@@ -4,112 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MURKS</title>
-  <meta name="description" content="MURKS – Bücher und Comics von Noah Zimmermann." />
+  <meta name="description" content="MURKS – Romane und Comics von Noah Zimmermann. Direkt. Schräg. Ohne Filter." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="top">
     <nav class="nav">
-      <a class="logo" href="index.html">MURKS</a>
+      <a class="nav-logo" href="#top">MURKS</a>
+      <button class="menu-toggle" aria-label="Navigation öffnen">☰</button>
       <div class="nav-links">
         <a href="#buecher">Bücher</a>
         <a href="#autoren">Autoren</a>
+        <a href="#die-saecke">Die Säcke</a>
         <a href="#shop">Shop</a>
         <a href="#kontakt">Kontakt</a>
       </div>
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">Schräg. Direkt. Literatur mit Nachbrenner.</p>
-      <h1 class="murks-title">MURKS</h1>
-      <p class="subtitle">
-        Romane und Comics, die sich gut lesen, böse reinziehen und nicht mehr loslassen.
-      </p>
-      <a class="button primary" href="#buecher">Bücher ansehen</a>
+      <p class="eyebrow">DIREKT. SCHRÄG. OHNE FILTER.</p>
+      <img class="hero-logo" src="assets/murks-logo.png" alt="MURKS Logo" />
+      <p class="subtitle">Geschichten, die sich gut lesen, böse reinziehen und lange nicht mehr loslassen.</p>
+      <a class="button primary" href="#buecher">Bücher entdecken</a>
     </section>
   </header>
 
   <main>
-    <section id="buecher" class="section">
+    <section id="buecher" class="section books-section">
       <h2>Bücher</h2>
-      <p class="section-text">
-        Drei Einstiege ins Murks-Universum. Anklicken, öffnen, weiterlesen.
-      </p>
+      <p class="section-text">Keine glatte Ware. Eher Geschichten mit Macken, Narben und Nachbrenner.</p>
 
-      <div class="book-grid">
-        <a class="book-card" href="the-good-the-bad-and-the-junkie.html">
-          <img src="assets/good-bad-junkie.jpg" alt="Cover The Good, The Bad and The Junkie" />
-          <div class="book-info">
-            <span class="tag">Roman</span>
-            <h3>The Good, The Bad and The Junkie</h3>
-            <p>Ein Klinikroman über Krise, Schuld, Absturz, Freundschaft und den schweren Weg zurück.</p>
-          </div>
-        </a>
+      <div class="shelf">
+        <h3 class="shelf-title">Romane</h3>
+        <div class="book-slider" data-slider="romane">
+          <button class="arrow" data-direction="-1" aria-label="Vorheriges Buch">‹</button>
+          <article class="book-slide">
+            <img class="book-sketch" src="assets/books/sketch-good-bad-junkie.png" alt="Skizze The Good, The Bad and The Junkie" />
+            <div class="book-copy">
+              <h4 class="book-title red">The Good, The Bad and The Junkie</h4>
+              <p>Ein Klinikroman über Angst, Schuld, Kontrollverlust und die Menschen, die bleiben, wenn eigentlich nichts mehr geht. Düster, ehrlich und trotzdem nicht ohne Hoffnung.</p>
+              <a class="button" href="the-good-the-bad-and-the-junkie.html">Zum Buch</a>
+            </div>
+          </article>
+          <button class="arrow" data-direction="1" aria-label="Nächstes Buch">›</button>
+        </div>
+      </div>
 
-        <a class="book-card" href="ruinen-und-dinge.html">
-          <img src="assets/ruinen.png" alt="Cover Von Ruinen und Dingen, die kaputtgehen" />
-          <div class="book-info">
-            <span class="tag">Roman</span>
-            <h3>Von Ruinen und Dingen, die kaputtgehen</h3>
-            <p>Prequel und Sequel: Burg, Gastro, Winterwärme und alles, was vor und nach dem Zusammenbruch bleibt.</p>
-          </div>
-        </a>
-
-        <a class="book-card" href="die-saecke.html">
-          <img src="assets/die-saecke.png" alt="Cover Die Säcke" />
-          <div class="book-info">
-            <span class="tag">Comic</span>
-            <h3>DIE SÄCKE!</h3>
-            <p>Willkommen in Sackingen: absurd, derb, detailverliebt, komplett daneben und trotzdem mit Herz.</p>
-          </div>
-        </a>
+      <div class="shelf">
+        <h3 class="shelf-title">Comics</h3>
+        <div class="book-slider" data-slider="comics">
+          <button class="arrow" data-direction="-1" aria-label="Vorheriger Comic">‹</button>
+          <article class="book-slide">
+            <img class="book-sketch" src="assets/books/sketch-die-saecke.png" alt="Skizze Die Säcke" />
+            <div class="book-copy">
+              <h4 class="book-title white">Die Säcke</h4>
+              <p>Willkommen in Sackingen: einer Stadt voller Säcke, Abgründe, Wortspiele und Figuren, die sehr überzeugt davon sind, normal zu sein. Funktioniert eigenständig, belohnt aber alle, die tiefer graben.</p>
+              <a class="button" href="die-saecke-buch.html">Zum Buch</a>
+            </div>
+          </article>
+          <button class="arrow" data-direction="1" aria-label="Nächster Comic">›</button>
+        </div>
       </div>
     </section>
 
     <section id="autoren" class="section authors">
       <h2>Autoren</h2>
-      <div class="author-box">
+      <div class="author-card">
+        <span class="tag">Autor</span>
         <h3>Noah Zimmermann</h3>
-        <p>
-          Autor, Comic-Erfinder und Gründer von MURKS. Weitere Autorinnen und Autoren folgen.
-        </p>
+        <p>Noah Zimmermann schreibt Romane und Comics zwischen schwarzem Humor, psychologischer Tiefe und absurden Welten. Mit MURKS entsteht ein unabhängiger Ort für Geschichten, die nicht glattgebügelt werden.</p>
         <a class="button" href="noah-zimmermann.html">Autorenseite öffnen</a>
+      </div>
+    </section>
+
+    <section id="die-saecke" class="notebook-section">
+      <div class="notebook">
+        <img class="character labersack" src="assets/characters/labersack.png" alt="Labersack winkt" />
+        <h2>Die Säcke</h2>
+        <p class="notebook-subtitle">Willkommen in Sackingen.</p>
+
+        <div class="note-block intro">
+          <p>Alles begann mit einem einzigen dummen Gedanken: Was wäre, wenn alle Menschen einfach Säcke wären? Normalerweise verschwinden solche Gedanken wieder. Dieser hier nicht. Er bekam eine Stadt, Einwohner, einen Gott, einen schwarzen Turm, einen Bibbeleskäs-Fanatiker und irgendwann komplett die Kontrolle über die Situation.</p>
+        </div>
+
+        <div class="note-block with-character">
+          <div>
+            <p>Sackingen ist eine Stadt voller Säcke. Ein Ort, an dem Cowboys Säcke wegpusten, Filmstars werden, schwäbische Philosophen in Sinklöchern leben und Figuren irgendwann merken, dass ihre Geschichte vielleicht von jemand anderem geschrieben wird.</p>
+            <p>Der Comic funktioniert komplett eigenständig. Wer die Romane kennt, findet zusätzliche Gags, Zusammenhänge und tiefere Ebenen. Wer neu kommt, bekommt trotzdem genug Murks für beide Hände.</p>
+          </div>
+          <img class="character-inline" src="assets/characters/herrgottsack.png" alt="Herrgottsack" />
+        </div>
+
+        <div class="note-grid">
+          <article><img src="assets/characters/el-crippolo.png" alt="El Crippolo" /><h3>El Crippolo</h3><p>Ein Fuchs-Cowboy mit zu viel Staub im Mantel und zu wenig Geduld für normale Lösungen.</p></article>
+          <article><img src="assets/characters/steven-spielsack.png" alt="Steven Spielsack" /><h3>Steven Spielsack</h3><p>Absolutes Kino, selbst wenn gerade niemand gefragt hat. In Sackingen reicht das als Berufsbezeichnung.</p></article>
+          <article><img src="assets/characters/horst-baff.png" alt="Horst Baff" /><h3>Horst Baff</h3><p>Manche Figuren erklären die Welt. Andere sitzen davor und verstehen sie exakt gar nicht.</p></article>
+          <article><img src="assets/characters/drecksack.png" alt="Drecksack" /><h3>Drecksack</h3><p>Wenn Sackingen Ordnung verspricht, steht Drecksack meist schon mit dem Gegenteil bereit.</p></article>
+          <article><img src="assets/characters/cannelloni.png" alt="Don Cannelloni" /><h3>Don Cannelloni</h3><p>Kommt selten leise. Geht selten ohne Szene. Und irgendwo wartet immer ein roter Fiat.</p></article>
+          <article><img src="assets/characters/lacksack-absack.png" alt="Lacksack und Absack" /><h3>Lacksack & Absack</h3><p>Farbe, Flasche, falsches Timing. In Sackingen reicht das für eine Nebenhandlung.</p></article>
+        </div>
+
+        <div class="note-block final-note">
+          <img src="assets/characters/facksack.png" alt="Facksack" />
+          <p>Was als absurder Witz begann, wurde zu einer Geschichte über Identität, Freundschaft, Einsamkeit, Familie, psychische Krisen und die Frage, wer wir eigentlich sind, wenn die Rollen wegfallen, die wir unser ganzes Leben gespielt haben. Denn am Ende sind wir alle Säcke. Jeder trägt sein eigenes Säckle.</p>
+        </div>
       </div>
     </section>
 
     <section id="shop" class="section shop">
       <h2>Shop</h2>
-      <p class="section-text">
-        Downloads folgen bald. Die Buttons sind vorbereitet und können später mit echten Links ersetzt werden.
-      </p>
-
+      <p class="section-text">Downloads folgen bald. Die Buttons sind vorbereitet und können später mit echten Links ersetzt werden.</p>
       <div class="products">
-        <article class="product">
-          <div>
-            <h3>The Good, The Bad and The Junkie</h3>
-            <p>Digitalausgabe</p>
-          </div>
-          <strong class="price">4,20 €</strong>
-          <a class="button disabled" href="#" aria-disabled="true">Download folgt</a>
-        </article>
-
-        <article class="product">
-          <div>
-            <h3>Von Ruinen und Dingen, die kaputtgehen</h3>
-            <p>Digitalausgabe</p>
-          </div>
-          <strong class="price">4,20 €</strong>
-          <a class="button disabled" href="#" aria-disabled="true">Download folgt</a>
-        </article>
-
-        <article class="product highlight">
-          <div>
-            <h3>DIE SÄCKE!</h3>
-            <p>Comicband</p>
-          </div>
-          <strong class="price">14,20 €</strong>
-          <a class="button disabled" href="#" aria-disabled="true">Download folgt</a>
-        </article>
+        <article class="product"><div><h3>The Good, The Bad and The Junkie</h3><p>Digitalausgabe</p></div><strong class="price">4,20 €</strong><a class="button disabled" href="#" aria-disabled="true">Download folgt</a></article>
+        <article class="product"><div><h3>Von Ruinen und Dingen, die kaputtgehen</h3><p>Digitalausgabe</p></div><strong class="price">4,20 €</strong><a class="button disabled" href="#" aria-disabled="true">Download folgt</a></article>
+        <article class="product highlight"><div><h3>Die Säcke</h3><p>Comicband</p></div><strong class="price">14,20 €</strong><a class="button disabled" href="#" aria-disabled="true">Download folgt</a></article>
       </div>
     </section>
 
@@ -121,8 +129,11 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 MURKS · GitHub Pages</p>
-    <p class="small">Impressum und Datenschutz bitte vor Veröffentlichung ergänzen.</p>
+    <p>© 2026 MURKS</p>
+    <p>Unabhängiger Verlag. Geschichten mit Nachbrenner.</p>
+    <p class="small">Impressum und Datenschutz werden ergänzt.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
