@@ -1,41 +1,23 @@
-# Murks Verlag Website
+# MURKS Website V2
 
-GitHub-Pages-fertige Website für `www.murks-verlag.de`.
+## Geändert
 
-## Dateien
+- Großer Titel nur noch `MURKS`, weiß, schräg, Streetfighter-/Brush-Look per CSS.
+- Neuer Claim: `Romane und Comics, die sich gut lesen, böse reinziehen und nicht mehr loslassen.`
+- Reiter `Autoren` ergänzt.
+- Autorenseite `Noah Zimmermann` ergänzt.
+- Drei anwählbare Bücher mit eigenen Unterseiten.
+- Buchcover/Buchzeichnungen in `assets/`.
+- Shop bleibt vorbereitet mit Download-Platzhaltern.
 
-- `index.html`
-- `style.css`
+## Was du jetzt bei GitHub machen musst
 
-## So veröffentlichst du sie kostenlos auf GitHub Pages
-
-1. Neues Repository bei GitHub erstellen, z. B. `murks-verlag`.
-2. `index.html` und `style.css` hochladen.
-3. In GitHub auf `Settings` → `Pages`.
-4. Bei `Build and deployment` → `Deploy from a branch` wählen.
-5. Branch `main`, Ordner `/root` auswählen.
-6. Speichern.
-
-## Eigene Domain verbinden
-
-Im Repository eine Datei namens `CNAME` erstellen mit:
-
-```txt
-www.murks-verlag.de
-```
-
-Dann beim Domain-Anbieter die DNS-Einträge für GitHub Pages setzen.
-
-## Downloadlinks später eintragen
-
-In `index.html` diese Stellen ersetzen:
-
-```html
-<a class="button disabled" href="#" aria-disabled="true">Download folgt</a>
-```
-
-durch z. B.:
-
-```html
-<a class="button" href="DEIN-LINK-ZUR-DATEI.pdf">Download</a>
-```
+1. ZIP entpacken.
+2. In deinem Repository `MURKS` auf GitHub gehen.
+3. Oben auf `Add file` klicken.
+4. `Upload files` klicken.
+5. Alle entpackten Dateien und den Ordner `assets` hineinziehen.
+6. GitHub fragt, ob vorhandene Dateien ersetzt werden sollen. Das ist richtig.
+7. Unten auf `Commit changes` klicken.
+8. Danach unter `Actions` warten, bis der grüne Haken erscheint.
+9. Website öffnen: `https://murks-verlag.github.io/MURKS/`
