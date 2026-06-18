@@ -527,246 +527,275 @@
 }
 
 
-/* SACKIPEDIA FINAL FORMAT UPDATE */
-.wiki-article-body,
-.wiki-article-body p,
-.wiki-article-body li,
-.wiki-article-body blockquote {
-  font-size: 16px !important;
+/* SACK IT! */
+.sackit-gate {
+  background: #030303;
+  color: #fff;
+  padding: clamp(72px, 10vw, 130px) 20px;
+  text-align: center;
 }
 
-.wiki-article-header {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 290px !important;
-  gap: 28px !important;
-  align-items: start !important;
-  margin-bottom: 18px !important;
+.sackit-gate-inner {
+  width: min(980px, 100%);
+  margin: 0 auto;
 }
 
-.wiki-infobox {
-  background: #f8f9fa !important;
-  border: 1px solid #a2a9b1 !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  color: #202122 !important;
-  font-size: 14px !important;
-  overflow: hidden !important;
+.sackit-logo-link {
+  display: inline-block;
+  width: min(540px, 88vw);
+  transition: transform .35s ease, filter .35s ease;
 }
 
-.wiki-infobox-title {
-  text-align: center !important;
-  font-weight: 700 !important;
-  background: #eaecf0 !important;
-  border-bottom: 1px solid #a2a9b1 !important;
-  padding: 10px 8px !important;
+.sackit-logo-link:hover {
+  transform: translateY(-8px) scale(1.025);
+  filter: drop-shadow(0 0 34px rgba(255, 111, 0, .42));
 }
 
-.wiki-info-row {
-  display: grid !important;
-  grid-template-columns: 92px minmax(0, 1fr) !important;
-  gap: 8px !important;
-  border-bottom: 1px solid #eaecf0 !important;
-  padding: 8px 10px !important;
-  text-align: left !important;
+.sackit-logo-link img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.wiki-info-row span {
-  font-weight: 700 !important;
-  color: #202122 !important;
+.sackit-page-body {
+  background: #050505;
+  color: #fff;
 }
 
-.wiki-info-row strong {
-  font-weight: 400 !important;
-  color: #202122 !important;
-  overflow-wrap: anywhere !important;
+.sackit-page {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 111, 0, .16), transparent 34%),
+    #050505;
+  min-height: 100vh;
+  padding-bottom: 90px;
 }
 
-.wiki-article-body h3 {
-  font-size: 1.25rem !important;
-  margin: 26px 0 10px !important;
-  padding-top: 18px !important;
-  border-top: 1px solid #a2a9b1 !important;
-  color: #202122 !important;
-  font-family: sans-serif !important;
-  font-weight: 700 !important;
+.sackit-hero {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+  padding: 74px 20px 38px;
+  text-align: center;
 }
 
-.wiki-article-body h3:first-child {
-  border-top: 0 !important;
-  padding-top: 0 !important;
+.sackit-page-logo {
+  width: min(430px, 86vw);
+  display: block;
+  margin: 0 auto 28px;
+  filter: drop-shadow(0 0 28px rgba(255, 111, 0, .28));
 }
 
-.wiki-note,
-.wiki-edit-line {
-  color: #54595d !important;
-  background: #f8f9fa !important;
-  border-left: 3px solid #a2a9b1 !important;
-  padding: 8px 12px !important;
-  margin: 12px 0 !important;
+.sackit-kicker {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 800;
+  max-width: 780px;
+  margin: 0 auto 18px;
 }
 
-.wiki-note strong,
-.wiki-note em,
-.wiki-edit-line strong,
-.wiki-edit-line em {
-  font-weight: 700 !important;
-  font-style: italic !important;
+.sackit-hero p {
+  max-width: 760px;
+  margin: 10px auto;
 }
 
-.wiki-article-body blockquote {
-  margin: 12px 0 !important;
-  padding: 8px 14px !important;
-  border-left: 3px solid #a2a9b1 !important;
-  background: #f8f9fa !important;
+.sackit-shell {
+  width: min(1240px, calc(100% - 28px));
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 280px;
+  gap: 18px;
+  align-items: start;
 }
 
-.wiki-article-body ul {
-  margin: 10px 0 16px 24px !important;
+.sackit-sidebar,
+.sackit-rightbar,
+.sackit-post,
+.sackit-namecheck {
+  border: 2px solid rgba(255,255,255,.14);
+  background: rgba(12,12,12,.96);
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
 }
 
-@media (max-width: 860px) {
-  .wiki-article-header {
-    grid-template-columns: 1fr !important;
+.sackit-sidebar {
+  padding: 16px;
+  position: sticky;
+  top: 14px;
+}
+
+.sackit-sidebar h2,
+.sackit-card h2,
+.sackit-namecheck h2 {
+  margin: 0 0 14px;
+  color: #ff7900;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.sackit-sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.sackit-sidebar a:hover {
+  color: #ff7900;
+}
+
+.sackit-feed {
+  display: grid;
+  gap: 16px;
+}
+
+.sackit-post {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px;
+}
+
+.sackit-votes {
+  display: grid;
+  place-items: center;
+  align-content: start;
+  gap: 8px;
+  color: #ff7900;
+}
+
+.sackit-votes button {
+  border: 0;
+  background: #151515;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.sackit-votes button:hover {
+  background: #ff7900;
+}
+
+.sackit-post-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: rgba(255,255,255,.68);
+  font-size: .94rem;
+  margin-bottom: 8px;
+}
+
+.sackit-sack {
+  color: #ff7900;
+  font-weight: 800;
+}
+
+.verified-sack {
+  filter: drop-shadow(0 0 8px rgba(0, 108, 255, .7));
+}
+
+.sackit-post h2 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+}
+
+.sackit-post p {
+  margin: 0 0 12px;
+  color: rgba(255,255,255,.86);
+}
+
+.sackit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgba(255,255,255,.6);
+  font-size: .92rem;
+}
+
+.sackit-rightbar {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  position: sticky;
+  top: 14px;
+}
+
+.sackit-card {
+  background: #101010;
+  border: 1px solid rgba(255,255,255,.12);
+  padding: 14px;
+}
+
+.sackit-card a {
+  color: #ff7900;
+  font-weight: 800;
+}
+
+.sackit-card ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+.sackit-small {
+  color: rgba(255,255,255,.64);
+  font-size: .9rem;
+}
+
+.sackit-namecheck {
+  width: min(760px, calc(100% - 28px));
+  margin: 32px auto 0;
+  padding: 22px;
+  text-align: center;
+}
+
+.sackit-checker {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.sackit-checker input {
+  width: min(420px, 100%);
+  padding: 13px 14px;
+  border: 2px solid rgba(255,255,255,.2);
+  background: #111;
+  color: #fff;
+}
+
+.sackit-checker button {
+  padding: 13px 18px;
+  border: 0;
+  background: #ff7900;
+  color: #050505;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.sackit-result {
+  min-height: 26px;
+  font-weight: 800;
+  color: #ff7900;
+}
+
+@media (max-width: 980px) {
+  .sackit-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sackit-sidebar,
+  .sackit-rightbar {
+    position: static;
+  }
+
+  .sackit-post {
+    grid-template-columns: 56px minmax(0, 1fr);
   }
 }
 
-
-/* SACKIPEDIA CLEAN FIX - only real entries, no sentence articles */
-.wiki-entry-list {
-  display: grid !important;
-  gap: 2px !important;
+@media (max-width: 560px) {
+  .sackit-checker {
+    flex-direction: column;
+  }
 }
-.wiki-group-title {
-  font-weight: 700 !important;
-  color: #202122 !important;
-  margin: 12px 0 5px !important;
-  padding-top: 8px !important;
-  border-top: 1px solid #c8ccd1 !important;
-  font-size: 13px !important;
-  text-transform: uppercase !important;
-  letter-spacing: .04em !important;
-}
-.wiki-entry-link {
-  appearance: none !important;
-  border: 0 !important;
-  background: transparent !important;
-  color: #36c !important;
-  text-align: left !important;
-  padding: 4px 2px !important;
-  cursor: pointer !important;
-  font-size: 14px !important;
-  line-height: 1.22 !important;
-  word-break: normal !important;
-}
-.wiki-entry-link:hover,
-.wiki-entry-link.active {
-  text-decoration: underline !important;
-  background: rgba(51,102,204,.08) !important;
-}
-.wiki-article { display: none !important; }
-.wiki-article.active { display: block !important; }
-.wiki-article-header {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 290px !important;
-  gap: 28px !important;
-  align-items: start !important;
-  margin-bottom: 18px !important;
-}
-.wiki-article h2 {
-  font-family: Georgia, "Times New Roman", serif !important;
-  font-weight: 400 !important;
-  font-size: clamp(2.1rem, 5vw, 3.4rem) !important;
-  color: #000 !important;
-  margin: 0 0 16px !important;
-  padding-bottom: 8px !important;
-  border-bottom: 1px solid #a2a9b1 !important;
-  line-height: 1.05 !important;
-}
-.wiki-article-body,
-.wiki-article-body p,
-.wiki-article-body li,
-.wiki-article-body blockquote {
-  font-size: 16px !important;
-  line-height: 1.62 !important;
-}
-.wiki-article-body p {
-  max-width: 780px !important;
-  margin: 0 0 12px !important;
-}
-.wiki-article-body h3 {
-  font-size: 1.25rem !important;
-  margin: 26px 0 10px !important;
-  padding-top: 18px !important;
-  border-top: 1px solid #a2a9b1 !important;
-  color: #202122 !important;
-  font-family: sans-serif !important;
-  font-weight: 700 !important;
-}
-.wiki-article-body h3:first-child {
-  border-top: 0 !important;
-  padding-top: 0 !important;
-}
-.wiki-note,
-.wiki-edit-line {
-  color: #54595d !important;
-  background: #f8f9fa !important;
-  border-left: 3px solid #a2a9b1 !important;
-  padding: 8px 12px !important;
-  margin: 12px 0 !important;
-}
-.wiki-note strong,
-.wiki-note em,
-.wiki-edit-line strong,
-.wiki-edit-line em {
-  font-weight: 700 !important;
-  font-style: italic !important;
-}
-.wiki-article-body blockquote {
-  margin: 12px 0 !important;
-  padding: 8px 14px !important;
-  border-left: 3px solid #a2a9b1 !important;
-  background: #f8f9fa !important;
-}
-.wiki-article-body ul {
-  margin: 10px 0 16px 24px !important;
-}
-.wiki-infobox {
-  background: #f8f9fa !important;
-  border: 1px solid #a2a9b1 !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  color: #202122 !important;
-  font-size: 14px !important;
-  overflow: hidden !important;
-}
-.wiki-infobox-title {
-  text-align: center !important;
-  font-weight: 700 !important;
-  background: #eaecf0 !important;
-  border-bottom: 1px solid #a2a9b1 !important;
-  padding: 10px 8px !important;
-}
-.wiki-info-row {
-  display: grid !important;
-  grid-template-columns: 92px minmax(0, 1fr) !important;
-  gap: 8px !important;
-  border-bottom: 1px solid #eaecf0 !important;
-  padding: 8px 10px !important;
-  text-align: left !important;
-}
-.wiki-info-row span {
-  font-weight: 700 !important;
-  color: #202122 !important;
-}
-.wiki-info-row strong {
-  font-weight: 400 !important;
-  color: #202122 !important;
-  overflow-wrap: anywhere !important;
-}
-@media (max-width: 860px) {
-  .wiki-article-header { grid-template-columns: 1fr !important; }
-}
-
-/* SACKIPEDIA INFOBOX ONLY FIX: metadata moved from body into infobox in sackipedia.html */
-
-/* SACKIPEDIA JOINED META FIX: combined metadata lines moved into infobox */

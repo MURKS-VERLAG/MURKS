@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SACK IT! · MURKS</title>
+  <meta name="description" content="SACK IT! – Sack Media für Sackingen." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="sackit-page-body">
+  <header class="page-header">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">MURKS</a>
+      <div class="nav-links open">
+        <a href="index.html#buecher">Bücher</a>
+        <a href="index.html#autoren">Autoren</a>
+        <a href="index.html#die-saecke">Die Säcke</a>
+        <a href="index.html#sackipedia-gate">Sackipedia</a>
+        <a href="index.html#sack-it">Sack It!</a>
+        <a href="index.html#blog-gate">Blog</a>
+        <a href="index.html#podcast">Podcast</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sackit-page">
+    <section class="sackit-hero">
+      <img src="assets/sack-it-logo.png" alt="SACK IT! Sack Media" class="sackit-page-logo" />
+      <p class="sackit-kicker">Die offizielle Plattform für alle Säcke, die ihren Sack dazugeben wollen.</p>
+      <p>Bald können Leser hier posten, liken und mit Sackingen interagieren.</p>
+      <p>Keine neuen Sacks erstellen. Aber Beiträge schreiben, Dinge liken und Teil der Diskussion werden.</p>
+    </section>
+
+    <section class="sackit-shell" aria-label="SACK IT Grundgerüst">
+      <aside class="sackit-sidebar">
+        <h2>Sacks</h2>
+        <a href="#sackingen">s/Sackingen</a>
+        <a href="#sacktv">s/SackTV</a>
+        <a href="#psychosaecke">s/Psychosäcke</a>
+        <a href="#liebessaecke">s/Liebessäcke</a>
+        <a href="#blechsackaliens">s/BlechsackAliens</a>
+        <a href="#kiffsaecke">s/Kiffsäcke</a>
+        <a href="#pumpersaecke">s/Pumpersäcke</a>
+        <a href="#erzaehlersaecke">s/Erzählersäcke</a>
+      </aside>
+
+      <section class="sackit-feed">
+        <article class="sackit-post">
+          <div class="sackit-votes">
+            <button title="Sack geben">🟧</button>
+            <strong>421</strong>
+            <button title="Kackhaufen geben">💩</button>
+          </div>
+          <div class="sackit-post-content">
+            <div class="sackit-post-meta">
+              <span class="sackit-sack">s/Sackingen</span>
+              <span>gepostet von <strong>Labersack</strong> <span class="verified-sack">🟦</span></span>
+            </div>
+            <h2>Willkommen auf SACK IT!</h2>
+            <p>Hier kommentiert Sackingen zurück. Manchmal hilfreich. Meistens nicht.</p>
+            <div class="sackit-actions">
+              <span>💬 42 Sackantworten</span>
+              <span>🟧 Orangene Säcke = Zustimmung</span>
+              <span>💩 Downvote</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="sackit-post">
+          <div class="sackit-votes">
+            <button title="Sack geben">🟧</button>
+            <strong>87</strong>
+            <button title="Kackhaufen geben">💩</button>
+          </div>
+          <div class="sackit-post-content">
+            <div class="sackit-post-meta">
+              <span class="sackit-sack">s/SackTV</span>
+              <span>gepostet von <strong>Sackgesicht</strong> <span class="verified-sack">🟦</span></span>
+            </div>
+            <h2>Ich bewerbe mich hiermit als Moderator aller Sacks.</h2>
+            <p>Aus Gründen der objektiven Ordnung. Weitere Nachfragen werden entfernt.</p>
+            <div class="sackit-actions">
+              <span>💬 317 Sackantworten</span>
+              <span>🛡️ Moderatorstatus: umstritten</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="sackit-rightbar">
+        <div class="sackit-card">
+          <h2>Anmeldung</h2>
+          <p>Aktivierungscode und Accountfragen über:</p>
+          <a href="mailto:sackit@gmx.net">sackit@gmx.net</a>
+        </div>
+
+        <div class="sackit-card">
+          <h2>Sackname</h2>
+          <p>Alle echten Nutzer müssen Sack sein.</p>
+          <ul>
+            <li><strong>Nomen + sack</strong><br />Kaffeesack, Kommentarsack, Buchsack</li>
+            <li><strong>Adjektiv + Sack</strong><br />Müder Sack, Wilder Sack, Verwirrter Sack</li>
+          </ul>
+        </div>
+
+        <div class="sackit-card">
+          <h2>Reserviert</h2>
+          <p>Alle offiziellen Figuren, Orte und Begriffe aus der Sackipedia sind gesperrt.</p>
+          <p class="sackit-small">Groß-/Kleinschreibung, Leerzeichen und Bindestriche werden ignoriert.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="sackit-namecheck">
+      <h2>Sacknamen prüfen</h2>
+      <p>Demo fürs spätere Grundgerüst. Noch keine echte Registrierung.</p>
+      <div class="sackit-checker">
+        <input id="sackNameInput" type="text" placeholder="z. B. Kaffeesack" />
+        <button id="sackNameButton" type="button">Prüfen</button>
+      </div>
+      <p id="sackNameResult" class="sackit-result"></p>
+    </section>
+  </main>
+
+  <script>
+    window.SACKIT_RESERVED_NAMES = [
+    'Labersack',
+    'Sackgesicht',
+    'Herrgottsack',
+    'Piesack',
+    'Gabelhorst',
+    'EL CRIPPOLO',
+    'Spaghetti',
+    'Drecksack',
+    'Kacksack',
+    'Kackolina',
+    'Facksack',
+    'White Knight',
+    'Schwarzer Sackritter',
+    'Grüner Heckensackritter',
+    'Lacksack',
+    'Absack',
+    'Wladi Wodka',
+    'Wladi Watsch',
+    'Sackingen',
+    'SackTV',
+    'Sackipedia',
+    'MacSack',
+    'KAMEL',
+    'KAMEL-Brüder',
+    'Sackbolika',
+    'Sacksee',
+    'Le Burg',
+    'Blacksack Tower',
+    'Filterbach',
+    'Gruselsackwald',
+    'Löffingen',
+    'Tonningen',
+    'Stuhlingen',
+    'Stuhlinger Zoo',
+    'Herzog de Sack Ratte',
+    'Herzog de Sack Schlange',
+    'Herzog de Sack Schwein',
+    'Herzog de Sack Wolf',
+    'Säckin',
+    'Sackina',
+    'Altersack',
+    'Neuer Altersack',
+    'Alter Altersack',
+    'Fettsack',
+    'Heimatsack',
+    'Schwobeseggel',
+    'Schwobeseppel',
+    'Don Cannelloni',
+    'Caesar Salad',
+    'Compagnoni',
+    'Sackus Pilates',
+    'Vadersack',
+    'Weiße Sackwanderer',
+    'Sackhenker',
+    'Quasselsack',
+    'Labertante',
+    'Plappersack',
+    'Schwafelsack',
+    'Schnattersack',
+    'Bibbeleskäs',
+    'Schweizer Käse',
+    'Franzbrötchen',
+    'Green Sack',
+    'CM Sack',
+    'ED Organ',
+    'Schwefelsack'
+    ];
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

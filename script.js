@@ -12,13 +12,7 @@ if (wikiSearch) {
 }
 
 
-
-
-
-
-
-
-// SACKIPEDIA CLEAN SINGLE ARTICLE HANDLER
+// SACKIPEDIA SINGLE ARTICLE FIX
 (function(){
   const buttons = document.querySelectorAll(".wiki-entry-link");
   const articles = document.querySelectorAll(".wiki-article");
@@ -45,18 +39,62 @@ if (wikiSearch) {
 
   if (location.hash && document.querySelector(location.hash + ".wiki-article")) {
     showArticle(location.hash.slice(1));
-  } else {
-    const firstReal = Array.from(buttons).find(b => b.dataset.target);
-    if (firstReal) showArticle(firstReal.dataset.target);
+  } else if (buttons[0]) {
+    showArticle(buttons[0].dataset.target);
   }
 
   if (search) {
     search.addEventListener("input", () => {
       const q = search.value.toLowerCase().trim();
       buttons.forEach(btn => {
-        const group = btn.previousElementSibling;
-        btn.style.display = btn.textContent.toLowerCase().includes(q) ? "" : "none";
+        const match = btn.textContent.toLowerCase().includes(q);
+        btn.style.display = match ? "" : "none";
       });
     });
   }
+})();
+
+
+// SACK IT! name checker demo
+(function () {
+  const input = document.querySelector("#sackNameInput");
+  const button = document.querySelector("#sackNameButton");
+  const result = document.querySelector("#sackNameResult");
+  if (!input || !button || !result) return;
+
+  function normalizeSackName(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/\s+/g, "")
+      .replace(/[-_]/g, "")
+      .replace(/[!?.:,;]/g, "")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+  const reserved = (window.SACKIT_RESERVED_NAMES || []).map(normalizeSackName);
+
+  function isValidSackName(value) {
+    const raw = String(value || "").trim();
+    const normalized = normalizeSackName(raw);
+    const hasSack = normalized.endsWith("sack");
+    const isReserved = reserved.includes(normalized);
+    return { raw, normalized, hasSack, isReserved };
+  }
+
+  button.addEventListener("click", () => {
+    const check = isValidSackName(input.value);
+    if (!check.raw) {
+      result.textContent = "Bitte erst einen Sacknamen eingeben.";
+      return;
+    }
+    if (!check.hasSack) {
+      result.textContent = "Abgelehnt. Alle müssen Sack sein.";
+      return;
+    }
+    if (check.isReserved) {
+      result.textContent = "Gesperrt. Offizielle Sackipedia-Namen sind reserviert.";
+      return;
+    }
+    result.textContent = "Sieht sackig aus. Aktivierung später über sackit@gmx.net.";
+  });
 })();
