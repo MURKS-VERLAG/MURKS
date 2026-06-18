@@ -766,3 +766,5 @@
 @media (max-width: 860px) {
   .wiki-article-header { grid-template-columns: 1fr !important; }
 }
+
+/* SACKIPEDIA INFOBOX ONLY FIX: metadata moved from body into infobox in sackipedia.html */
