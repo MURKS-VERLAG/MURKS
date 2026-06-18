@@ -1,10 +1,17 @@
-# Sackipedia linke Reiter/Liste Fix
+# Sackipedia Sidebar Restore
 
 Ändert nur sackipedia.html.
 
-Was gemacht wird:
-- Linke Eintragsliste neu aus echten article.wiki-article Überschriften aufgebaut.
-- Kaputte Pseudo-Einträge wie „Bearbeitung...“ verschwinden.
+Was gemacht wurde:
+- Linke Reiterliste aus alter funktionierender Sackipedia wiederhergestellt.
+- Quelle der alten Liste: murks-sackipedia-eintraege-update.zip
+- Herzog de Sack Wolf/Schwein/Schlange/Ratte bleiben damit wieder exakt wie früher.
 - Artikeltexte bleiben unverändert.
-- Don Cannelloni, Bibbeleskäs, Alter Altersack bleiben erhalten.
-- Keine anderen Seiten.
+- Don Cannelloni, Bibbeleskäs, Alter Altersack bleiben erhalten und werden links ergänzt, falls sie fehlten.
+
+NICHT geändert:
+- CSS
+- JS
+- andere Seiten
+- Artikeltexte
+- Layout außerhalb der linken Reiterliste
