@@ -1,1 +1,1 @@
-Echte GitHub-Datei: nur sackipedia.html. Ersetzt ausschließlich Don Cannelloni, Bibbeleskäs und Alter Altersack in der Sackipedia. Keine CSS-, Asset- oder Layoutänderungen.
+Nur sackipedia.html. Alte volle Basis behalten. Don Cannelloni, Bibbeleskäs und Alter Altersack manuell korrekt ersetzt. Linke Liste nicht neu gebaut.
