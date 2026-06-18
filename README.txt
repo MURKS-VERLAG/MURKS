@@ -1,17 +1,18 @@
-# Sackipedia Sidebar Restore
+# Sackipedia präziser Mini-Patch
 
-Ändert nur sackipedia.html.
+Enthält nur sackipedia.html.
 
-Was gemacht wurde:
-- Linke Reiterliste aus alter funktionierender Sackipedia wiederhergestellt.
-- Quelle der alten Liste: murks-sackipedia-eintraege-update.zip
-- Herzog de Sack Wolf/Schwein/Schlange/Ratte bleiben damit wieder exakt wie früher.
-- Artikeltexte bleiben unverändert.
-- Don Cannelloni, Bibbeleskäs, Alter Altersack bleiben erhalten und werden links ergänzt, falls sie fehlten.
+Änderungen:
+- Infokasten-Position geändert: links unter/bei Titel, direkt neben dem Artikelfluss statt ganz rechts.
+- Doppelten großgeschriebenen EL CRIPPOLO ohne Eintrag entfernt.
+- WLADI WATSCH großgeschrieben entfernt.
+- Wladi Watsch normal bleibt drin.
+- Wladi Wodka Artikel wieder eingefügt/ersetzt.
 
-NICHT geändert:
-- CSS
+Nicht geändert:
+- andere Artikel
+- alte Einträge
+- Navigation außer den genannten doppelten falschen Reitern
+- CSS-Dateien
 - JS
 - andere Seiten
-- Artikeltexte
-- Layout außerhalb der linken Reiterliste
