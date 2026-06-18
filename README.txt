@@ -1,19 +1,17 @@
-# Sackipedia Reparatur aus aktueller Live-Datei
+# Sackipedia Final Microfix
 
-Basis: direkt hochgeladene aktuelle sackipedia.html.
+Enthält nur sackipedia.html.
 
-Nur sackipedia.html.
-
-Repariert:
-- Pseudo-Artikel aus Bearbeitungszeilen/Sätzen entfernt.
-- Entsprechende kaputte linke Reiter entfernt.
-- Metadatenblöcke wie Kategorie/Status/Wesen/Beruf/Wohnort aus Fließtext in Infokästen verschoben.
-- Grüner Heckensackritter wieder in linke Reiterliste eingefügt.
-- Grüner Heckensackritter Infokasten befüllt.
+Nur diese Änderungen:
+- Waldi Watsch / Wladi Watsch / WLADI WATSCH aus linker Liste entfernt.
+- Falls passende Waldi/Wladi-Watsch-Artikel existierten, wurden sie entfernt.
+- Wladi Wodka bleibt erhalten.
+- Infokasten steht unter dem Titel, Text beginnt erst darunter.
 
 Nicht geändert:
-- keine CSS-Datei
-- keine JS-Datei
+- keine anderen Artikeltexte
+- keine andere Navigation
+- kein CSS außerhalb des internen Sackipedia-Infokasten-Fixes
+- keine JS-Dateien
 - keine Assets
 - keine anderen Seiten
-- bestehende Artikeltexte bleiben erhalten, abgesehen von entfernten Metadatenzeilen
