@@ -525,3 +525,11 @@
     background-size: 24px 24px;
   }
 }
+
+/* SACKIPEDIA ARTICLE UPDATE */
+.wiki-article-body,.wiki-article-body p,.wiki-article-body li,.wiki-article-body blockquote{font-size:16px!important;}
+.wiki-article-body h3{font-size:1.25rem!important;margin:26px 0 10px!important;padding-top:18px;border-top:1px solid #a2a9b1;color:#202122!important;}
+.wiki-article-body blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid #a2a9b1;background:#f8f9fa;}
+.wiki-meta-line{color:#202122;margin:4px 0!important;}
+.wiki-edit-line{color:#54595d;font-style:italic;margin:8px 0!important;}
+.wiki-article-body ul{margin:10px 0 16px 24px;}

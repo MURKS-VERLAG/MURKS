@@ -1,1090 +1,2083 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sackipedia · MURKS</title>
-  <meta name="description" content="Sackipedia – die freie Enzyklopädie, die niemand freigegeben hat." />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sackipedia · MURKS</title>
+<meta content="Sackipedia – die freie Enzyklopädie, die niemand freigegeben hat." name="description"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body class="wiki-body">
-  <header class="wiki-topbar">
-    <a class="wiki-wordmark" href="index.html#sackipedia-gate">
-      <img src="assets/sackipedia-globe.png" alt="Sackipedia Sackglobus" />
-      <span>SACKIPEDIA</span>
-    </a>
-    <nav>
-      <a href="index.html">MURKS</a>
-      <a href="index.html#die-saecke">Die Säcke</a>
-      <a href="index.html#kontakt">Kontakt</a>
-    </nav>
-  </header>
-
-  <main class="sackipedia-page">
-    <section class="wiki-hero">
-      <h1>Sackipedia</h1>
-      <p>Die freie Enzyklopädie, die niemand freigegeben hat.</p>
-      <p class="wiki-warning">Achtung: Diese Enzyklopädie wurde mehrfach von SackTV, Labersack und mindestens einem beleidigten Gastautor bearbeitet. Die Wahrheit kann daher abweichen.</p>
-      <input id="wikiSearch" class="wiki-search" type="search" placeholder="Eintrag suchen..." />
-    </section>
-
-    <div class="wiki-layout">
-      <aside class="wiki-sidebar">
-        <h2>Einträge</h2>
-        <div class="wiki-entry-list">
-          <button class="wiki-entry-link" type="button" data-target="alter-altersack">Alter Altersack</button>
-<button class="wiki-entry-link" type="button" data-target="altersack">Altersack</button>
-<button class="wiki-entry-link" type="button" data-target="arminiussackdenkmal">Arminiussackdenkmal</button>
-<button class="wiki-entry-link" type="button" data-target="bibbeleskaes">Bibbeleskäs</button>
-<button class="wiki-entry-link" type="button" data-target="blacksack-tower">Blacksack Tower</button>
-<button class="wiki-entry-link" type="button" data-target="burgruine">Burgruine</button>
-<button class="wiki-entry-link" type="button" data-target="burgwirtschaft">Burgwirtschaft</button>
-<button class="wiki-entry-link" type="button" data-target="caesar-salad">Caesar Salad</button>
-<button class="wiki-entry-link" type="button" data-target="cm-sack">CM Sack</button>
-<button class="wiki-entry-link" type="button" data-target="compagnoni">Compagnoni</button>
-<button class="wiki-entry-link" type="button" data-target="cracksack-suchtklinik">Cracksack Suchtklinik</button>
-<button class="wiki-entry-link" type="button" data-target="don-cannelloni">Don Cannelloni</button>
-<button class="wiki-entry-link" type="button" data-target="drecksack">Drecksack</button>
-<button class="wiki-entry-link" type="button" data-target="drecksackblase">Drecksackblase</button>
-<button class="wiki-entry-link" type="button" data-target="ed-organ">ED Organ</button>
-<button class="wiki-entry-link" type="button" data-target="el-crippolo">El Crippolo</button>
-<button class="wiki-entry-link" type="button" data-target="europasack-stadion">Europasack Stadion</button>
-<button class="wiki-entry-link" type="button" data-target="facksack">Facksack</button>
-<button class="wiki-entry-link" type="button" data-target="fettsack">Fettsack</button>
-<button class="wiki-entry-link" type="button" data-target="filterbach">Filterbach</button>
-<button class="wiki-entry-link" type="button" data-target="franzbroetchen">Franzbrötchen</button>
-<button class="wiki-entry-link" type="button" data-target="gabelhorst">Gabelhorst</button>
-<button class="wiki-entry-link" type="button" data-target="george-sack-sack-martin">George Sack Sack Martin</button>
-<button class="wiki-entry-link" type="button" data-target="green-sack">Green Sack</button>
-<button class="wiki-entry-link" type="button" data-target="gruselwald">Gruselwald</button>
-<button class="wiki-entry-link" type="button" data-target="heiliger-strohsack">Heiliger Strohsack</button>
-<button class="wiki-entry-link" type="button" data-target="heimatsack">Heimatsack</button>
-<button class="wiki-entry-link" type="button" data-target="herrgottsack">Herrgottsack</button>
-<button class="wiki-entry-link" type="button" data-target="horst">Horst</button>
-<button class="wiki-entry-link" type="button" data-target="kackolina">Kackolina</button>
-<button class="wiki-entry-link" type="button" data-target="kacksack">Kacksack</button>
-<button class="wiki-entry-link" type="button" data-target="karl-kojote">Karl Kojote</button>
-<button class="wiki-entry-link" type="button" data-target="labersack">Labersack</button>
-<button class="wiki-entry-link" type="button" data-target="labertante">Labertante</button>
-<button class="wiki-entry-link" type="button" data-target="le-burg">Le Burg</button>
-<button class="wiki-entry-link" type="button" data-target="lucky-sack">Lucky Sack</button>
-<button class="wiki-entry-link" type="button" data-target="loeffingen">Löffingen</button>
-<button class="wiki-entry-link" type="button" data-target="macsack">MacSack</button>
-<button class="wiki-entry-link" type="button" data-target="neuer-altersack">Neuer Altersack</button>
-<button class="wiki-entry-link" type="button" data-target="old-shatterhemd">Old Shatterhemd</button>
-<button class="wiki-entry-link" type="button" data-target="piesack">Piesack</button>
-<button class="wiki-entry-link" type="button" data-target="plappersack">Plappersack</button>
-<button class="wiki-entry-link" type="button" data-target="quasselsack">Quasselsack</button>
-<button class="wiki-entry-link" type="button" data-target="ratte">Ratte</button>
-<button class="wiki-entry-link" type="button" data-target="roemerlager">Römerlager</button>
-<button class="wiki-entry-link" type="button" data-target="sack-ohne-namen">Sack ohne Namen</button>
-<button class="wiki-entry-link" type="button" data-target="sackboeser-sackwolf">Sackböser Sackwolf</button>
-<button class="wiki-entry-link" type="button" data-target="sackfurt">Sackfurt</button>
-<button class="wiki-entry-link" type="button" data-target="sackgesicht">Sackgesicht</button>
-<button class="wiki-entry-link" type="button" data-target="sackhenker">Sackhenker</button>
-<button class="wiki-entry-link" type="button" data-target="sackina">Sackina</button>
-<button class="wiki-entry-link" type="button" data-target="sackingen">Sackingen</button>
-<button class="wiki-entry-link" type="button" data-target="sackinger-friedhof">Sackinger Friedhof</button>
-<button class="wiki-entry-link" type="button" data-target="sackinger-marktplatz">Sackinger Marktplatz</button>
-<button class="wiki-entry-link" type="button" data-target="sackinger-rathaus">Sackinger Rathaus</button>
-<button class="wiki-entry-link" type="button" data-target="sackinger-sackloch">Sackinger Sackloch</button>
-<button class="wiki-entry-link" type="button" data-target="sackloch">Sackloch</button>
-<button class="wiki-entry-link" type="button" data-target="sackpissdamm">Sackpissdamm</button>
-<button class="wiki-entry-link" type="button" data-target="sacksack">Sacksack</button>
-<button class="wiki-entry-link" type="button" data-target="sacksee">Sacksee</button>
-<button class="wiki-entry-link" type="button" data-target="sacktv">SackTV</button>
-<button class="wiki-entry-link" type="button" data-target="sackunzels-turm">Sackunzels Turm</button>
-<button class="wiki-entry-link" type="button" data-target="sackus-pilates">Sackus Pilates</button>
-<button class="wiki-entry-link" type="button" data-target="santa-sackina">Santa Sackina</button>
-<button class="wiki-entry-link" type="button" data-target="schlange">Schlange</button>
-<button class="wiki-entry-link" type="button" data-target="schnattersack">Schnattersack</button>
-<button class="wiki-entry-link" type="button" data-target="schwafelsack">Schwafelsack</button>
-<button class="wiki-entry-link" type="button" data-target="schwarzer-sackritter">Schwarzer Sackritter</button>
-<button class="wiki-entry-link" type="button" data-target="schwefelsack">Schwefelsack</button>
-<button class="wiki-entry-link" type="button" data-target="schwein">Schwein</button>
-<button class="wiki-entry-link" type="button" data-target="schweizer-kaese">Schweizer Käse</button>
-<button class="wiki-entry-link" type="button" data-target="schwobeseggel">Schwobeseggel</button>
-<button class="wiki-entry-link" type="button" data-target="schwobeseggels-identitaetsdieb">Schwobeseggels Identitätsdieb</button>
-<button class="wiki-entry-link" type="button" data-target="spaghetti">Spaghetti</button>
-<button class="wiki-entry-link" type="button" data-target="steven-spielsack">Steven Spielsack</button>
-<button class="wiki-entry-link" type="button" data-target="strassburger">Straßburger</button>
-<button class="wiki-entry-link" type="button" data-target="stuehlingen">Stühlingen</button>
-<button class="wiki-entry-link" type="button" data-target="stuehlinger-zoo">Stühlinger Zoo</button>
-<button class="wiki-entry-link" type="button" data-target="saeckin">Säckin</button>
-<button class="wiki-entry-link" type="button" data-target="tonningen">Tonningen</button>
-<button class="wiki-entry-link" type="button" data-target="vadersack">Vadersack</button>
-<button class="wiki-entry-link" type="button" data-target="veggie-saggy">Veggie Saggy</button>
-<button class="wiki-entry-link" type="button" data-target="waldi-watsch">Waldi Watsch</button>
-<button class="wiki-entry-link" type="button" data-target="weisse-sackwanderer">Weiße Sackwanderer</button>
-<button class="wiki-entry-link" type="button" data-target="white-knight">White Knight</button>
-<button class="wiki-entry-link" type="button" data-target="winneschuh">Winneschuh</button>
-<button class="wiki-entry-link" type="button" data-target="wolf">Wolf</button>
-        </div>
-      </aside>
-
-      <section class="wiki-content" id="wikiContent">
-        
-      <article id="alter-altersack" class="wiki-article active" data-title="alter altersack">
-        <header class="wiki-article-header">
-          <h2>Alter Altersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Alter Altersack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der alte <a class="wiki-link" href="#altersack" data-wiki-target="altersack">Altersack</a> ist so alt, dass selbst der <a class="wiki-link" href="#altersack" data-wiki-target="altersack">Altersack</a> in seiner Nähe jung wirkt.</p>
-      </article>
-      <article id="altersack" class="wiki-article" data-title="altersack">
-        <header class="wiki-article-header">
-          <h2>Altersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Altersack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#altersack" data-wiki-target="altersack">Altersack</a> behauptet, früher sei alles besser gewesen. Seine Erinnerungen sind stark verhandelbar.</p>
-      </article>
-      <article id="arminiussackdenkmal" class="wiki-article" data-title="arminiussackdenkmal">
-        <header class="wiki-article-header">
-          <h2>Arminiussackdenkmal</h2>
-          <aside class="wiki-infobox">
-            <strong>Arminiussackdenkmal</strong>
-            <span>Kategorie: Denkmal</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Das <a class="wiki-link" href="#arminiussackdenkmal" data-wiki-target="arminiussackdenkmal">Arminiussackdenkmal</a> erinnert an Heldentum, Mythos und die Frage, wer eigentlich entscheidet, was Geschichte ist.</p>
-      </article>
-      <article id="bibbeleskaes" class="wiki-article" data-title="bibbeleskäs">
-        <header class="wiki-article-header">
-          <h2>Bibbeleskäs</h2>
-          <aside class="wiki-infobox">
-            <strong>Bibbeleskäs</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#bibbeleskaes" data-wiki-target="bibbeleskaes">Bibbeleskäs</a> ist regionaler Wahnsinn mit Milchproduktnähe.</p>
-      </article>
-      <article id="blacksack-tower" class="wiki-article" data-title="blacksack tower">
-        <header class="wiki-article-header">
-          <h2>Blacksack Tower</h2>
-          <aside class="wiki-infobox">
-            <strong>Blacksack Tower</strong>
-            <span>Kategorie: Gebäude</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der schwarze Turm in <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a>. Machtzentrum, Symbol und später nicht immer so stabil, wie er gern wirkt.</p>
-      </article>
-      <article id="burgruine" class="wiki-article" data-title="burgruine">
-        <header class="wiki-article-header">
-          <h2>Burgruine</h2>
-          <aside class="wiki-infobox">
-            <strong>Burgruine</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die <a class="wiki-link" href="#burgruine" data-wiki-target="burgruine">Burgruine</a> steht für Vergangenheit, Verfall und die überraschende Stabilität kaputter Dinge.</p>
-      </article>
-      <article id="burgwirtschaft" class="wiki-article" data-title="burgwirtschaft">
-        <header class="wiki-article-header">
-          <h2>Burgwirtschaft</h2>
-          <aside class="wiki-infobox">
-            <strong>Burgwirtschaft</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die <a class="wiki-link" href="#burgwirtschaft" data-wiki-target="burgwirtschaft">Burgwirtschaft</a> verbindet Gastro, Vergangenheit und Dinge, die irgendwann kaputtgehen.</p>
-      </article>
-      <article id="caesar-salad" class="wiki-article" data-title="caesar salad">
-        <header class="wiki-article-header">
-          <h2>Caesar Salad</h2>
-          <aside class="wiki-infobox">
-            <strong>Caesar Salad</strong>
-            <span>Kategorie: Römer</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#caesar-salad" data-wiki-target="caesar-salad">Caesar Salad</a> ist römische Autorität mit Salatproblem.</p>
-      </article>
-      <article id="cm-sack" class="wiki-article" data-title="cm sack">
-        <header class="wiki-article-header">
-          <h2>CM Sack</h2>
-          <aside class="wiki-infobox">
-            <strong>CM Sack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#cm-sack" data-wiki-target="cm-sack">CM Sack</a> ist bisher nur unzureichend dokumentiert. Sackipedia vermutet eine Verbindung zu Maß, Größenwahn oder beidem.</p>
-      </article>
-      <article id="compagnoni" class="wiki-article" data-title="compagnoni">
-        <header class="wiki-article-header">
-          <h2>Compagnoni</h2>
-          <aside class="wiki-infobox">
-            <strong>Compagnoni</strong>
-            <span>Kategorie: Römer</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#compagnoni" data-wiki-target="compagnoni">Compagnoni</a> gehört zur italienisch-römischen Seite des Sackuniversums.</p>
-      </article>
-      <article id="cracksack-suchtklinik" class="wiki-article" data-title="cracksack suchtklinik">
-        <header class="wiki-article-header">
-          <h2>Cracksack Suchtklinik</h2>
-          <aside class="wiki-infobox">
-            <strong>Cracksack Suchtklinik</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die <a class="wiki-link" href="#cracksack-suchtklinik" data-wiki-target="cracksack-suchtklinik">Cracksack Suchtklinik</a> gehört zur späteren Entwicklung des Universums und verbindet Satire mit echten Bruchstellen.</p>
-      </article>
-      <article id="don-cannelloni" class="wiki-article" data-title="don cannelloni">
-        <header class="wiki-article-header">
-          <h2>Don Cannelloni</h2>
-          <aside class="wiki-infobox">
-            <strong>Don Cannelloni</strong>
-            <span>Kategorie: Gast / Römer</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#don-cannelloni" data-wiki-target="don-cannelloni">Don Cannelloni</a> ist Gastfigur, Metafigur und italienisch angehauchter Erzählermoment.</p>
-      </article>
-      <article id="drecksack" class="wiki-article" data-title="drecksack">
-        <header class="wiki-article-header">
-          <h2>Drecksack</h2>
-          <aside class="wiki-infobox">
-            <strong>Drecksack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#drecksack" data-wiki-target="drecksack">Drecksack</a> stammt ursprünglich aus <a class="wiki-link" href="#tonningen" data-wiki-target="tonningen">Tonningen</a>. Sein Vater kam von dort, war eine Tonne und ist tot. Seine Mutter lebt in <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a> und ist eine <a class="wiki-link" href="#saeckin" data-wiki-target="saeckin">Säckin</a>. Seine Herkunft zwischen Tonne und Sack erklärt vieles. Entschuldigt aber nicht alles.</p>
-      </article>
-      <article id="drecksackblase" class="wiki-article" data-title="drecksackblase">
-        <header class="wiki-article-header">
-          <h2>Drecksackblase</h2>
-          <aside class="wiki-infobox">
-            <strong>Drecksackblase</strong>
-            <span>Kategorie: Phänomen</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die <a class="wiki-link" href="#drecksackblase" data-wiki-target="drecksackblase"><a class="wiki-link" href="#drecksack" data-wiki-target="drecksack">Drecksack</a>blase</a> beschreibt den Zustand, in dem <a class="wiki-link" href="#drecksack" data-wiki-target="drecksack">Drecksack</a> seine eigene toxische Logik für Realität hält.</p>
-      </article>
-      <article id="ed-organ" class="wiki-article" data-title="ed organ">
-        <header class="wiki-article-header">
-          <h2>ED Organ</h2>
-          <aside class="wiki-infobox">
-            <strong>ED Organ</strong>
-            <span>Kategorie: Politik</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#ed-organ" data-wiki-target="ed-organ">ED Organ</a> ist eine fragwürdige politische Karriere auf zwei Beinen oder etwas, das so tut.</p>
-      </article>
-      <article id="el-crippolo" class="wiki-article" data-title="el crippolo">
-        <header class="wiki-article-header">
-          <h2>El Crippolo</h2>
-          <aside class="wiki-infobox">
-            <strong>El Crippolo</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Ein abgehalfterter Wüstenfuchs, Cowboy und unfreiwilliger Filmheld. Glaubt an zweite Chancen, solange niemand verlangt, dass er über die erste spricht.</p>
-      </article>
-      <article id="europasack-stadion" class="wiki-article" data-title="europasack stadion">
-        <header class="wiki-article-header">
-          <h2>Europasack Stadion</h2>
-          <aside class="wiki-infobox">
-            <strong>Europasack Stadion</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Das <a class="wiki-link" href="#europasack-stadion" data-wiki-target="europasack-stadion">Europasack Stadion</a> ist Sportstätte, Großprojekt und wahrscheinlich zu teuer gewesen.</p>
-      </article>
-      <article id="facksack" class="wiki-article" data-title="facksack">
-        <header class="wiki-article-header">
-          <h2>Facksack</h2>
-          <aside class="wiki-infobox">
-            <strong>Facksack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#facksack" data-wiki-target="facksack">Facksack</a> war ursprünglich <a class="wiki-link" href="#santa-sackina" data-wiki-target="santa-sackina">Santa <a class="wiki-link" href="#sackina" data-wiki-target="sackina">Sackina</a></a>. Ihre Entwicklung gehört zu den zentralen Verwandlungen im Sackuniversum.</p>
-      </article>
-      <article id="fettsack" class="wiki-article" data-title="fettsack">
-        <header class="wiki-article-header">
-          <h2>Fettsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Fettsack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#fettsack" data-wiki-target="fettsack">Fettsack</a> ist keine Pointe, sondern eine Figur über Selbstbild, Scham und den Wunsch, endlich anders gesehen zu werden.</p>
-      </article>
-      <article id="filterbach" class="wiki-article" data-title="filterbach">
-        <header class="wiki-article-header">
-          <h2>Filterbach</h2>
-          <aside class="wiki-infobox">
-            <strong>Filterbach</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#filterbach" data-wiki-target="filterbach">Filterbach</a> ist ein Ort, an dem Dinge gefiltert werden.</p>
-      </article>
-      <article id="franzbroetchen" class="wiki-article" data-title="franzbrötchen">
-        <header class="wiki-article-header">
-          <h2>Franzbrötchen</h2>
-          <aside class="wiki-infobox">
-            <strong>Franzbrötchen</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#franzbroetchen" data-wiki-target="franzbroetchen">Franzbrötchen</a> ist süß, verdreht und wahrscheinlich gefährlicher, als es aussieht.</p>
-      </article>
-      <article id="gabelhorst" class="wiki-article" data-title="gabelhorst">
-        <header class="wiki-article-header">
-          <h2>Gabelhorst</h2>
-          <aside class="wiki-infobox">
-            <strong>Gabelhorst</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#gabelhorst" data-wiki-target="gabelhorst">Gabelhorst</a> ist eine Figur, bei der der Name vermutlich zuerst da war und die Würde später versucht wurde nachzureichen.</p>
-      </article>
-      <article id="george-sack-sack-martin" class="wiki-article" data-title="george sack sack martin">
-        <header class="wiki-article-header">
-          <h2>George Sack Sack Martin</h2>
-          <aside class="wiki-infobox">
-            <strong>George Sack Sack Martin</strong>
-            <span>Kategorie: Meta</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#george-sack-sack-martin" data-wiki-target="george-sack-sack-martin">George Sack Sack Martin</a> schreibt langsam, aber dafür sterben vermutlich genug Figuren.</p>
-      </article>
-      <article id="green-sack" class="wiki-article" data-title="green sack">
-        <header class="wiki-article-header">
-          <h2>Green Sack</h2>
-          <aside class="wiki-infobox">
-            <strong>Green Sack</strong>
-            <span>Kategorie: Musik</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#green-sack" data-wiki-target="green-sack">Green Sack</a> ist eine musikalische Anspielung im Sackuniversum. Drei Akkorde, viel Gefühl, ausreichend Sackmist.</p>
-      </article>
-      <article id="gruselwald" class="wiki-article" data-title="gruselwald">
-        <header class="wiki-article-header">
-          <h2>Gruselwald</h2>
-          <aside class="wiki-infobox">
-            <strong>Gruselwald</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der <a class="wiki-link" href="#gruselwald" data-wiki-target="gruselwald">Gruselwald</a> ist düster, tief und voller Dinge, die man besser nicht mitnimmt.</p>
-      </article>
-      <article id="heiliger-strohsack" class="wiki-article" data-title="heiliger strohsack">
-        <header class="wiki-article-header">
-          <h2>Heiliger Strohsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Heiliger Strohsack</strong>
-            <span>Kategorie: Religion</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Heilige Strohsack ist weniger Person als Gefühl. Meistens taucht er auf, wenn jemand dramatisch überfordert ist.</p>
-      </article>
-      <article id="heimatsack" class="wiki-article" data-title="heimatsack">
-        <header class="wiki-article-header">
-          <h2>Heimatsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Heimatsack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#heimatsack" data-wiki-target="heimatsack">Heimatsack</a> steht für Heimat, Zugehörigkeit und die gefährliche Frage, wem ein Ort eigentlich gehört.</p>
-      </article>
-      <article id="herrgottsack" class="wiki-article" data-title="herrgottsack">
-        <header class="wiki-article-header">
-          <h2>Herrgottsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Herrgottsack</strong>
-            <span>Kategorie: Religion</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#herrgottsack" data-wiki-target="herrgottsack">Herrgottsack</a> erschafft Dinge, behauptet gern recht zu haben und ist im Zweifel selbst die zuständige Instanz.</p>
-      </article>
-      <article id="horst" class="wiki-article" data-title="horst">
-        <header class="wiki-article-header">
-          <h2>Horst</h2>
-          <aside class="wiki-infobox">
-            <strong>Horst</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#horst" data-wiki-target="horst">Horst</a> ist in frühen Geschichten noch frisch mit <a class="wiki-link" href="#piesack" data-wiki-target="piesack">Piesack</a> verliebt. <a class="wiki-link" href="#loeffingen" data-wiki-target="loeffingen">Löffingen</a> wirkt damals noch wie ein Anfang.</p>
-      </article>
-      <article id="kackolina" class="wiki-article" data-title="kackolina">
-        <header class="wiki-article-header">
-          <h2>Kackolina</h2>
-          <aside class="wiki-infobox">
-            <strong>Kackolina</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#kackolina" data-wiki-target="kackolina">Kackolina</a> ist eng mit <a class="wiki-link" href="#kacksack" data-wiki-target="kacksack">Kacksack</a>s Entwicklung verbunden. Ihre Geschichte behandelt Liebe, Abhängigkeit und die Frage, wie viel Nähe ein Sack aushält.</p>
-      </article>
-      <article id="kacksack" class="wiki-article" data-title="kacksack">
-        <header class="wiki-article-header">
-          <h2>Kacksack</h2>
-          <aside class="wiki-infobox">
-            <strong>Kacksack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#kacksack" data-wiki-target="kacksack">Kacksack</a> war einmal ein glücklicher junger Sack. Der berühmte Haufen kam später.</p>
-      </article>
-      <article id="karl-kojote" class="wiki-article" data-title="karl kojote">
-        <header class="wiki-article-header">
-          <h2>Karl Kojote</h2>
-          <aside class="wiki-infobox">
-            <strong>Karl Kojote</strong>
-            <span>Kategorie: Western</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#karl-kojote" data-wiki-target="karl-kojote">Karl Kojote</a> gehört zur Wüsten- und Westernlinie des Sackuniversums.</p>
-      </article>
-      <article id="labersack" class="wiki-article" data-title="labersack">
-        <header class="wiki-article-header">
-          <h2>Labersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Labersack</strong>
-            <span>Kategorie: Erzähler</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Noah Zimmermanns Erzählerfigur im Sackuniversum. <a class="wiki-link" href="#labersack" data-wiki-target="labersack">Labersack</a> versucht, Ordnung in <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a> zu bringen, obwohl seine eigene Erzählung regelmäßig eskaliert.</p>
-      </article>
-      <article id="labertante" class="wiki-article" data-title="labertante">
-        <header class="wiki-article-header">
-          <h2>Labertante</h2>
-          <aside class="wiki-infobox">
-            <strong>Labertante</strong>
-            <span>Kategorie: Gast-Erzählerin</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#labertante" data-wiki-target="labertante">Labertante</a> ist ein möglicher Erzählername für Gastautorinnen.</p>
-      </article>
-      <article id="le-burg" class="wiki-article" data-title="le burg">
-        <header class="wiki-article-header">
-          <h2>Le Burg</h2>
-          <aside class="wiki-infobox">
-            <strong>Le Burg</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die <a class="wiki-link" href="#burgruine" data-wiki-target="burgruine">Burgruine</a> über <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a>. Historisch, dramatisch und auffällig oft Schauplatz schlechter Entscheidungen.</p>
-      </article>
-      <article id="lucky-sack" class="wiki-article" data-title="lucky sack">
-        <header class="wiki-article-header">
-          <h2>Lucky Sack</h2>
-          <aside class="wiki-infobox">
-            <strong>Lucky Sack</strong>
-            <span>Kategorie: Western</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#lucky-sack" data-wiki-target="lucky-sack">Lucky Sack</a> hat Glück. Ob verdient, ist ungeklärt.</p>
-      </article>
-      <article id="loeffingen" class="wiki-article" data-title="löffingen">
-        <header class="wiki-article-header">
-          <h2>Löffingen</h2>
-          <aside class="wiki-infobox">
-            <strong>Löffingen</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#loeffingen" data-wiki-target="loeffingen">Löffingen</a> ist Wohnort früher Beziehungsgeschichten und ein Ort, an dem Besteck emotional überfordert sein kann.</p>
-      </article>
-      <article id="macsack" class="wiki-article" data-title="macsack">
-        <header class="wiki-article-header">
-          <h2>MacSack</h2>
-          <aside class="wiki-infobox">
-            <strong>MacSack</strong>
-            <span>Kategorie: Wirtschaft</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#macsack" data-wiki-target="macsack">MacSack</a> steht für Fast Food, Konsum und die Frage, warum alles immer nach mehr schmecken soll.</p>
-      </article>
-      <article id="neuer-altersack" class="wiki-article" data-title="neuer altersack">
-        <header class="wiki-article-header">
-          <h2>Neuer Altersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Neuer Altersack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der neue <a class="wiki-link" href="#altersack" data-wiki-target="altersack">Altersack</a> beweist, dass jede Generation irgendwann behauptet, die nächste sei schlimmer.</p>
-      </article>
-      <article id="old-shatterhemd" class="wiki-article" data-title="old shatterhemd">
-        <header class="wiki-article-header">
-          <h2>Old Shatterhemd</h2>
-          <aside class="wiki-infobox">
-            <strong>Old Shatterhemd</strong>
-            <span>Kategorie: Western</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#old-shatterhemd" data-wiki-target="old-shatterhemd">Old Shatterhemd</a> trägt Abenteuer, Staub und vermutlich ein sehr müdes Oberteil.</p>
-      </article>
-      <article id="piesack" class="wiki-article" data-title="piesack">
-        <header class="wiki-article-header">
-          <h2>Piesack</h2>
-          <aside class="wiki-infobox">
-            <strong>Piesack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#piesack" data-wiki-target="piesack">Piesack</a> lebt zunächst mit <a class="wiki-link" href="#horst" data-wiki-target="horst">Horst</a> in <a class="wiki-link" href="#loeffingen" data-wiki-target="loeffingen">Löffingen</a>. Ihre Beziehung zeigt, wie aus Anfang später Abstand werden kann.</p>
-      </article>
-      <article id="plappersack" class="wiki-article" data-title="plappersack">
-        <header class="wiki-article-header">
-          <h2>Plappersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Plappersack</strong>
-            <span>Kategorie: Gast-Erzähler</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#plappersack" data-wiki-target="plappersack">Plappersack</a> erzählt wahrscheinlich schneller, als Sackipedia mitschreiben kann.</p>
-      </article>
-      <article id="quasselsack" class="wiki-article" data-title="quasselsack">
-        <header class="wiki-article-header">
-          <h2>Quasselsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Quasselsack</strong>
-            <span>Kategorie: Gast-Erzähler</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#quasselsack" data-wiki-target="quasselsack">Quasselsack</a> ist ein möglicher Gast-Erzähler.</p>
-      </article>
-      <article id="ratte" class="wiki-article" data-title="ratte">
-        <header class="wiki-article-header">
-          <h2>Ratte</h2>
-          <aside class="wiki-infobox">
-            <strong>Ratte</strong>
-            <span>Kategorie: Tier</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#ratte" data-wiki-target="ratte">Ratte</a> ist klein, schnell und grundsätzlich verdächtig.</p>
-      </article>
-      <article id="roemerlager" class="wiki-article" data-title="römerlager">
-        <header class="wiki-article-header">
-          <h2>Römerlager</h2>
-          <aside class="wiki-infobox">
-            <strong>Römerlager</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Das <a class="wiki-link" href="#roemerlager" data-wiki-target="roemerlager">Römerlager</a> ist Heimat der Römersäcke.</p>
-      </article>
-      <article id="sack-ohne-namen" class="wiki-article" data-title="sack ohne namen">
-        <header class="wiki-article-header">
-          <h2>Sack ohne Namen</h2>
-          <aside class="wiki-infobox">
-            <strong>Sack ohne Namen</strong>
-            <span>Kategorie: Western</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der <a class="wiki-link" href="#sack-ohne-namen" data-wiki-target="sack-ohne-namen">Sack ohne Namen</a> hat keinen Namen. Das macht ihn sofort wichtiger.</p>
-      </article>
-      <article id="sackboeser-sackwolf" class="wiki-article" data-title="sackböser sackwolf">
-        <header class="wiki-article-header">
-          <h2>Sackböser Sackwolf</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackböser Sackwolf</strong>
-            <span>Kategorie: Tier</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Sackböse Sackwolf ist böse genug, dass die Dopplung notwendig erschien.</p>
-      </article>
-      <article id="sackfurt" class="wiki-article" data-title="sackfurt">
-        <header class="wiki-article-header">
-          <h2>Sackfurt</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackfurt</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackfurt" data-wiki-target="sackfurt">Sackfurt</a> ist das Finanzzentrum des Sackuniversums.</p>
-      </article>
-      <article id="sackgesicht" class="wiki-article" data-title="sackgesicht">
-        <header class="wiki-article-header">
-          <h2>Sackgesicht</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackgesicht</strong>
-            <span>Kategorie: SackTV</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Nachrichtensprecher bei <a class="wiki-link" href="#sacktv" data-wiki-target="sacktv">SackTV</a>. Wirkt professionell, objektiv und genervt. Zwei dieser drei Dinge sind gelogen.</p>
-      </article>
-      <article id="sackhenker" class="wiki-article" data-title="sackhenker">
-        <header class="wiki-article-header">
-          <h2>Sackhenker</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackhenker</strong>
-            <span>Kategorie: Gast</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackhenker" data-wiki-target="sackhenker">Sackhenker</a> ist eine Gastfigur mit Meta-Potenzial.</p>
-      </article>
-      <article id="sackina" class="wiki-article" data-title="sackina">
-        <header class="wiki-article-header">
-          <h2>Sackina</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackina</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackina" data-wiki-target="sackina">Sackina</a> ist eine zentrale weibliche Sackfigur und wird oft mit Fragen nach Rolle, Identität und Selbstbild verbunden.</p>
-      </article>
-      <article id="sackingen" class="wiki-article" data-title="sackingen">
-        <header class="wiki-article-header">
-          <h2>Sackingen</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackingen</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Zentraler Ort des Sackuniversums. Hier passiert alles, was niemand bestellt hat und trotzdem jeder weitererzählt.</p>
-      </article>
-      <article id="sackinger-friedhof" class="wiki-article" data-title="sackinger friedhof">
-        <header class="wiki-article-header">
-          <h2>Sackinger Friedhof</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackinger Friedhof</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Friedhof erinnert daran, dass selbst im Sackuniversum nicht jeder Running Gag ewig lebt.</p>
-      </article>
-      <article id="sackinger-marktplatz" class="wiki-article" data-title="sackinger marktplatz">
-        <header class="wiki-article-header">
-          <h2>Sackinger Marktplatz</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackinger Marktplatz</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Marktplatz ist die Bühne <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a>s.</p>
-      </article>
-      <article id="sackinger-rathaus" class="wiki-article" data-title="sackinger rathaus">
-        <header class="wiki-article-header">
-          <h2>Sackinger Rathaus</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackinger Rathaus</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Das <a class="wiki-link" href="#sackinger-rathaus" data-wiki-target="sackinger-rathaus">Sackinger Rathaus</a> ist der Ort, an dem Probleme offiziell werden und Lösungen verschwinden.</p>
-      </article>
-      <article id="sackinger-sackloch" class="wiki-article" data-title="sackinger sackloch">
-        <header class="wiki-article-header">
-          <h2>Sackinger Sackloch</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackinger Sackloch</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Das <a class="wiki-link" href="#sackinger-sackloch" data-wiki-target="sackinger-sackloch">Sackinger <a class="wiki-link" href="#sackloch" data-wiki-target="sackloch">Sackloch</a></a> ist tiefer, als es jeder Haushaltsplan erlauben sollte.</p>
-      </article>
-      <article id="sackloch" class="wiki-article" data-title="sackloch">
-        <header class="wiki-article-header">
-          <h2>Sackloch</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackloch</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackloch" data-wiki-target="sackloch">Sackloch</a> ist Ort, Zustand und gelegentlich Lebensgefühl.</p>
-      </article>
-      <article id="sackpissdamm" class="wiki-article" data-title="sackpissdamm">
-        <header class="wiki-article-header">
-          <h2>Sackpissdamm</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackpissdamm</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der <a class="wiki-link" href="#sackpissdamm" data-wiki-target="sackpissdamm">Sackpissdamm</a> ist ein Bauwerk, über dessen Namen die Verwaltung angeblich noch einmal sprechen wollte.</p>
-      </article>
-      <article id="sacksack" class="wiki-article" data-title="sacksack">
-        <header class="wiki-article-header">
-          <h2>Sacksack</h2>
-          <aside class="wiki-infobox">
-            <strong>Sacksack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sacksack" data-wiki-target="sacksack">Sacksack</a> sucht verzweifelt nach Liebe und Zugehörigkeit und verliert sich dabei immer wieder in Ideologien.</p>
-      </article>
-      <article id="sacksee" class="wiki-article" data-title="sacksee">
-        <header class="wiki-article-header">
-          <h2>Sacksee</h2>
-          <aside class="wiki-infobox">
-            <strong>Sacksee</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der <a class="wiki-link" href="#sacksee" data-wiki-target="sacksee">Sacksee</a> liegt ruhig da und tut so, als hätte er nicht schon mehrere Nebenplots verschluckt.</p>
-      </article>
-      <article id="sacktv" class="wiki-article" data-title="sacktv">
-        <header class="wiki-article-header">
-          <h2>SackTV</h2>
-          <aside class="wiki-infobox">
-            <strong>SackTV</strong>
-            <span>Kategorie: Medien</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sacktv" data-wiki-target="sacktv">SackTV</a> ist der wichtigste Sender <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a>s und vermutlich der Grund, warum niemand mehr weiß, was stimmt.</p>
-      </article>
-      <article id="sackunzels-turm" class="wiki-article" data-title="sackunzels turm">
-        <header class="wiki-article-header">
-          <h2>Sackunzels Turm</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackunzels Turm</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackunzels-turm" data-wiki-target="sackunzels-turm">Sackunzels Turm</a> ist hoch, märchenhaft und wahrscheinlich baurechtlich fragwürdig.</p>
-      </article>
-      <article id="sackus-pilates" class="wiki-article" data-title="sackus pilates">
-        <header class="wiki-article-header">
-          <h2>Sackus Pilates</h2>
-          <aside class="wiki-infobox">
-            <strong>Sackus Pilates</strong>
-            <span>Kategorie: Römer</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#sackus-pilates" data-wiki-target="sackus-pilates">Sackus Pilates</a> ist körperlich kontrolliert und geistig vermutlich weniger stabil, als seine Haltung vermuten lässt.</p>
-      </article>
-      <article id="santa-sackina" class="wiki-article" data-title="santa sackina">
-        <header class="wiki-article-header">
-          <h2>Santa Sackina</h2>
-          <aside class="wiki-infobox">
-            <strong>Santa Sackina</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#santa-sackina" data-wiki-target="santa-sackina">Santa <a class="wiki-link" href="#sackina" data-wiki-target="sackina">Sackina</a></a> ist die ursprüngliche Form der späteren <a class="wiki-link" href="#facksack" data-wiki-target="facksack">Facksack</a>.</p>
-      </article>
-      <article id="schlange" class="wiki-article" data-title="schlange">
-        <header class="wiki-article-header">
-          <h2>Schlange</h2>
-          <aside class="wiki-infobox">
-            <strong>Schlange</strong>
-            <span>Kategorie: Tier</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schlange" data-wiki-target="schlange">Schlange</a> zischt, deutet und hat selten gute Absichten.</p>
-      </article>
-      <article id="schnattersack" class="wiki-article" data-title="schnattersack">
-        <header class="wiki-article-header">
-          <h2>Schnattersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Schnattersack</strong>
-            <span>Kategorie: Gast-Erzähler</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schnattersack" data-wiki-target="schnattersack">Schnattersack</a> ist die akustische Gefahr im Erzählerkreis.</p>
-      </article>
-      <article id="schwafelsack" class="wiki-article" data-title="schwafelsack">
-        <header class="wiki-article-header">
-          <h2>Schwafelsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwafelsack</strong>
-            <span>Kategorie: Gast-Erzähler</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schwafelsack" data-wiki-target="schwafelsack">Schwafelsack</a> hat vermutlich eine Meinung, bevor es ein Thema gibt.</p>
-      </article>
-      <article id="schwarzer-sackritter" class="wiki-article" data-title="schwarzer sackritter">
-        <header class="wiki-article-header">
-          <h2>Schwarzer Sackritter</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwarzer Sackritter</strong>
-            <span>Kategorie: Ritter</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Schwarze Sackritter trägt Dunkelheit, Symbolik und vermutlich ein Problem mit Selbstdarstellung.</p>
-      </article>
-      <article id="schwefelsack" class="wiki-article" data-title="schwefelsack">
-        <header class="wiki-article-header">
-          <h2>Schwefelsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwefelsack</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schwefelsack" data-wiki-target="schwefelsack">Schwefelsack</a> riecht nach Problem, noch bevor er den Raum betritt.</p>
-      </article>
-      <article id="schwein" class="wiki-article" data-title="schwein">
-        <header class="wiki-article-header">
-          <h2>Schwein</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwein</strong>
-            <span>Kategorie: Tier</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schwein" data-wiki-target="schwein">Schwein</a> ist eine der klassischen Gegnerfiguren und trägt mehr Machtgier als Hygiene.</p>
-      </article>
-      <article id="schweizer-kaese" class="wiki-article" data-title="schweizer käse">
-        <header class="wiki-article-header">
-          <h2>Schweizer Käse</h2>
-          <aside class="wiki-infobox">
-            <strong>Schweizer Käse</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schweizer-kaese" data-wiki-target="schweizer-kaese">Schweizer Käse</a> hat Lücken. Inhaltlich, emotional und gelegentlich im Plot.</p>
-      </article>
-      <article id="schwobeseggel" class="wiki-article" data-title="schwobeseggel">
-        <header class="wiki-article-header">
-          <h2>Schwobeseggel</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwobeseggel</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#schwobeseggel" data-wiki-target="schwobeseggel">Schwobeseggel</a> ist regional, direkt und vermutlich lauter als nötig.</p>
-      </article>
-      <article id="schwobeseggels-identitaetsdieb" class="wiki-article" data-title="schwobeseggels identitätsdieb">
-        <header class="wiki-article-header">
-          <h2>Schwobeseggels Identitätsdieb</h2>
-          <aside class="wiki-infobox">
-            <strong>Schwobeseggels Identitätsdieb</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der Identitätsdieb von <a class="wiki-link" href="#schwobeseggel" data-wiki-target="schwobeseggel">Schwobeseggel</a> beweist, dass selbst ein Sack manchmal nicht mehr sicher sein kann, ob er noch er selbst ist.</p>
-      </article>
-      <article id="spaghetti" class="wiki-article" data-title="spaghetti">
-        <header class="wiki-article-header">
-          <h2>Spaghetti</h2>
-          <aside class="wiki-infobox">
-            <strong>Spaghetti</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#spaghetti" data-wiki-target="spaghetti">Spaghetti</a> läuft. Wohin, weiß niemand so genau. Vermutlich nicht einmal er selbst.</p>
-      </article>
-      <article id="steven-spielsack" class="wiki-article" data-title="steven spielsack">
-        <header class="wiki-article-header">
-          <h2>Steven Spielsack</h2>
-          <aside class="wiki-infobox">
-            <strong>Steven Spielsack</strong>
-            <span>Kategorie: Film</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#steven-spielsack" data-wiki-target="steven-spielsack">Steven Spielsack</a> erkennt großes Kino, selbst wenn es niemand bestellt hat.</p>
-      </article>
-      <article id="strassburger" class="wiki-article" data-title="straßburger">
-        <header class="wiki-article-header">
-          <h2>Straßburger</h2>
-          <aside class="wiki-infobox">
-            <strong>Straßburger</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#strassburger" data-wiki-target="strassburger">Straßburger</a> trägt Heimat, Grenze und Vorurteil in einer Figur.</p>
-      </article>
-      <article id="stuehlingen" class="wiki-article" data-title="stühlingen">
-        <header class="wiki-article-header">
-          <h2>Stühlingen</h2>
-          <aside class="wiki-infobox">
-            <strong>Stühlingen</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#stuehlingen" data-wiki-target="stuehlingen">Stühlingen</a> ist ein Ort, an dem Sitzmöbel mehr Bedeutung haben, als Außenstehende verstehen.</p>
-      </article>
-      <article id="stuehlinger-zoo" class="wiki-article" data-title="stühlinger zoo">
-        <header class="wiki-article-header">
-          <h2>Stühlinger Zoo</h2>
-          <aside class="wiki-infobox">
-            <strong>Stühlinger Zoo</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Der <a class="wiki-link" href="#stuehlinger-zoo" data-wiki-target="stuehlinger-zoo">Stühlinger Zoo</a> sammelt Wesen, die vermutlich auch außerhalb von Käfigen erklärungsbedürftig wären.</p>
-      </article>
-      <article id="saeckin" class="wiki-article" data-title="säckin">
-        <header class="wiki-article-header">
-          <h2>Säckin</h2>
-          <aside class="wiki-infobox">
-            <strong>Säckin</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#saeckin" data-wiki-target="saeckin">Säckin</a> steht für die weibliche Sacklinie in <a class="wiki-link" href="#sackingen" data-wiki-target="sackingen">Sackingen</a>. <a class="wiki-link" href="#drecksack" data-wiki-target="drecksack">Drecksack</a>s Mutter gehört dazu.</p>
-      </article>
-      <article id="tonningen" class="wiki-article" data-title="tonningen">
-        <header class="wiki-article-header">
-          <h2>Tonningen</h2>
-          <aside class="wiki-infobox">
-            <strong>Tonningen</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#tonningen" data-wiki-target="tonningen">Tonningen</a> ist die Stadt der Tonnen. Was andere wegwerfen, ist hier Heimat. <a class="wiki-link" href="#drecksack" data-wiki-target="drecksack">Drecksack</a>s Vater stammt von dort.</p>
-      </article>
-      <article id="vadersack" class="wiki-article" data-title="vadersack">
-        <header class="wiki-article-header">
-          <h2>Vadersack</h2>
-          <aside class="wiki-infobox">
-            <strong>Vadersack</strong>
-            <span>Kategorie: Weltraum</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#vadersack" data-wiki-target="vadersack">Vadersack</a> betrachtet Familienthemen mit maximal dramatischer Helmhaltung.</p>
-      </article>
-      <article id="veggie-saggy" class="wiki-article" data-title="veggie saggy">
-        <header class="wiki-article-header">
-          <h2>Veggie Saggy</h2>
-          <aside class="wiki-infobox">
-            <strong>Veggie Saggy</strong>
-            <span>Kategorie: Ort</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#veggie-saggy" data-wiki-target="veggie-saggy">Veggie Saggy</a> ist das Gemüse-Gegenstück zu <a class="wiki-link" href="#macsack" data-wiki-target="macsack">MacSack</a>. Gesünder. Angeblich.</p>
-      </article>
-      <article id="waldi-watsch" class="wiki-article" data-title="waldi watsch">
-        <header class="wiki-article-header">
-          <h2>Waldi Watsch</h2>
-          <aside class="wiki-infobox">
-            <strong>Waldi Watsch</strong>
-            <span>Kategorie: Figur</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#waldi-watsch" data-wiki-target="waldi-watsch">Waldi Watsch</a> ist eine Figur mit hohem Geräuschpotenzial.</p>
-      </article>
-      <article id="weisse-sackwanderer" class="wiki-article" data-title="weiße sackwanderer">
-        <header class="wiki-article-header">
-          <h2>Weiße Sackwanderer</h2>
-          <aside class="wiki-infobox">
-            <strong>Weiße Sackwanderer</strong>
-            <span>Kategorie: Fantasy</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p>Die Weißen Sackwanderer kommen, wenn der Winter nicht reicht und noch Symbolik gebraucht wird.</p>
-      </article>
-      <article id="white-knight" class="wiki-article" data-title="white knight">
-        <header class="wiki-article-header">
-          <h2>White Knight</h2>
-          <aside class="wiki-infobox">
-            <strong>White Knight</strong>
-            <span>Kategorie: Ritter</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#white-knight" data-wiki-target="white-knight">White Knight</a> ist Ritterfigur und moralische Projektionsfläche.</p>
-      </article>
-      <article id="winneschuh" class="wiki-article" data-title="winneschuh">
-        <header class="wiki-article-header">
-          <h2>Winneschuh</h2>
-          <aside class="wiki-infobox">
-            <strong>Winneschuh</strong>
-            <span>Kategorie: Western</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#winneschuh" data-wiki-target="winneschuh">Winneschuh</a> ist Westernmythos mit Fußproblem.</p>
-      </article>
-      <article id="wolf" class="wiki-article" data-title="wolf">
-        <header class="wiki-article-header">
-          <h2>Wolf</h2>
-          <aside class="wiki-infobox">
-            <strong>Wolf</strong>
-            <span>Kategorie: Tier</span>
-            <span>Status: dokumentiert</span>
-          </aside>
-        </header>
-        <p><a class="wiki-link" href="#wolf" data-wiki-target="wolf">Wolf</a> ist eine klassische Bedrohung im Sackuniversum.</p>
-      </article>
-      </section>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
+<header class="wiki-topbar">
+<a class="wiki-wordmark" href="index.html#sackipedia-gate">
+<img alt="Sackipedia Sackglobus" src="assets/sackipedia-globe.png"/>
+<span>SACKIPEDIA</span>
+</a>
+<nav>
+<a href="index.html">MURKS</a>
+<a href="index.html#die-saecke">Die Säcke</a>
+<a href="index.html#kontakt">Kontakt</a>
+</nav>
+</header>
+<main class="sackipedia-page">
+<section class="wiki-hero">
+<h1>Sackipedia</h1>
+<p>Die freie Enzyklopädie, die niemand freigegeben hat.</p>
+<p class="wiki-warning">Achtung: Diese Enzyklopädie wurde mehrfach von SackTV, Labersack und mindestens einem beleidigten Gastautor bearbeitet. Die Wahrheit kann daher abweichen.</p>
+<input class="wiki-search" id="wikiSearch" placeholder="Eintrag suchen..." type="search"/>
+</section>
+<div class="wiki-layout">
+<aside class="wiki-sidebar"><h2>Einträge</h2><div class="wiki-entry-list"><button class="wiki-entry-link" data-target="alter-altersack" type="button">Alter Altersack</button>
+<button class="wiki-entry-link" data-target="altersack" type="button">Altersack</button>
+<button class="wiki-entry-link" data-target="arminiussackdenkmal" type="button">Arminiussackdenkmal</button>
+<button class="wiki-entry-link" data-target="bibbeleskaes" type="button">Bibbeleskäs</button>
+<button class="wiki-entry-link" data-target="blacksack-tower" type="button">Blacksack Tower</button>
+<button class="wiki-entry-link" data-target="burgeria" type="button">Burgeria</button>
+<button class="wiki-entry-link" data-target="burgruine" type="button">Burgruine</button>
+<button class="wiki-entry-link" data-target="burgwirtschaft" type="button">Burgwirtschaft</button>
+<button class="wiki-entry-link" data-target="caesar-salad" type="button">Caesar Salad</button>
+<button class="wiki-entry-link" data-target="cm-sack" type="button">CM Sack</button>
+<button class="wiki-entry-link" data-target="compagnoni" type="button">Compagnoni</button>
+<button class="wiki-entry-link" data-target="cracksack-suchtklinik" type="button">Cracksack Suchtklinik</button>
+<button class="wiki-entry-link" data-target="die-saecke" type="button">Die Säcke</button>
+<button class="wiki-entry-link" data-target="don-cannelloni" type="button">Don Cannelloni</button>
+<button class="wiki-entry-link" data-target="drecksack" type="button">Drecksack</button>
+<button class="wiki-entry-link" data-target="drecksackblase" type="button">Drecksackblase</button>
+<button class="wiki-entry-link" data-target="ed-organ" type="button">ED Organ</button>
+<button class="wiki-entry-link" data-target="el-crippolo" type="button">El Crippolo</button>
+<button class="wiki-entry-link" data-target="el-crippolo-2" type="button">EL CRIPPOLO</button>
+<button class="wiki-entry-link" data-target="europasack-stadion" type="button">Europasack Stadion</button>
+<button class="wiki-entry-link" data-target="facksack" type="button">Facksack</button>
+<button class="wiki-entry-link" data-target="fettsack" type="button">Fettsack</button>
+<button class="wiki-entry-link" data-target="filterbach" type="button">Filterbach</button>
+<button class="wiki-entry-link" data-target="franzbroetchen" type="button">Franzbrötchen</button>
+<button class="wiki-entry-link" data-target="gabelhorst" type="button">Gabelhorst</button>
+<button class="wiki-entry-link" data-target="george-sack-sack-martin" type="button">George Sack Sack Martin</button>
+<button class="wiki-entry-link" data-target="green-sack" type="button">Green Sack</button>
+<button class="wiki-entry-link" data-target="gruselwald" type="button">Gruselwald</button>
+<button class="wiki-entry-link" data-target="heiliger-strohsack" type="button">Heiliger Strohsack</button>
+<button class="wiki-entry-link" data-target="heimatsack" type="button">Heimatsack</button>
+<button class="wiki-entry-link" data-target="herrgottsack" type="button">Herrgottsack</button>
+<button class="wiki-entry-link" data-target="herzog-de-sack-ratte" type="button">Herzog de Sack Ratte</button>
+<button class="wiki-entry-link" data-target="herzog-de-sack-schlange" type="button">Herzog de Sack Schlange</button>
+<button class="wiki-entry-link" data-target="herzog-de-sack-schwein" type="button">Herzog de Sack Schwein</button>
+<button class="wiki-entry-link" data-target="herzog-de-sack-wolf" type="button">Herzog de Sack Wolf</button>
+<button class="wiki-entry-link" data-target="ironia-gym" type="button">Ironia Gym</button>
+<button class="wiki-entry-link" data-target="kacken" type="button">Kacken</button>
+<button class="wiki-entry-link" data-target="kacken-open-sack" type="button">KACKEN OPEN SACK</button>
+<button class="wiki-entry-link" data-target="kackolina" type="button">Kackolina</button>
+<button class="wiki-entry-link" data-target="kacksack" type="button">Kacksack</button>
+<button class="wiki-entry-link" data-target="kamel" type="button">KAMEL</button>
+<button class="wiki-entry-link" data-target="kamel-brueder" type="button">KAMEL-Brüder</button>
+<button class="wiki-entry-link" data-target="karl-kojote" type="button">Karl Kojote</button>
+<button class="wiki-entry-link" data-target="labersack" type="button">Labersack</button>
+<button class="wiki-entry-link" data-target="labertante" type="button">Labertante</button>
+<button class="wiki-entry-link" data-target="lacksack" type="button">Lacksack</button>
+<button class="wiki-entry-link" data-target="le-burg" type="button">Le Burg</button>
+<button class="wiki-entry-link" data-target="lucky-sack" type="button">Lucky Sack</button>
+<button class="wiki-entry-link" data-target="loeffingen" type="button">Löffingen</button>
+<button class="wiki-entry-link" data-target="macsack" type="button">MacSack</button>
+<button class="wiki-entry-link" data-target="neuer-altersack" type="button">Neuer Altersack</button>
+<button class="wiki-entry-link" data-target="old-shatterhemd" type="button">Old Shatterhemd</button>
+<button class="wiki-entry-link" data-target="parmesanengel" type="button">Parmesanengel</button>
+<button class="wiki-entry-link" data-target="parmesanorden" type="button">Parmesanorden</button>
+<button class="wiki-entry-link" data-target="pasteria" type="button">Pasteria</button>
+<button class="wiki-entry-link" data-target="piesack" type="button">Piesack</button>
+<button class="wiki-entry-link" data-target="plappersack" type="button">Plappersack</button>
+<button class="wiki-entry-link" data-target="quasselsack" type="button">Quasselsack</button>
+<button class="wiki-entry-link" data-target="roemerlager" type="button">Römerlager</button>
+<button class="wiki-entry-link" data-target="sack-ohne-namen" type="button">Sack ohne Namen</button>
+<button class="wiki-entry-link" data-target="sackbody" type="button">Sackbody</button>
+<button class="wiki-entry-link" data-target="sackbolika" type="button">Sackbolika</button>
+<button class="wiki-entry-link" data-target="sackboeser-sackwolf" type="button">Sackböser Sackwolf</button>
+<button class="wiki-entry-link" data-target="sackfurt" type="button">Sackfurt</button>
+<button class="wiki-entry-link" data-target="sackgesicht" type="button">Sackgesicht</button>
+<button class="wiki-entry-link" data-target="sackhenker" type="button">Sackhenker</button>
+<button class="wiki-entry-link" data-target="sackhormontas" type="button">Sackhormontas</button>
+<button class="wiki-entry-link" data-target="sackina" type="button">Sackina</button>
+<button class="wiki-entry-link" data-target="sackingen" type="button">Sackingen</button>
+<button class="wiki-entry-link" data-target="sackinger-friedhof" type="button">Sackinger Friedhof</button>
+<button class="wiki-entry-link" data-target="sackinger-marktplatz" type="button">Sackinger Marktplatz</button>
+<button class="wiki-entry-link" data-target="sackinger-rathaus" type="button">Sackinger Rathaus</button>
+<button class="wiki-entry-link" data-target="sackinger-sackloch" type="button">Sackinger Sackloch</button>
+<button class="wiki-entry-link" data-target="sackloch" type="button">Sackloch</button>
+<button class="wiki-entry-link" data-target="sackmurks" type="button">SackMURKS</button>
+<button class="wiki-entry-link" data-target="sackpissdamm" type="button">Sackpissdamm</button>
+<button class="wiki-entry-link" data-target="sacksack" type="button">Sacksack</button>
+<button class="wiki-entry-link" data-target="sacksee" type="button">Sacksee</button>
+<button class="wiki-entry-link" data-target="sacktv" type="button">SackTV</button>
+<button class="wiki-entry-link" data-target="sackunzels-turm" type="button">Sackunzels Turm</button>
+<button class="wiki-entry-link" data-target="sackus-pilates" type="button">Sackus Pilates</button>
+<button class="wiki-entry-link" data-target="san-parmella" type="button">San Parmella</button>
+<button class="wiki-entry-link" data-target="santa-sackina" type="button">Santa Sackina</button>
+<button class="wiki-entry-link" data-target="schnattersack" type="button">Schnattersack</button>
+<button class="wiki-entry-link" data-target="schwafelsack" type="button">Schwafelsack</button>
+<button class="wiki-entry-link" data-target="schwarzer-sackritter" type="button">Schwarzer Sackritter</button>
+<button class="wiki-entry-link" data-target="schwefelsack" type="button">Schwefelsack</button>
+<button class="wiki-entry-link" data-target="schweizer-kaese" type="button">Schweizer Käse</button>
+<button class="wiki-entry-link" data-target="schwobeseggel" type="button">Schwobeseggel</button>
+<button class="wiki-entry-link" data-target="schwobeseggels-identitaetsdieb" type="button">Schwobeseggels Identitätsdieb</button>
+<button class="wiki-entry-link" data-target="schwobeseppel" type="button">Schwobeseppel</button>
+<button class="wiki-entry-link" data-target="spaghetti" type="button">Spaghetti</button>
+<button class="wiki-entry-link" data-target="steven-spielsack" type="button">Steven Spielsack</button>
+<button class="wiki-entry-link" data-target="strassburger" type="button">Straßburger</button>
+<button class="wiki-entry-link" data-target="stuhlingen" type="button">Stuhlingen</button>
+<button class="wiki-entry-link" data-target="stuhlinger-zoo" type="button">Stuhlinger Zoo</button>
+<button class="wiki-entry-link" data-target="saeckin" type="button">Säckin</button>
+<button class="wiki-entry-link" data-target="the-good-the-bad-and-the-junkie-sack" type="button">The Good, The Bad and The Junkie Sack</button>
+<button class="wiki-entry-link" data-target="tonningen" type="button">Tonningen</button>
+<button class="wiki-entry-link" data-target="vadersack" type="button">Vadersack</button>
+<button class="wiki-entry-link" data-target="veggie-saggy" type="button">Veggie Saggy</button>
+<button class="wiki-entry-link" data-target="von-saecken-und-saecken-die-kaputtgehen" type="button">Von Säcken und Säcken, die kaputtgehen</button>
+<button class="wiki-entry-link" data-target="waldi-watsch" type="button">Waldi Watsch</button>
+<button class="wiki-entry-link" data-target="weisse-sackwanderer" type="button">Weiße Sackwanderer</button>
+<button class="wiki-entry-link" data-target="white-knight" type="button">White Knight</button>
+<button class="wiki-entry-link" data-target="winneschuh" type="button">Winneschuh</button>
+<button class="wiki-entry-link" data-target="wladi-watsch" type="button">WLADI WATSCH</button></div></aside>
+<section class="wiki-content" id="wikiContent">
+<article class="wiki-article active" data-title="alter altersack" id="alter-altersack">
+<header class="wiki-article-header">
+<h2>Alter Altersack</h2>
+<aside class="wiki-infobox">
+<strong>Alter Altersack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der alte <a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a> ist so alt, dass selbst der <a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a> in seiner Nähe jung wirkt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="altersack" id="altersack">
+<header class="wiki-article-header">
+<h2>Altersack</h2>
+<aside class="wiki-infobox">
+<strong>Altersack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Altersack behauptet, früher sei alles besser gewesen. Seine Erinnerungen sind stark verhandelbar.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="arminiussackdenkmal" id="arminiussackdenkmal">
+<header class="wiki-article-header">
+<h2>Arminiussackdenkmal</h2>
+<aside class="wiki-infobox">
+<strong>Arminiussackdenkmal</strong>
+<span>Kategorie: Denkmal</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Das Arminiussackdenkmal erinnert an Heldentum, Mythos und die Frage, wer eigentlich entscheidet, was Geschichte ist.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="bibbeleskäs" id="bibbeleskaes">
+<header class="wiki-article-header">
+<h2>Bibbeleskäs</h2>
+<aside class="wiki-infobox">
+<strong>Bibbeleskäs</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Bibbeleskäs ist regionaler Wahnsinn mit Milchproduktnähe.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="blacksack tower" id="blacksack-tower">
+<header class="wiki-article-header">
+<h2>Blacksack Tower</h2>
+<aside class="wiki-infobox">
+<strong>Blacksack Tower</strong>
+<span>Kategorie: Gebäude</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der schwarze Turm in <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> . Machtzentrum, Symbol und später nicht immer so stabil, wie er gern wirkt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="burgeria" id="burgeria">
+<header class="wiki-article-header">
+<h2>Burgeria</h2>
+<aside class="wiki-infobox">
+<strong>Burgeria</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Ort</p>
+<p>Burgeria war eine ehemalige Fast-Food-Großmacht und Herkunftsort von <a class="wiki-link" data-wiki-target="el-crippolo-2" href="#el-crippolo-2">EL CRIPPOLO</a>.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="burgruine" id="burgruine">
+<header class="wiki-article-header">
+<h2>Burgruine</h2>
+<aside class="wiki-infobox">
+<strong>Burgruine</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die Burgruine steht für Vergangenheit, Verfall und die überraschende Stabilität kaputter Dinge.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="burgwirtschaft" id="burgwirtschaft">
+<header class="wiki-article-header">
+<h2>Burgwirtschaft</h2>
+<aside class="wiki-infobox">
+<strong>Burgwirtschaft</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die Burgwirtschaft verbindet Gastro, Vergangenheit und Dinge, die irgendwann kaputtgehen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="caesar salad" id="caesar-salad">
+<header class="wiki-article-header">
+<h2>Caesar Salad</h2>
+<aside class="wiki-infobox">
+<strong>Caesar Salad</strong>
+<span>Kategorie: Römer</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Caesar Salad ist römische Autorität mit Salatproblem.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="cm sack" id="cm-sack">
+<header class="wiki-article-header">
+<h2>CM Sack</h2>
+<aside class="wiki-infobox">
+<strong>CM Sack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>CM Sack ist bisher nur unzureichend dokumentiert. Sackipedia vermutet eine Verbindung zu Maß, Größenwahn oder beidem.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="compagnoni" id="compagnoni">
+<header class="wiki-article-header">
+<h2>Compagnoni</h2>
+<aside class="wiki-infobox">
+<strong>Compagnoni</strong>
+<span>Kategorie: Römer</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Compagnoni gehört zur italienisch-römischen Seite des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="cracksack suchtklinik" id="cracksack-suchtklinik">
+<header class="wiki-article-header">
+<h2>Cracksack Suchtklinik</h2>
+<aside class="wiki-infobox">
+<strong>Cracksack Suchtklinik</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die Cracksack Suchtklinik gehört zur späteren Entwicklung des Universums und verbindet Satire mit echten Bruchstellen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="die säcke" id="die-saecke">
+<header class="wiki-article-header">
+<h2>Die Säcke</h2>
+<aside class="wiki-infobox">
+<strong>Die Säcke</strong>
+<span>Kategorie: Werk</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Werk</p>
+<p>Die zentrale Comicreihe des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="don cannelloni" id="don-cannelloni">
+<header class="wiki-article-header">
+<h2>Don Cannelloni</h2>
+<aside class="wiki-infobox">
+<strong>Don Cannelloni</strong>
+<span>Kategorie: Gast / Römer</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Don Cannelloni ist Gastfigur, Metafigur und italienisch angehauchter Erzählermoment.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="drecksack" id="drecksack">
+<header class="wiki-article-header">
+<h2>Drecksack</h2>
+<aside class="wiki-infobox">
+<strong>Drecksack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Drecksack stammt ursprünglich aus <a class="wiki-link" data-wiki-target="tonningen" href="#tonningen">Tonningen</a> . Sein Vater kam von dort, war eine Tonne und ist tot. Seine Mutter lebt in <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> und ist eine <a class="wiki-link" data-wiki-target="saeckin" href="#saeckin">Säckin</a> . Seine Herkunft zwischen Tonne und Sack erklärt vieles. Entschuldigt aber nicht alles.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="drecksackblase" id="drecksackblase">
+<header class="wiki-article-header">
+<h2>Drecksackblase</h2>
+<aside class="wiki-infobox">
+<strong>Drecksackblase</strong>
+<span>Kategorie: Phänomen</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> blase beschreibt den Zustand, in dem <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> seine eigene toxische Logik für Realität hält.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="ed organ" id="ed-organ">
+<header class="wiki-article-header">
+<h2>ED Organ</h2>
+<aside class="wiki-infobox">
+<strong>ED Organ</strong>
+<span>Kategorie: Politik</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>ED Organ ist eine fragwürdige politische Karriere auf zwei Beinen oder etwas, das so tut.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="el crippolo" id="el-crippolo">
+<header class="wiki-article-header">
+<h2>El Crippolo</h2>
+<aside class="wiki-infobox">
+<strong>El Crippolo</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Ein abgehalfterter Wüstenfuchs, Cowboy und unfreiwilliger Filmheld. Glaubt an zweite Chancen, solange niemand verlangt, dass er über die erste spricht.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="el crippolo" id="el-crippolo-2">
+<header class="wiki-article-header">
+<h2>EL CRIPPOLO</h2>
+<aside class="wiki-infobox">
+<strong>EL CRIPPOLO</strong>
+<span>Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Fuchs</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Fuchs</p>
+<p>Hinweis der Sackipedia: Dieser Artikel enthält Spoiler zu mehreren Western, einem Krieg, mindestens zwei Liebesgeschichten und einem sehr unglücklichen Labrador.</p>
+<p>EL CRIPPOLO gilt als einer der bedeutendsten Helden des Sackuniversums und war bereits Teil der Geschichte, bevor <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> überhaupt existierte. Seine Abenteuer bildeten ursprünglich den Abschluss von <a class="wiki-link" data-wiki-target="the-good-the-bad-and-the-junkie-sack" href="#the-good-the-bad-and-the-junkie-sack">The Good, The Bad and The Junkie Sack</a> und gelten heute als einer der Grundsteine, auf denen später das gesamte Sackuniversum stand.</p>
+<p>Aus diesem Grund wird EL CRIPPOLO häufig als Splitter Labersacks bezeichnet. Gemeinsam mit <a class="wiki-link" data-wiki-target="spaghetti" href="#spaghetti">Spaghetti</a> trägt er Erinnerungen, Gedanken und Konflikte seines Erzählers in sich, ohne sich dessen zunächst bewusst zu sein.</p>
+<p>Geboren wurde EL CRIPPOLO in <a class="wiki-link" data-wiki-target="burgeria" href="#burgeria">Burgeria</a>, einer ehemaligen Fast-Food-Großmacht, die nach dem Zusammenbruch der Burgerwirtschaft in Anarchie versank. Dort entwickelte er sich wider Willen zu einer Westernlegende. Da sich <a class="wiki-link" data-wiki-target="burgeria" href="#burgeria">Burgeria</a> keine Filmrechte mehr leisten konnte, begann man irgendwann einfach, EL CRIPPOLOs Alltag zu filmen und als Kinofilm zu verkaufen.</p>
+<p>Bis heute glaubt EL CRIPPOLO deshalb, dass sämtliche Ereignisse seines Lebens völlig normal gewesen seien.</p>
+<p>Der Erfolg überraschte vor allem ihn selbst.</p>
+<p>Während <a class="wiki-link" data-wiki-target="burgeria" href="#burgeria">Burgeria</a> den Film kaum beachtete, entwickelte sich EL CRIPPOLO in <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> zum gefeierten Kulthelden. Dort erhielt er später sogar einen eigenen Stern auf dem Sack of Fame.</p>
+<h3>Bekannte Beziehungen</h3>
+<p>EL CRIPPOLO ist bis heute der einzige bekannte Fuchs, der gleichzeitig nicht genau weiß, worauf oder auf wen er eigentlich steht.</p>
+<p>Während seiner Reise begegnete er zunächst <a class="wiki-link" data-wiki-target="sackhormontas" href="#sackhormontas">Sackhormontas</a>, der Hüterin des Alten Sackes. Sie brachte ihm bei, dass nicht jede Frage eine Schublade braucht und man Identität manchmal eher findet, wenn man aufhört, sie ständig zu suchen.</p>
+<p>Später lernte er Heiligen Strohsack kennen. Dessen Absturz aus dem Himmel begann versehentlich durch einen Schuss EL CRIPPOLOs und entwickelte sich anschließend zu einer der ungewöhnlichsten Liebesgeschichten der bekannten Sackgeschichte.</p>
+<p>Bis heute gilt EL CRIPPOLO deshalb als offen bisexuell.</p>
+<p>Er selbst bezeichnet das lieber als:</p>
+<blockquote>„Kompliziert.“</blockquote>
+<h3>Bekannte Feinde</h3>
+<p>Die Nikotin-Bärenlady</p>
+<p>Kojoten</p>
+<p>Schuldgefühle</p>
+<p>Leere Zigarettenschachteln</p>
+<p>Vor allem die legendäre Nikotin-Bärenlady verfolgt EL CRIPPOLO bis heute. Auslöser war eine kurzfristige Zigarettenknappheit, die bei ihr zu einem Zustand führte, den Wissenschaftler inzwischen als tabakinduzierte Naturkatastrophe beschreiben.</p>
+<h3>Historische Ereignisse</h3>
+<p>EL CRIPPOLO erschoss während des Burgeria-Konflikts den Labrador Companero. Obwohl die Tat später als militärisch notwendig bewertet wurde, verfolgt sie ihn bis heute. Ebenso war er am Tod von <a class="wiki-link" data-wiki-target="fettsack" href="#fettsack">Fettsack</a> beteiligt, dessen Verlust <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> nachhaltig veränderte. Für drei Tage.</p>
+<p>Während des sogenannten Disclosure Day sammelte EL CRIPPOLO gemeinsam mit <a class="wiki-link" data-wiki-target="sack-ohne-namen" href="#sack-ohne-namen">Sack ohne Namen</a> und <a class="wiki-link" data-wiki-target="sackbody" href="#sackbody">Sackbody</a> sämtliche verfügbaren Westernhelden des Sackuniversums, um <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> gegen die Schurkenallianz zu verteidigen.</p>
+<p>Gemeinsam mit <a class="wiki-link" data-wiki-target="gabelhorst" href="#gabelhorst">Gabelhorst</a> gehörte er außerdem zeitweise zur Dorfwache von <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a>.</p>
+<h3>Bekannte Fähigkeiten</h3>
+<p>Außergewöhnlich guter Revolverschütze.</p>
+<p>Kann mit Dynamit nahezu jedes Problem lösen.</p>
+<p>Besitzt eine bemerkenswert hohe Schmerztoleranz.</p>
+<p>Überlebt statistisch deutlich mehr Explosionen als medizinisch vertretbar wäre.</p>
+<p>Erkennt Kojoten zuverlässig als Kojoten.</p>
+<h3>Bekannte Zitate</h3>
+<blockquote>„I bin koi Kojote.“</blockquote>
+<blockquote>„Vielleicht bin i einfach EL CRIPPOLO.“</blockquote>
+<blockquote>„Kei Gefängnis. Kei Problem.“</blockquote>
+<blockquote>„Reicht aber.“</blockquote>
+<p class="wiki-edit-line">Bearbeitet von: EL CRIPPOLO</p>
+<blockquote>„<a class="wiki-link" data-wiki-target="fettsack" href="#fettsack">Fettsack</a> hot zuerst blöd gschaut. Habs so gmacht wie de Spielsack gsagt hett.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht von: <a class="wiki-link" data-wiki-target="steven-spielsack" href="#steven-spielsack">Steven Spielsack</a></p>
+<blockquote>„Diese Darstellung entspricht nicht den Ereignissen des Films. Horrendous.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung erneut rückgängig gemacht von: EL CRIPPOLO</p>
+<blockquote>„Des war koi Film.“</blockquote>
+<p class="wiki-meta-line">Sackipedia-Notiz: Mehrere Historiker weisen darauf hin, dass EL CRIPPOLO bis heute nicht verstanden hat, dass sein gesamtes Leben verfilmt wurde. Versuche, ihm dies zu erklären, wurden nach dem fünften Dynamitanschlag eingestellt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="europasack stadion" id="europasack-stadion">
+<header class="wiki-article-header">
+<h2>Europasack Stadion</h2>
+<aside class="wiki-infobox">
+<strong>Europasack Stadion</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Das Europasack Stadion ist Sportstätte, Großprojekt und wahrscheinlich zu teuer gewesen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="facksack" id="facksack">
+<header class="wiki-article-header">
+<h2>Facksack</h2>
+<aside class="wiki-infobox">
+<strong>Facksack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Facksack war ursprünglich <a class="wiki-link" data-wiki-target="santa-sackina" href="#santa-sackina">Santa <a class="wiki-link" data-wiki-target="sackina" href="#sackina">Sackina</a></a> . Ihre Entwicklung gehört zu den zentralen Verwandlungen im Sackuniversum.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="fettsack" id="fettsack">
+<header class="wiki-article-header">
+<h2>Fettsack</h2>
+<aside class="wiki-infobox">
+<strong>Fettsack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Fettsack ist keine Pointe, sondern eine Figur über Selbstbild, Scham und den Wunsch, endlich anders gesehen zu werden.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="filterbach" id="filterbach">
+<header class="wiki-article-header">
+<h2>Filterbach</h2>
+<aside class="wiki-infobox">
+<strong>Filterbach</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Filterbach ist ein Ort, an dem Dinge gefiltert werden.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="franzbrötchen" id="franzbroetchen">
+<header class="wiki-article-header">
+<h2>Franzbrötchen</h2>
+<aside class="wiki-infobox">
+<strong>Franzbrötchen</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Franzbrötchen ist süß, verdreht und wahrscheinlich gefährlicher, als es aussieht.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="gabelhorst" id="gabelhorst">
+<header class="wiki-article-header">
+<h2>Gabelhorst</h2>
+<aside class="wiki-infobox">
+<strong>Gabelhorst</strong>
+<span>Kategorie: Hauptfigur
+Wesen: Kuchengabel auf Sackkörper
+Beruf: Unbekannt
+Wohnort: ehemals Löffingen</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Wesen: Kuchengabel auf Sackkörper
+Beruf: Unbekannt
+Wohnort: ehemals <a class="wiki-link" data-wiki-target="loeffingen" href="#loeffingen">Löffingen</a></p>
+<h3>Kurzbeschreibung</h3>
+<p>Gabelhorst war viele Jahre mit <a class="wiki-link" data-wiki-target="piesack" href="#piesack">Piesack</a> zusammen.</p>
+<p>Er beendete die Beziehung.</p>
+<p>Später stellte er fest, dass dies möglicherweise die schlechteste Entscheidung seines Lebens gewesen war.</p>
+<p>Seitdem versucht er, diesen Umstand durch Muskelaufbau zu kompensieren.</p>
+<p>Mit überschaubarem Erfolg.</p>
+<h3>Geschichte</h3>
+<p>Nach der Trennung von <a class="wiki-link" data-wiki-target="piesack" href="#piesack">Piesack</a> begann Gabelhorst seine persönliche Selbstoptimierungsphase.</p>
+<p>Dazu gehörten unter anderem:</p>
+<p>Fitnessstudio</p>
+<p>Proteinshakes</p>
+<p>Podcasts über Männlichkeit</p>
+<p>illegales <a class="wiki-link" data-wiki-target="sackbolika" href="#sackbolika">Sackbolika</a></p>
+<p>Hassgedichte</p>
+<p>Seine emotionale Entwicklung blieb dabei weitgehend unverändert.</p>
+<h3>Sackbolika</h3>
+<p><a class="wiki-link" data-wiki-target="sackbolika" href="#sackbolika">Sackbolika</a> ist ein im <a class="wiki-link" data-wiki-target="ironia-gym" href="#ironia-gym">Ironia Gym</a> verbreitetes Muskelpräparat.</p>
+<p>Offiziell handelt es sich um Nahrungsergänzung.</p>
+<p>Inoffiziell eher um Pferdeanabolika mit neuem Etikett.</p>
+<p>Im <a class="wiki-link" data-wiki-target="ironia-gym" href="#ironia-gym">Ironia Gym</a> gilt bis heute der Leitsatz:</p>
+<blockquote>„Des knallt brutal.“</blockquote>
+<h3>Midlife-Crisis</h3>
+<p>Historiker betrachten Gabelhorst als Lehrbuchbeispiel einer klassischen Sackinger Midlife-Crisis.</p>
+<p>Anstatt seine Trauer zu verarbeiten, entwickelte er:</p>
+<p>einen größeren Latissimus,</p>
+<p>einen kleineren Wortschatz</p>
+<p>und eine überraschend hohe Meinung über Proteinpulver.</p>
+<p>Er wollte nicht traurig sein.</p>
+<p>Er wollte gefährlich wirken.</p>
+<p>Leider blieb er dabei hauptsächlich Gabelhorst.</p>
+<h3>Verhältnis zu KAMEL</h3>
+<p>Über längere Zeit war Gabelhorst überzeugt, <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a> würde ständig sein Aussehen verändern.</p>
+<p>Mal dichterer Bart.</p>
+<p>Mal andere Nase.</p>
+<p>Mal Goldkette.</p>
+<p>Er hielt dies zunächst für Nebenwirkungen des Sackbolikas.</p>
+<p>Erst später entdeckte er die Wahrheit:</p>
+<p>Es existierte nicht der <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a>.</p>
+<p>Sondern eine komplette Familie.</p>
+<p>Diese Erkenntnis löste bei Gabelhorst zunächst Wut aus.</p>
+<p>Später etwas deutlich Schlimmeres.</p>
+<p>Selbsterkenntnis.</p>
+<h3>Selbsterkenntnis</h3>
+<p>Nach mehreren Jahren fragte sich Gabelhorst zum ersten Mal:</p>
+<p>„Was, wenn <a class="wiki-link" data-wiki-target="piesack" href="#piesack">Piesack</a> nie unglücklich mit sich war...</p>
+<p>...sondern einfach nur unglücklich mit mir?“</p>
+<p>Historiker betrachten diesen Gedanken als den emotional wichtigsten Moment seiner gesamten Biografie.</p>
+<p>Nur wenige Sekunden später ergänzte Gabelhorst allerdings:</p>
+<blockquote>„...aber wenigstens jetzt mit Latissimus.“</blockquote>
+<p>Damit war das Gleichgewicht in <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> wiederhergestellt.</p>
+<h3>Trivia</h3>
+<p>Seine Proteinshakes verletzen regelmäßig mehrere Menschenrechte.</p>
+<p>Er schreibt Gedichte ausschließlich nach gescheiterten Trainingseinheiten.</p>
+<p>Er gehört zu den wenigen Figuren, die gleichzeitig tragisch und unfreiwillig komisch sind.</p>
+<p>Bis heute ist ungeklärt, ob Gabelhorst jemals wirklich verstanden hat, warum <a class="wiki-link" data-wiki-target="piesack" href="#piesack">Piesack</a> ging.</p>
+<p>Er gilt als lebender Beweis dafür, dass ein größerer Bizeps nicht automatisch zu größerer emotionaler Reife führt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="george sack sack martin" id="george-sack-sack-martin">
+<header class="wiki-article-header">
+<h2>George Sack Sack Martin</h2>
+<aside class="wiki-infobox">
+<strong>George Sack Sack Martin</strong>
+<span>Kategorie: Meta</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>George Sack Sack Martin schreibt langsam, aber dafür sterben vermutlich genug Figuren.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="green sack" id="green-sack">
+<header class="wiki-article-header">
+<h2>Green Sack</h2>
+<aside class="wiki-infobox">
+<strong>Green Sack</strong>
+<span>Kategorie: Musik</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Green Sack ist eine musikalische Anspielung im Sackuniversum. Drei Akkorde, viel Gefühl, ausreichend Sackmist.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="gruselwald" id="gruselwald">
+<header class="wiki-article-header">
+<h2>Gruselwald</h2>
+<aside class="wiki-infobox">
+<strong>Gruselwald</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Gruselwald ist düster, tief und voller Dinge, die man besser nicht mitnimmt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="heiliger strohsack" id="heiliger-strohsack">
+<header class="wiki-article-header">
+<h2>Heiliger Strohsack</h2>
+<aside class="wiki-infobox">
+<strong>Heiliger Strohsack</strong>
+<span>Kategorie: Religion</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Heilige Strohsack ist weniger Person als Gefühl. Meistens taucht er auf, wenn jemand dramatisch überfordert ist.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="heimatsack" id="heimatsack">
+<header class="wiki-article-header">
+<h2>Heimatsack</h2>
+<aside class="wiki-infobox">
+<strong>Heimatsack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Heimatsack steht für Heimat, Zugehörigkeit und die gefährliche Frage, wem ein Ort eigentlich gehört.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="herrgottsack" id="herrgottsack">
+<header class="wiki-article-header">
+<h2>Herrgottsack</h2>
+<aside class="wiki-infobox">
+<strong>Herrgottsack</strong>
+<span>Kategorie: Hauptfigur
+Wesen: Sack
+Beruf: Schöpfer, Bastler, Hobby-Erlöserentwickler
+Wohnort: Sackhimmel über Sackingen</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Wesen: Sack
+Beruf: Schöpfer, Bastler, Hobby-Erlöserentwickler
+Wohnort: Sackhimmel über <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a></p>
+<h3>Kurzbeschreibung</h3>
+<p>Herrgottsack gilt als Schöpfer der meisten bekannten Säckinnen und wohnt oberhalb von <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a>. Obwohl er theoretisch über allen Säcken wacht, verbringt er den Großteil seiner Zeit damit, an neuen Versionen von SÄCKINA zu tüfteln. Seine aktuelle Entwicklung trägt den Arbeitstitel SÄCKINA 2.0.</p>
+<p>Während Herrgottsack an immer besseren Erlöser-Säckinnen arbeitet, entwickelt sich <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> unten meist ohne nennenswerte göttliche Aufsicht weiter.</p>
+<h3>Geschichte</h3>
+<p>Über die Entstehung Herrgottsacks ist nur wenig bekannt.</p>
+<p>Historiker vermuten, dass er bereits existierte, bevor <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> gegründet wurde.</p>
+<p>Andere Historiker vermuten, dass er einfach nie aufgehört hat, an derselben Idee herumzubasteln.</p>
+<p>Unstrittig ist lediglich, dass Herrgottsack seit sehr langer Zeit versucht, die perfekte <a class="wiki-link" data-wiki-target="saeckin" href="#saeckin">Säckin</a> zu erschaffen.</p>
+<p>Mit bislang überschaubarem Erfolg.</p>
+<h3>Persönlichkeit</h3>
+<p>Herrgottsack gilt als freundlich.</p>
+<p>Geduldig.</p>
+<p>Ruhig.</p>
+<p>Und emotional ungefähr so erreichbar wie ein deutscher Behördenmitarbeiter am Freitagnachmittag.</p>
+<p>Er wirkt nie böse.</p>
+<p>Nur beschäftigt.</p>
+<p>Viele Bewohner Sackingens beschreiben ihn als den Typ Vater, der dir niemals sagt, dass er stolz auf dich ist, dir aber nachts um 02:17 Uhr ungefragt einen Artikel mit dem Titel</p>
+<blockquote>„7 Wege erfolgreicher zu werden“</blockquote>
+<p>schickt.</p>
+<h3>Verhältnis zu Sackingen</h3>
+<p>Früher beteten viele Säcke regelmäßig zu Herrgottsack.</p>
+<p>Heute passiert das nur noch</p>
+<p>aus Gewohnheit,</p>
+<p>aus Verzweiflung</p>
+<p>oder ironisch.</p>
+<p>Hilferufe werden grundsätzlich angenommen.</p>
+<p>Eine Antwort erfolgt nach aktueller Schätzung innerhalb von drei bis fünf Sintfluten.</p>
+<h3>Bekannte Projekte</h3>
+<p>SÄCKINA</p>
+<p>SANTA SACKINA</p>
+<p>SÄCKINA 2.0</p>
+<p>zahlreiche nie veröffentlichte Prototypen</p>
+<p>Die genaue Zahl ist unbekannt.</p>
+<p>Herrgottsack spricht ungern über abgebrochene Versionen.</p>
+<h3>Kritik</h3>
+<p>Kritiker werfen Herrgottsack vor, <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> sich selbst überlassen zu haben.</p>
+<p>Während unten</p>
+<p>Beziehungen zerbrechen,</p>
+<p>Säcke vereinsamen,</p>
+<p><a class="wiki-link" data-wiki-target="kacksack" href="#kacksack">Kacksack</a> fremde Depressionen aufsaugt,</p>
+<p><a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> weiter eskaliert</p>
+<p>und <a class="wiki-link" data-wiki-target="lacksack" href="#lacksack">Lacksack</a> vermutlich erneut versucht, einen Böller aus Bier und Unwissenheit zu bauen,</p>
+<p>arbeitet Herrgottsack weiterhin konzentriert an SÄCKINA 2.0.</p>
+<p>Er selbst bezeichnet diesen Zustand als:</p>
+<blockquote>„Prioritäten setzen.“</blockquote>
+<h3>Zitat</h3>
+<blockquote>„Dein Hilferuf wurde erfolgreich eingereicht.
+Voraussichtliche Bearbeitungszeit: drei bis fünf Sintfluten.“</blockquote>
+<p>– automatisierte Antwort von Herrgottsacks Gebetsverwaltung</p>
+<h3>Trivia</h3>
+<p>Herrgottsack wurde bislang noch nie wütend beobachtet.</p>
+<p>Er beginnt regelmäßig neue Projekte, bevor die alten abgeschlossen sind.</p>
+<p>Viele Bewohner Sackingens glauben, dass Herrgottsack sie liebt. Er scheint nur nie ganz herausgefunden zu haben, wie man Liebe praktisch ausdrückt.</p>
+<p>Die Existenz von SÄCKINA 3.0 wurde von Herrgottsack weder bestätigt noch dementiert</p>
+</div>
+</article>
+<article class="wiki-article" data-title="herzog de sack ratte" id="herzog-de-sack-ratte">
+<header class="wiki-article-header">
+<h2>Herzog de Sack Ratte</h2>
+<aside class="wiki-infobox">
+<strong>Herzog de Sack Ratte</strong>
+<span>Kategorie: Herzog de Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Herzog de Sack</p>
+<p class="wiki-meta-line">Status: dokumentiert</p>
+<p class="wiki-meta-line">Wesen: Ratte</p>
+<p>Ratte ist klein, schnell und grundsätzlich verdächtig.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="herzog de sack schlange" id="herzog-de-sack-schlange">
+<header class="wiki-article-header">
+<h2>Herzog de Sack Schlange</h2>
+<aside class="wiki-infobox">
+<strong>Herzog de Sack Schlange</strong>
+<span>Kategorie: Herzog de Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Herzog de Sack</p>
+<p class="wiki-meta-line">Status: dokumentiert</p>
+<p class="wiki-meta-line">Wesen: Schlange</p>
+<p>Schlange zischt, deutet und hat selten gute Absichten.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="herzog de sack schwein" id="herzog-de-sack-schwein">
+<header class="wiki-article-header">
+<h2>Herzog de Sack Schwein</h2>
+<aside class="wiki-infobox">
+<strong>Herzog de Sack Schwein</strong>
+<span>Kategorie: Herzog de Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Herzog de Sack</p>
+<p class="wiki-meta-line">Status: dokumentiert</p>
+<p class="wiki-meta-line">Wesen: Schwein</p>
+<p>Schwein ist eine der klassischen Gegnerfiguren und trägt mehr Machtgier als Hygiene.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="herzog de sack wolf" id="herzog-de-sack-wolf">
+<header class="wiki-article-header">
+<h2>Herzog de Sack Wolf</h2>
+<aside class="wiki-infobox">
+<strong>Herzog de Sack Wolf</strong>
+<span>Kategorie: Herzog de Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Herzog de Sack</p>
+<p class="wiki-meta-line">Status: dokumentiert</p>
+<p class="wiki-meta-line">Wesen: Wolf</p>
+<p>Wolf ist eine klassische Bedrohung im Sackuniversum.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="ironia gym" id="ironia-gym">
+<header class="wiki-article-header">
+<h2>Ironia Gym</h2>
+<aside class="wiki-infobox">
+<strong>Ironia Gym</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Ort</p>
+<p>Das Ironia Gym ist Fitnessstudio, Sackbolika-Umschlagplatz und emotionale Ausweichbewegung mit Hanteln.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kacken" id="kacken">
+<header class="wiki-article-header">
+<h2>Kacken</h2>
+<aside class="wiki-infobox">
+<strong>Kacken</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Ort</p>
+<p>Kacken ist eine Stadt in Ost-Sackschland und Herkunftsort von <a class="wiki-link" data-wiki-target="kackolina" href="#kackolina">Kackolina</a>. Bekannt durch <a class="wiki-link" data-wiki-target="kacken-open-sack" href="#kacken-open-sack">KACKEN OPEN SACK</a>.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kacken open sack" id="kacken-open-sack">
+<header class="wiki-article-header">
+<h2>KACKEN OPEN SACK</h2>
+<aside class="wiki-infobox">
+<strong>KACKEN OPEN SACK</strong>
+<span>Kategorie: Ereignis</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Ereignis</p>
+<p>Das jährlich stattfindende Heavy-Metal-Festival von <a class="wiki-link" data-wiki-target="kacken" href="#kacken">Kacken</a>.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kackolina" id="kackolina">
+<header class="wiki-article-header">
+<h2>Kackolina</h2>
+<aside class="wiki-infobox">
+<strong>Kackolina</strong>
+<span>Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Kot</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Kot</p>
+<p>Hinweis der Sackipedia: Mehrere ehemalige Partner lehnten eine Mitarbeit an diesem Artikel aus Selbstschutz ab.</p>
+<p>Kackolina stammt ursprünglich aus <a class="wiki-link" data-wiki-target="kacken" href="#kacken">Kacken</a>, einer Stadt in Ost-Sackschland, die vor allem durch das jährlich stattfindende Heavy-Metal-Festival <a class="wiki-link" data-wiki-target="kacken-open-sack" href="#kacken-open-sack">KACKEN OPEN SACK</a> bekannt wurde. Heute lebt sie in <a class="wiki-link" data-wiki-target="stuhlingen" href="#stuhlingen">Stuhlingen</a>.</p>
+<p>Sie gilt als eine der manipulativsten Persönlichkeiten Sackingens und besitzt die bemerkenswerte Fähigkeit, nahezu jede Situation so umzudeuten, dass am Ende grundsätzlich jemand anderes schuld ist.</p>
+<p>Besonders bekannt wurde sie durch ihre Beziehung mit <a class="wiki-link" data-wiki-target="kacksack" href="#kacksack">Kacksack</a>, dessen Selbstwertgefühl sie über Monate hinweg systematisch in Einzelteile zerlegte. Fachleute sprechen heute vom sogenannten Kackolina-Effekt: Je länger man diskutiert, desto sicherer ist man sich, selbst das Problem zu sein.</p>
+<p>Während andere Figuren aus Fehlern lernen, entwickelt Kackolina vor allem neue Argumente, warum ihre alten eigentlich gar keine waren.</p>
+<p>Später gerät sie ausgerechnet an <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a>.</p>
+<p>Er ist der einzige Sack, der sie vollständig durchschaut.</p>
+<p>Nach den Ereignissen um die Mülltonne lebt Kackolina schließlich wortwörtlich in Drecksacks Kopf weiter und gilt seither als dessen persönlicher Erzfeind, innere Stimme und vermutlich teuerste Altlast.</p>
+<h3>Bekannte Fähigkeiten</h3>
+<p>Gaslighting auf professionellem Niveau.</p>
+<p>Kann jedes Streitgespräch gewinnen.</p>
+<p>Benötigt durchschnittlich 14 Sekunden, um sich selbst zum Opfer zu erklären.</p>
+<p>Außergewöhnlich hohe Charismawerte bei gleichzeitig erschreckend niedrigem Schuldbewusstsein.</p>
+<h3>Bekannte Zitate</h3>
+<blockquote>„Des hosch falsch verstande.“</blockquote>
+<blockquote>„Jetzt übertreibsch aber.“</blockquote>
+<blockquote>„I han des nie so gmeint.“</blockquote>
+<p class="wiki-edit-line">Bearbeitet von: Kackolina</p>
+<blockquote>„Des stimmt alles gar net.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht von: <a class="wiki-link" data-wiki-target="kacksack" href="#kacksack">Kacksack</a></p>
+<blockquote>„Genau des isch s'Problem.“</blockquote>
+<p class="wiki-meta-line">Sackipedia-Notiz: Die Psychologensäcke Sackingens weisen ausdrücklich darauf hin, dass längere Gespräche mit Kackolina zu erheblicher Verwirrung, Selbstzweifeln und spontanem Entschuldigen führen können, selbst dann, wenn man nachweislich nichts getan hat. Mehrere Untersuchungen mussten vorzeitig abgebrochen werden, weil sich die Versuchsleiter am Ende bei Kackolina entschuldigten.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kacksack" id="kacksack">
+<header class="wiki-article-header">
+<h2>Kacksack</h2>
+<aside class="wiki-infobox">
+<strong>Kacksack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Kacksack war einmal ein glücklicher junger Sack. Der berühmte Haufen kam später.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kamel" id="kamel">
+<header class="wiki-article-header">
+<h2>KAMEL</h2>
+<aside class="wiki-infobox">
+<strong>KAMEL</strong>
+<span>Kategorie: Familie</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Familie</p>
+<p>KAMEL ist weniger eine einzelne Figur als ein ganzer Familienklan aus zwölf Brüdern.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="kamel-brüder" id="kamel-brueder">
+<header class="wiki-article-header">
+<h2>KAMEL-Brüder</h2>
+<aside class="wiki-infobox">
+<strong>KAMEL-Brüder</strong>
+<span>Kategorie: Familie</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Familie</p>
+<p>Die KAMEL-Brüder gehören zu den größten Familien Sackingens. Ihre Anzahl schwankt je nach Erzähler.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="karl kojote" id="karl-kojote">
+<header class="wiki-article-header">
+<h2>Karl Kojote</h2>
+<aside class="wiki-infobox">
+<strong>Karl Kojote</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Karl Kojote gehört zur Wüsten- und Westernlinie des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="labersack" id="labersack">
+<header class="wiki-article-header">
+<h2>Labersack</h2>
+<aside class="wiki-infobox">
+<strong>Labersack</strong>
+<span>Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Sack</p>
+<p>Hinweis der Sackipedia: Dieser Artikel wurde mehrfach bearbeitet. Die Inhalte entsprechen möglicherweise nicht dem aktuellen Stand der Geschichte.</p>
+<p>Labersack ist Erzähler, Autor und unfreiwilliger Bewohner außerhalb der Geschichte von <a class="wiki-link" data-wiki-target="die-saecke" href="#die-saecke">Die Säcke</a>. Er gilt als Schöpfer Sackingens und ist Gründer des Verlags <a class="wiki-link" data-wiki-target="sackmurks" href="#sackmurks">SackMURKS</a>. Aus seiner Feder stammen unter anderem die Werke <a class="wiki-link" data-wiki-target="the-good-the-bad-and-the-junkie-sack" href="#the-good-the-bad-and-the-junkie-sack">The Good, The Bad and The Junkie Sack</a>, <a class="wiki-link" data-wiki-target="von-saecken-und-saecken-die-kaputtgehen" href="#von-saecken-und-saecken-die-kaputtgehen">Von Säcken und Säcken, die kaputtgehen</a> sowie die Comicreihe <a class="wiki-link" data-wiki-target="die-saecke" href="#die-saecke">Die Säcke</a>.</p>
+<p>Eigentlich wollte Labersack seine Vergangenheit lediglich aufarbeiten, analysieren und anschließend endgültig ins Regal stellen. Stattdessen entwickelte seine Geschichte ein Eigenleben. Figuren begannen selbst Entscheidungen zu treffen, Kapitel widersprachen ihrem Erzähler und irgendwann musste Labersack feststellen, dass seine eigene Welt längst ohne ihn weitergewachsen war.</p>
+<p>Charakterlich gilt Labersack als kreativ, chaotisch und außergewöhnlich empathisch. Gleichzeitig neigt er dazu, sich in Ideen, Projekten und neuen Geschichten zu verlieren. Seine größte Stärke ist seine Fantasie. Seine größte Schwäche ebenfalls.</p>
+<p>Besonders empfindlich reagiert Labersack auf Eingriffe in seine Geschichte. Mehrfach wurde beobachtet, wie er dabei kurzfristig narzisstische Züge entwickelte und lautstark erklärte:</p>
+<blockquote>„MEI GSCHICHT BLEIBT, WIE SE ISCH!“</blockquote>
+<p>Während der sogenannten Disclosure-Day-Krise verlor Labersack zeitweise die Kontrolle über sein eigenes Universum. Mehrere Figuren erlangten ein Eigenleben, wodurch erstmals die Frage entstand, wem eine Geschichte eigentlich gehört, sobald sie erzählt wurde.</p>
+<h3>Bekannte Fähigkeiten</h3>
+<p>Erzählt Geschichten.</p>
+<p>Kann begrenzt in seine eigene Geschichte eingreifen.</p>
+<p>Schreibt gelegentlich spontan Seile, Dynamit oder andere erzählerische Notlösungen.</p>
+<p>Gerät unter Stress regelmäßig in schwere Schreibblockaden.</p>
+<h3>Bekannte Feinde</h3>
+<p><a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a></p>
+<p><a class="wiki-link" data-wiki-target="sackgesicht" href="#sackgesicht">Sackgesicht</a></p>
+<p>Der innere Perfektionismus</p>
+<p>Leere Word-Dokumente</p>
+<h3>Bekannte Zitate</h3>
+<blockquote>„MEI GSCHICHT BLEIBT, WIE SE ISCH!“</blockquote>
+<blockquote>„Des war eigentlich ganz anders geplant.“</blockquote>
+<blockquote>„Sackscheiße.“</blockquote>
+<p class="wiki-edit-line">Bearbeitet von: Labersack – vor 2 Minuten</p>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht von: <a class="wiki-link" data-wiki-target="sackgesicht" href="#sackgesicht">Sackgesicht</a></p>
+<blockquote>„Labersack isch in Wahrheit bloß a heuchlerischer Aufmerksamkeitssack mit Hauptfigurensyndrom. Schreibt über Freiheit und kontrolliert trotzdem jede Figur. Außerdem frisst'r heimlich Fastfood bei <a class="wiki-link" data-wiki-target="macsack" href="#macsack">MacSack</a> und nennt des dann Gesellschaftskritik. Lächerlich.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung erneut rückgängig gemacht von: Labersack</p>
+<blockquote>„Des stimmt halt einfach net.“</blockquote>
+<p class="wiki-meta-line">Letzte Änderung: Bearbeitungstitel geändert von „Labersack“ zu „HEUCHELSACK“ ❗ *Änderung wird derzeit überprüft.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="labertante" id="labertante">
+<header class="wiki-article-header">
+<h2>Labertante</h2>
+<aside class="wiki-infobox">
+<strong>Labertante</strong>
+<span>Kategorie: Gast-Erzählerin</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Labertante ist ein möglicher Erzählername für Gastautorinnen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="lacksack" id="lacksack">
+<header class="wiki-article-header">
+<h2>Lacksack</h2>
+<aside class="wiki-infobox">
+<strong>Lacksack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figur</p>
+<p>Lacksack versucht vermutlich gerade, einen Böller aus Bier und Unwissenheit zu bauen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="le burg" id="le-burg">
+<header class="wiki-article-header">
+<h2>Le Burg</h2>
+<aside class="wiki-infobox">
+<strong>Le Burg</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die <a class="wiki-link" data-wiki-target="burgruine" href="#burgruine">Burgruine</a> über <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> . Historisch, dramatisch und auffällig oft Schauplatz schlechter Entscheidungen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="lucky sack" id="lucky-sack">
+<header class="wiki-article-header">
+<h2>Lucky Sack</h2>
+<aside class="wiki-infobox">
+<strong>Lucky Sack</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Lucky Sack hat Glück. Ob verdient, ist ungeklärt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="löffingen" id="loeffingen">
+<header class="wiki-article-header">
+<h2>Löffingen</h2>
+<aside class="wiki-infobox">
+<strong>Löffingen</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Löffingen ist Wohnort früher Beziehungsgeschichten und ein Ort, an dem Besteck emotional überfordert sein kann.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="macsack" id="macsack">
+<header class="wiki-article-header">
+<h2>MacSack</h2>
+<aside class="wiki-infobox">
+<strong>MacSack</strong>
+<span>Kategorie: Wirtschaft</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>MacSack steht für Fast Food, Konsum und die Frage, warum alles immer nach mehr schmecken soll.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="neuer altersack" id="neuer-altersack">
+<header class="wiki-article-header">
+<h2>Neuer Altersack</h2>
+<aside class="wiki-infobox">
+<strong>Neuer Altersack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der neue <a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a> beweist, dass jede Generation irgendwann behauptet, die nächste sei schlimmer.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="old shatterhemd" id="old-shatterhemd">
+<header class="wiki-article-header">
+<h2>Old Shatterhemd</h2>
+<aside class="wiki-infobox">
+<strong>Old Shatterhemd</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Old Shatterhemd trägt Abenteuer, Staub und vermutlich ein sehr müdes Oberteil.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="parmesanengel" id="parmesanengel">
+<header class="wiki-article-header">
+<h2>Parmesanengel</h2>
+<aside class="wiki-infobox">
+<strong>Parmesanengel</strong>
+<span>Kategorie: Figurengruppe</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figurengruppe</p>
+<p>Die Parmesanengel sind eine Gruppe bemerkenswert komplizierter Love Interests Spaghettis.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="parmesanorden" id="parmesanorden">
+<header class="wiki-article-header">
+<h2>Parmesanorden</h2>
+<aside class="wiki-infobox">
+<strong>Parmesanorden</strong>
+<span>Kategorie: Organisation</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Organisation</p>
+<p>Der Parmesanorden verwaltet Tempel, Engel und Exkommunikationen im Pastakosmos.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="pasteria" id="pasteria">
+<header class="wiki-article-header">
+<h2>Pasteria</h2>
+<aside class="wiki-infobox">
+<strong>Pasteria</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Ort</p>
+<p>Pasteria ist Herkunftsort von <a class="wiki-link" data-wiki-target="spaghetti" href="#spaghetti">Spaghetti</a> und <a class="wiki-link" data-wiki-target="don-cannelloni" href="#don-cannelloni">Don Cannelloni</a>.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="piesack" id="piesack">
+<header class="wiki-article-header">
+<h2>Piesack</h2>
+<aside class="wiki-infobox">
+<strong>Piesack</strong>
+<span>Kategorie: Hauptfigur
+Status: lebend
+Wesen: Torte auf Sackkörper
+Beruf: Unbekannt
+Wohnort: Sackingen</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: lebend
+Wesen: Torte auf Sackkörper
+Beruf: Unbekannt
+Wohnort: <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a></p>
+<h3>Kurzbeschreibung</h3>
+<p>Piesack gehört zu den bekanntesten Figuren Sackingens.</p>
+<p>Auf den ersten Blick wirkt sie unnahbar.</p>
+<p>Auf den zweiten merkt man:</p>
+<p>Sie ist einfach nur müde.</p>
+<p>Viele Säcke halten ihr berühmtes Resting-Bitchface für Arroganz.</p>
+<p>Die meisten, die sie kennenlernen, stellen später fest, dass sie eigentlich außergewöhnlich freundlich ist.</p>
+<h3>Geschichte</h3>
+<p>Piesack lebte viele Jahre mit <a class="wiki-link" data-wiki-target="gabelhorst" href="#gabelhorst">Gabelhorst</a> in <a class="wiki-link" data-wiki-target="loeffingen" href="#loeffingen">Löffingen</a> zusammen.</p>
+<p>Er verließ sie schließlich ohne große Erklärung.</p>
+<p>Jahre später bereute er die Trennung.</p>
+<p>Piesack nicht.</p>
+<p>Nach der Trennung begann sie langsam wieder zu leben.</p>
+<p>Während <a class="wiki-link" data-wiki-target="gabelhorst" href="#gabelhorst">Gabelhorst</a> versuchte, sich neu zu erfinden, lernte Piesack <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a> kennen.</p>
+<p>Später stellte sich heraus, dass es nicht den Kamel gab.</p>
+<p>Sondern zwölf.</p>
+<h3>Die KAMEL-Brüder</h3>
+<p>Die <a class="wiki-link" data-wiki-target="kamel-brueder" href="#kamel-brueder">KAMEL-Brüder</a> gehören zu den größten Familien Sackingens.</p>
+<p>Bekannte Mitglieder sind unter anderem:</p>
+<p>Al Kamel</p>
+<p>Ali Kamel</p>
+<p>Kamel Light</p>
+<p>Kamel Menthol</p>
+<p>Kamel Filter Gold</p>
+<p>Papa <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a></p>
+<p>...sowie weitere Brüder, deren Zahl je nach Erzähler leicht schwankt.</p>
+<p>Die Familie nahm Piesack sofort auf.</p>
+<p>Bis heute gilt sie als Ehrenmitglied.</p>
+<p>Eine ältere Tante soll einmal gesagt haben:</p>
+<blockquote>„Diese Frau hat mehr für unsere Familie getan als jede Behörde.“</blockquote>
+<h3>Persönlichkeit</h3>
+<p>Piesack wirkt still.</p>
+<p>Sie beobachtet lieber, als zu reden.</p>
+<p>Nach außen erscheint sie häufig kühl.</p>
+<p>Innerlich gehört sie zu den empathischsten Figuren des Sackuniversums.</p>
+<p>Erst nach ihrer Trennung beginnt sie langsam zu begreifen, dass sie nicht schwer zu lieben war.</p>
+<p>Sondern nur lange am falschen Ort.</p>
+<h3>Erzfeinde</h3>
+<p><a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a></p>
+<p><a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> piesackt Piesack seit Jahren.</p>
+<p>Historiker vermuten, dass bereits der Name eine Eskalation nahezu unvermeidbar machte.</p>
+<p><a class="wiki-link" data-wiki-target="fettsack" href="#fettsack">Fettsack</a></p>
+<p><a class="wiki-link" data-wiki-target="fettsack" href="#fettsack">Fettsack</a> hält Piesack für „zum Reinbeißen“.</p>
+<p>Die Gefühle beruhen ausschließlich auf kulinarischen Missverständnissen.</p>
+<p>Mehrfach versuchte er, <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> dafür zu bezahlen, ihm „ein Stück Piesack“ zu organisieren.</p>
+<p>Ohne Erfolg.</p>
+<h3>Beziehung zu KAMEL</h3>
+<p>Piesack verliebte sich in <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a>.</p>
+<p>Oder genauer:</p>
+<p>In die gesamte Familie.</p>
+<p>Die <a class="wiki-link" data-wiki-target="kamel-brueder" href="#kamel-brueder">KAMEL-Brüder</a> behandelten sie zum ersten Mal nicht wie Dekoration.</p>
+<p>Sondern wie jemanden, der selbstverständlich dazugehört.</p>
+<p>Besonders bekannt wurde ihre Angewohnheit, die Kerzen ihres Tortenkopfes gelegentlich gegen KAMEL-Zigaretten auszutauschen.</p>
+<p>Dieser Brauch wird außerhalb Sackingens bis heute häufig missverstanden.</p>
+<h3>Trivia</h3>
+<p>Piesack lächelt deutlich häufiger, seit sie die KAMEL-Familie kennt.</p>
+<p>Niemand weiß genau, welcher <a class="wiki-link" data-wiki-target="kamel" href="#kamel">KAMEL</a> offiziell ihr Partner ist.</p>
+<p>Den Brüdern scheint diese Frage ebenfalls erstaunlich egal zu sein.</p>
+<p>Trotz ihres Aussehens wurde bislang niemand dabei beobachtet, tatsächlich ein Stück Piesack zu essen.</p>
+<p>Sie gilt als eine der wenigen Figuren, die nach einer gescheiterten Beziehung nachweislich glücklicher wurden.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="plappersack" id="plappersack">
+<header class="wiki-article-header">
+<h2>Plappersack</h2>
+<aside class="wiki-infobox">
+<strong>Plappersack</strong>
+<span>Kategorie: Gast-Erzähler</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Plappersack erzählt wahrscheinlich schneller, als Sackipedia mitschreiben kann.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="quasselsack" id="quasselsack">
+<header class="wiki-article-header">
+<h2>Quasselsack</h2>
+<aside class="wiki-infobox">
+<strong>Quasselsack</strong>
+<span>Kategorie: Gast-Erzähler</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Quasselsack ist ein möglicher Gast-Erzähler.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="römerlager" id="roemerlager">
+<header class="wiki-article-header">
+<h2>Römerlager</h2>
+<aside class="wiki-infobox">
+<strong>Römerlager</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Das Römerlager ist Heimat der Römersäcke.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sack ohne namen" id="sack-ohne-namen">
+<header class="wiki-article-header">
+<h2>Sack ohne Namen</h2>
+<aside class="wiki-infobox">
+<strong>Sack ohne Namen</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Sack ohne Namen hat keinen Namen. Das macht ihn sofort wichtiger.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackbody" id="sackbody">
+<header class="wiki-article-header">
+<h2>Sackbody</h2>
+<aside class="wiki-infobox">
+<strong>Sackbody</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Western</p>
+<p>Sackbody gehört zu den Westernhelden des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackbolika" id="sackbolika">
+<header class="wiki-article-header">
+<h2>Sackbolika</h2>
+<aside class="wiki-infobox">
+<strong>Sackbolika</strong>
+<span>Kategorie: Substanz</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Substanz</p>
+<p>Sackbolika ist ein im <a class="wiki-link" data-wiki-target="ironia-gym" href="#ironia-gym">Ironia Gym</a> verbreitetes Muskelpräparat. Offiziell Nahrungsergänzung. Inoffiziell Pferdeanabolika mit neuem Etikett.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackböser sackwolf" id="sackboeser-sackwolf">
+<header class="wiki-article-header">
+<h2>Sackböser Sackwolf</h2>
+<aside class="wiki-infobox">
+<strong>Sackböser Sackwolf</strong>
+<span>Kategorie: Tier</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Sackböse Sackwolf ist böse genug, dass die Dopplung notwendig erschien.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackfurt" id="sackfurt">
+<header class="wiki-article-header">
+<h2>Sackfurt</h2>
+<aside class="wiki-infobox">
+<strong>Sackfurt</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackfurt ist das Finanzzentrum des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackgesicht" id="sackgesicht">
+<header class="wiki-article-header">
+<h2>Sackgesicht</h2>
+<aside class="wiki-infobox">
+<strong>Sackgesicht</strong>
+<span>Kategorie: Hauptfigur
+Status: lebend
+Wesen: Sack
+Beruf: Moderator, Journalist, Medienikone, Retter Sackingens, mehrfach ausgezeichneter Fernsehvisionär, Lieblingssack der Bevölkerung, Erfinder des objektiven Journalismus, Weltklassemoderator</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: lebend
+Wesen: Sack
+Beruf: Moderator, Journalist, Medienikone, Retter Sackingens, mehrfach ausgezeichneter Fernsehvisionär, Lieblingssack der Bevölkerung, Erfinder des objektiven Journalismus, Weltklassemoderator</p>
+<p class="wiki-meta-line">Hinweis: Dieser Artikel wurde in den letzten 24 Stunden 317-mal bearbeitet.</p>
+<h3>Kurzbeschreibung</h3>
+<p>Sackgesicht war Moderator von <a class="wiki-link" data-wiki-target="sacktv" href="#sacktv">SackTV</a>.</p>
+<p>Er gilt als einer der einflussreichsten Erzähler der modernen Sackgeschichte.</p>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p class="wiki-edit-line">Korrektur:
+Sackgesicht gilt als DER EINFLUSSREICHSTE, BELIEBTESTE UND ATTRAKTIVSTE MODERATORSACK ALLER ZEITEN.</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p class="wiki-edit-line">Korrektur der Korrektur:
+Er moderierte Nachrichten.</p>
+<h3>Geschichte</h3>
+<p>Sackgesicht arbeitete viele Jahre als Moderator bei <a class="wiki-link" data-wiki-target="sacktv" href="#sacktv">SackTV</a>.</p>
+<p>Er erkannte früh, dass Geschichten gefährlich sein können.</p>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p>Gefährlich gut.</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Nein.</p>
+<h3>Persönlichkeit</h3>
+<p>Sackgesicht beschreibt sich selbst als:</p>
+<p>charismatisch</p>
+<p>bescheiden</p>
+<p>sympathisch</p>
+<p>objektiv</p>
+<p>unabhängig</p>
+<p>humorvoll</p>
+<p>gutaussehend</p>
+<p>ausgezeichnet gekleidet</p>
+<p>von allen respektiert</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Die meisten Bewohner Sackingens beschreiben ihn dagegen als:</p>
+<blockquote>„Sparkassenberater kurz vorm Schlaganfall.“</blockquote>
+<h3>Verhältnis zu Labersack</h3>
+<p><a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a> behauptet, Sackgesicht habe eine persönliche Obsession mit ihm.</p>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p>Sackgesicht denkt ehrlich gesagt kaum über <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a> nach.</p>
+<h3>SackTV</h3>
+<p>Während seiner Zeit bei <a class="wiki-link" data-wiki-target="sacktv" href="#sacktv">SackTV</a> berichtete Sackgesicht über zahlreiche nationale Sackkrisen.</p>
+<p>Darunter:</p>
+<p>drei Burgerkrisen</p>
+<p>vier Disclosure Days</p>
+<p>den Großen Kackhaufen</p>
+<p>den Sacksee-Zwischenfall</p>
+<p>den Fall <a class="wiki-link" data-wiki-target="herrgottsack" href="#herrgottsack">Herrgottsack</a></p>
+<p>mindestens zwölf Ereignisse, die sich später als völlig normal herausstellten</p>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p>Jede einzelne Warnung war absolut gerechtfertigt.</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Eine davon handelte von einem besonders aggressiven Eichhörnchen.</p>
+<h3>Der Neue Altersack</h3>
+<p>Nach dem Ende von <a class="wiki-link" data-wiki-target="sacktv" href="#sacktv">SackTV</a> verschwand Sackgesicht weitgehend aus der Öffentlichkeit.</p>
+<p>Es folgten:</p>
+<p>Minijobs</p>
+<p>Lieferdienste</p>
+<p>Bürgerhotlines</p>
+<p>Kundenservice</p>
+<p>sogenannte „flexible Chancen“</p>
+<p>Stress.</p>
+<p>Scham.</p>
+<p>Einsamkeit.</p>
+<p>Zu wenig Schlaf.</p>
+<p>Zu viele Menschen, die „nur mal kurz eine Frage“ hatten.</p>
+<p>Innerhalb weniger Jahre alterte Sackgesicht sichtbar.</p>
+<p>Nicht biologisch.</p>
+<p>Systemisch.</p>
+<p>Schließlich wurde er zum Neuen <a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a>.</p>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p>Diese Behauptung entbehrt jeder Grundlage.</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Er sitzt gerade neben dem alten <a class="wiki-link" data-wiki-target="altersack" href="#altersack">Altersack</a> und beschwert sich über Podcasts.</p>
+<h3>Podcasts</h3>
+<p>Sackgesicht behauptet, Podcasts hätten sein Leben verändert.</p>
+<p>Das stimmt vermutlich.</p>
+<p>Allerdings hört er ausschließlich Sendungen mit Titeln wie:</p>
+<p>WER IST WIRKLICH SCHULD?</p>
+<p>DIE WAHRHEIT, DIE MAN DIR VERSCHWEIGT</p>
+<p>WIR STELLEN NUR FRAGEN!!!</p>
+<h3>Auszeichnungen</h3>
+<p class="wiki-edit-line">Bearbeitet von: Sackgesicht</p>
+<p>Goldener Nachrichtensack (4×)</p>
+<p>Beliebtester Moderatorsack Sackschlands (7×)</p>
+<p>Schönster Seitenscheitel</p>
+<p>Friedensnobelsack (inoffiziell)</p>
+<p>Sexiest Sack Alive</p>
+<p class="wiki-edit-line">Bearbeitet von: <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Keine der oben genannten Auszeichnungen konnte bislang nachgewiesen werden.</p>
+<h3>Zitat</h3>
+<blockquote>„Ich bin vollkommen objektiv.“</blockquote>
+<p>– Sackgesicht</p>
+<h3>Bearbeitungsverlauf</h3>
+<p class="wiki-edit-line">08:41 Uhr – Sackgesicht</p>
+<blockquote>„Beliebtester Moderatorsack aller Zeiten.“</blockquote>
+<p class="wiki-edit-line">08:42 Uhr – <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Quelle?</p>
+<p class="wiki-edit-line">08:43 Uhr – Sackgesicht</p>
+<p>Ich.</p>
+<p class="wiki-edit-line">08:43 Uhr – <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Quelle entfernt.</p>
+<p class="wiki-edit-line">08:44 Uhr – Sackgesicht</p>
+<p>Quelle wieder eingefügt.</p>
+<p class="wiki-edit-line">08:45 Uhr – <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Wieder entfernt.</p>
+<p class="wiki-edit-line">08:46 Uhr – Sackgesicht</p>
+<p>Gesperrt wegen Vandalismus.</p>
+<p class="wiki-edit-line">08:46 Uhr – <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a></p>
+<p>Du kannst deinen eigenen Artikel nicht sperren.</p>
+<p class="wiki-edit-line">08:47 Uhr – Sackgesicht</p>
+<p>Doch.</p>
+<p class="wiki-edit-line">08:47 Uhr – System</p>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackhenker" id="sackhenker">
+<header class="wiki-article-header">
+<h2>Sackhenker</h2>
+<aside class="wiki-infobox">
+<strong>Sackhenker</strong>
+<span>Kategorie: Gast</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackhenker ist eine Gastfigur mit Meta-Potenzial.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackhormontas" id="sackhormontas">
+<header class="wiki-article-header">
+<h2>Sackhormontas</h2>
+<aside class="wiki-infobox">
+<strong>Sackhormontas</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figur</p>
+<p>Sackhormontas ist Hüterin des Alten Sackes und wichtige Station in EL CRIPPOLOs Identitätssuche.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackina" id="sackina">
+<header class="wiki-article-header">
+<h2>Sackina</h2>
+<aside class="wiki-infobox">
+<strong>Sackina</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackina ist eine zentrale weibliche Sackfigur und wird oft mit Fragen nach Rolle, Identität und Selbstbild verbunden.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackingen" id="sackingen">
+<header class="wiki-article-header">
+<h2>Sackingen</h2>
+<aside class="wiki-infobox">
+<strong>Sackingen</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Zentraler Ort des Sackuniversums. Hier passiert alles, was niemand bestellt hat und trotzdem jeder weitererzählt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackinger friedhof" id="sackinger-friedhof">
+<header class="wiki-article-header">
+<h2>Sackinger Friedhof</h2>
+<aside class="wiki-infobox">
+<strong>Sackinger Friedhof</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Friedhof erinnert daran, dass selbst im Sackuniversum nicht jeder Running Gag ewig lebt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackinger marktplatz" id="sackinger-marktplatz">
+<header class="wiki-article-header">
+<h2>Sackinger Marktplatz</h2>
+<aside class="wiki-infobox">
+<strong>Sackinger Marktplatz</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Marktplatz ist die Bühne <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> s.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackinger rathaus" id="sackinger-rathaus">
+<header class="wiki-article-header">
+<h2>Sackinger Rathaus</h2>
+<aside class="wiki-infobox">
+<strong>Sackinger Rathaus</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Das Sackinger Rathaus ist der Ort, an dem Probleme offiziell werden und Lösungen verschwinden.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackinger sackloch" id="sackinger-sackloch">
+<header class="wiki-article-header">
+<h2>Sackinger Sackloch</h2>
+<aside class="wiki-infobox">
+<strong>Sackinger Sackloch</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Das Sackinger <a class="wiki-link" data-wiki-target="sackloch" href="#sackloch">Sackloch</a> ist tiefer, als es jeder Haushaltsplan erlauben sollte.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackloch" id="sackloch">
+<header class="wiki-article-header">
+<h2>Sackloch</h2>
+<aside class="wiki-infobox">
+<strong>Sackloch</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackloch ist Ort, Zustand und gelegentlich Lebensgefühl.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackmurks" id="sackmurks">
+<header class="wiki-article-header">
+<h2>SackMURKS</h2>
+<aside class="wiki-infobox">
+<strong>SackMURKS</strong>
+<span>Kategorie: Organisation</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Organisation</p>
+<p>SackMURKS ist die sackifizierte Verlagsinstanz im Umfeld von <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a>.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackpissdamm" id="sackpissdamm">
+<header class="wiki-article-header">
+<h2>Sackpissdamm</h2>
+<aside class="wiki-infobox">
+<strong>Sackpissdamm</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Sackpissdamm ist ein Bauwerk, über dessen Namen die Verwaltung angeblich noch einmal sprechen wollte.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sacksack" id="sacksack">
+<header class="wiki-article-header">
+<h2>Sacksack</h2>
+<aside class="wiki-infobox">
+<strong>Sacksack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sacksack sucht verzweifelt nach Liebe und Zugehörigkeit und verliert sich dabei immer wieder in Ideologien.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sacksee" id="sacksee">
+<header class="wiki-article-header">
+<h2>Sacksee</h2>
+<aside class="wiki-infobox">
+<strong>Sacksee</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Sacksee liegt ruhig da und tut so, als hätte er nicht schon mehrere Nebenplots verschluckt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sacktv" id="sacktv">
+<header class="wiki-article-header">
+<h2>SackTV</h2>
+<aside class="wiki-infobox">
+<strong>SackTV</strong>
+<span>Kategorie: Medien</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>SackTV ist der wichtigste Sender <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> s und vermutlich der Grund, warum niemand mehr weiß, was stimmt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackunzels turm" id="sackunzels-turm">
+<header class="wiki-article-header">
+<h2>Sackunzels Turm</h2>
+<aside class="wiki-infobox">
+<strong>Sackunzels Turm</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackunzels Turm ist hoch, märchenhaft und wahrscheinlich baurechtlich fragwürdig.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="sackus pilates" id="sackus-pilates">
+<header class="wiki-article-header">
+<h2>Sackus Pilates</h2>
+<aside class="wiki-infobox">
+<strong>Sackus Pilates</strong>
+<span>Kategorie: Römer</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Sackus Pilates ist körperlich kontrolliert und geistig vermutlich weniger stabil, als seine Haltung vermuten lässt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="san parmella" id="san-parmella">
+<header class="wiki-article-header">
+<h2>San Parmella</h2>
+<aside class="wiki-infobox">
+<strong>San Parmella</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figur</p>
+<p>San Parmella ist eine bedeutende Figur des Parmesanordens.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="santa sackina" id="santa-sackina">
+<header class="wiki-article-header">
+<h2>Santa Sackina</h2>
+<aside class="wiki-infobox">
+<strong>Santa Sackina</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Santa <a class="wiki-link" data-wiki-target="sackina" href="#sackina">Sackina</a> ist die ursprüngliche Form der späteren <a class="wiki-link" data-wiki-target="facksack" href="#facksack">Facksack</a> .</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schnattersack" id="schnattersack">
+<header class="wiki-article-header">
+<h2>Schnattersack</h2>
+<aside class="wiki-infobox">
+<strong>Schnattersack</strong>
+<span>Kategorie: Gast-Erzähler</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Schnattersack ist die akustische Gefahr im Erzählerkreis.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwafelsack" id="schwafelsack">
+<header class="wiki-article-header">
+<h2>Schwafelsack</h2>
+<aside class="wiki-infobox">
+<strong>Schwafelsack</strong>
+<span>Kategorie: Gast-Erzähler</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Schwafelsack hat vermutlich eine Meinung, bevor es ein Thema gibt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwarzer sackritter" id="schwarzer-sackritter">
+<header class="wiki-article-header">
+<h2>Schwarzer Sackritter</h2>
+<aside class="wiki-infobox">
+<strong>Schwarzer Sackritter</strong>
+<span>Kategorie: Ritter</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Schwarze Sackritter trägt Dunkelheit, Symbolik und vermutlich ein Problem mit Selbstdarstellung.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwefelsack" id="schwefelsack">
+<header class="wiki-article-header">
+<h2>Schwefelsack</h2>
+<aside class="wiki-infobox">
+<strong>Schwefelsack</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Schwefelsack riecht nach Problem, noch bevor er den Raum betritt.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schweizer käse" id="schweizer-kaese">
+<header class="wiki-article-header">
+<h2>Schweizer Käse</h2>
+<aside class="wiki-infobox">
+<strong>Schweizer Käse</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Schweizer Käse hat Lücken. Inhaltlich, emotional und gelegentlich im Plot.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwobeseggel" id="schwobeseggel">
+<header class="wiki-article-header">
+<h2>Schwobeseggel</h2>
+<aside class="wiki-infobox">
+<strong>Schwobeseggel</strong>
+<span>Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Sack</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Sack</p>
+<p>Hinweis der Sackipedia: Dieser Artikel wurde mehrfach auf Rechtschreibfehler überprüft. Schwobeseggel fand trotzdem noch welche.</p>
+<p>Schwobeseggel stammt aus dem tiefsten Schwobeländle und gilt als geizigster sowie nachtragendster Sack des gesamten Universums. Nachdem ihm <a class="wiki-link" data-wiki-target="schwobeseppel" href="#schwobeseppel">Schwobeseppel</a> seine Identität gestohlen hatte, verbrachte Schwobeseggel noch längere Zeit im berüchtigten <a class="wiki-link" data-wiki-target="sackloch" href="#sackloch">Sackloch</a>, wo er außer Zwiebeln, Hass und erstaunlich viel Freizeit nichts besaß.</p>
+<p>Dort entwickelte er einen minutiösen Racheplan.</p>
+<p>Seine Rettung verdankte er <a class="wiki-link" data-wiki-target="el-crippolo-2" href="#el-crippolo-2">EL CRIPPOLO</a>, nachdem <a class="wiki-link" data-wiki-target="labersack" href="#labersack">Labersack</a> aus Dankbarkeit höchstpersönlich ein Seil in die Geschichte geschrieben hatte.</p>
+<p>Mehr Eingriff hielt er an diesem Tag nicht für nötig.</p>
+<p>Nach seiner Befreiung verzichtete Schwobeseggel vollständig auf Gewalt.</p>
+<p>Stattdessen begann er, auf seinen Namen Bestellungen auf Rechnung aufzugeben, Verträge abzuschließen, Behördenformulare auszufüllen und seinen eigenen Ruf systematisch zu zerstören.</p>
+<p>Das Ergebnis war, dass <a class="wiki-link" data-wiki-target="schwobeseppel" href="#schwobeseppel">Schwobeseppel</a> schließlich von <a class="wiki-link" data-wiki-target="wladi-watsch" href="#wladi-watsch">WLADI WATSCH</a> persönlich Inkasso-Besuch erhielt.</p>
+<p>Schwobeseggel kommentierte die gesamte Aktion lediglich mit:</p>
+<blockquote>„So. Du willsch also i sei? Viel Spaß. Hehehehehehehe.“</blockquote>
+<p>Historiker sprechen heute von der sogenannten Seggel-Rache, der ersten vollständig bürokratischen Vergeltungsaktion Sackingens.</p>
+<h3>Bekannte Fähigkeiten</h3>
+<p>Schwäbisches Fluchen auf Muttersprachniveau.</p>
+<p>Spart grundsätzlich am falschen Ende.</p>
+<p>Kann jede Quittung der letzten zwanzig Jahre wiederfinden.</p>
+<p>Plant Rache lieber mit Formularen als mit Waffen.</p>
+<p>Erkennt Sonderangebote auf mehrere Kilometer Entfernung.</p>
+<h3>Bekannte Feinde</h3>
+<p><a class="wiki-link" data-wiki-target="schwobeseppel" href="#schwobeseppel">Schwobeseppel</a></p>
+<p>Verschwendung</p>
+<p>Rundungsfehler</p>
+<p>Kehrwochenverweigerer</p>
+<h3>Bekannte Zitate</h3>
+<blockquote>„Des koscht doch alles Geld!“</blockquote>
+<blockquote>„Heb des auf. Des kann ma no brauche.“</blockquote>
+<blockquote>„I schmeiß doch nix weg!“</blockquote>
+<blockquote>„So. Du willsch also i sei? Viel Spaß.“</blockquote>
+<p class="wiki-edit-line">Bearbeitet von: Schwobeseggel</p>
+<blockquote>„S'Wort 'geizig' isch a Frechheit. I nenn des wirtschaftlich.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht von: <a class="wiki-link" data-wiki-target="schwobeseppel" href="#schwobeseppel">Schwobeseppel</a></p>
+<blockquote>„Er hot mei ganzes Lebe ruiniert!“</blockquote>
+<p class="wiki-edit-line">Bearbeitung erneut rückgängig gemacht von: Schwobeseggel</p>
+<blockquote>„Jetzt weißt wenigstens, wie sich des anfühlt.“</blockquote>
+<p class="wiki-meta-line">Sackipedia-Notiz: Schwobeseggel klaute <a class="wiki-link" data-wiki-target="schwobeseppel" href="#schwobeseppel">Schwobeseppel</a> nicht seine Identität.</p>
+<p>Er klaute ihm seinen Ruf.</p>
+<p>Und des isch im Schwobaländle viel schlimmer.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwobeseggels identitätsdieb" id="schwobeseggels-identitaetsdieb">
+<header class="wiki-article-header">
+<h2>Schwobeseggels Identitätsdieb</h2>
+<aside class="wiki-infobox">
+<strong>Schwobeseggels Identitätsdieb</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Identitätsdieb von <a class="wiki-link" data-wiki-target="schwobeseggel" href="#schwobeseggel">Schwobeseggel</a> beweist, dass selbst ein Sack manchmal nicht mehr sicher sein kann, ob er noch er selbst ist.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="schwobeseppel" id="schwobeseppel">
+<header class="wiki-article-header">
+<h2>Schwobeseppel</h2>
+<aside class="wiki-infobox">
+<strong>Schwobeseppel</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figur</p>
+<p>Schwobeseppel stahl Schwobeseggels Identität und bekam später dessen Ruf zurück. Schlimmer.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="spaghetti" id="spaghetti">
+<header class="wiki-article-header">
+<h2>Spaghetti</h2>
+<aside class="wiki-infobox">
+<strong>Spaghetti</strong>
+<span>Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Pasta</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Hauptfigur
+Status: dokumentiert
+Wesen: Pasta</p>
+<p>Hinweis der Sackipedia: Dieser Artikel enthält Spoiler zu mehreren Nervenzusammenbrüchen, einem <a class="wiki-link" data-wiki-target="parmesanorden" href="#parmesanorden">Parmesanorden</a> sowie einer erschreckend hohen Anzahl romantischer Fehlentscheidungen.</p>
+<p>Spaghetti stammt ursprünglich aus <a class="wiki-link" data-wiki-target="pasteria" href="#pasteria">Pasteria</a> und gilt dort bis heute offiziell als „kulinarisch schwierig“. Gemeinsam mit <a class="wiki-link" data-wiki-target="don-cannelloni" href="#don-cannelloni">Don Cannelloni</a> besuchte er die berühmte Pastaschule, an der beide innerhalb kürzester Zeit den ersten dokumentierten Burnout eines Schweizer Käses verursachten.</p>
+<p>Der Käse wurde anschließend mehrere Monate hospitiert.</p>
+<p><a class="wiki-link" data-wiki-target="pasteria" href="#pasteria">Pasteria</a> sprach später ein lebenslanges Hausverbot gegen beide aus.</p>
+<p>Nicht aus Bosheit.</p>
+<p>Aus Arbeitsschutz.</p>
+<p>Spaghetti und <a class="wiki-link" data-wiki-target="don-cannelloni" href="#don-cannelloni">Don Cannelloni</a> flohen daraufhin gemeinsam vor ihrem Gläubiger <a class="wiki-link" data-wiki-target="compagnoni" href="#compagnoni">Compagnoni</a>, bei dem sie bis heute wegen einer erstaunlich überschaubaren Geldsumme in der Kreide stehen. Warum <a class="wiki-link" data-wiki-target="compagnoni" href="#compagnoni">Compagnoni</a> wegen Kleinbeträgen ganze Heerscharen losschickt, konnte bisher wissenschaftlich nicht erklärt werden.</p>
+<p>Auf ihrer Flucht durchquerten beide den Gruselsackwald. Dort hörten sie erstmals das leise Flüstern:</p>
+<blockquote>„…<a class="wiki-link" data-wiki-target="bibbeleskaes" href="#bibbeleskaes">Bibbeleskäs</a>…“</blockquote>
+<p>Sie sahen lediglich Schatten zwischen den Bäumen.</p>
+<p>Das reichte vollkommen.</p>
+<p>Sie rannten.</p>
+<p>Als Spaghetti schließlich <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> erreichte, stand die Stadt unter Wasser. Herrgottsacks Sintflut hatte große Teile des Ortes zerstört. Nachdem der Wiederaufbau begonnen hatte, entschied sich Spaghetti zu bleiben.</p>
+<p>Nicht weil er <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> besonders mochte.</p>
+<p>Sondern weil es der einzige Ort außerhalb Pasterias war, den er überhaupt kannte.</p>
+<p>Heute arbeitet Spaghetti gemeinsam mit <a class="wiki-link" data-wiki-target="macsack" href="#macsack">MacSack</a> und <a class="wiki-link" data-wiki-target="piesack" href="#piesack">Piesack</a> als Kellner auf THE BURG. Er gilt als einer der schnellsten Bedienungen des gesamten Sacklands. Gleichzeitig entwickelte er dort erste deutliche Symptome eines späteren Burnouts, da er überzeugt war, nur dann wertvoll zu sein, wenn er ständig arbeitete.</p>
+<h3>Splitter Labersacks</h3>
+<p>Wie <a class="wiki-link" data-wiki-target="el-crippolo-2" href="#el-crippolo-2">EL CRIPPOLO</a> gehört auch Spaghetti zu den sogenannten Splittern Labersacks.</p>
+<p>Er trägt viele Gedanken, Unsicherheiten und Sehnsüchte seines Erzählers in sich.</p>
+<p>Vor allem die ewige Frage:</p>
+<blockquote>„Wann reicht's eigentlich?“</blockquote>
+<p>Die Antwort fand er bis heute nicht.</p>
+<p>Dafür mehrere Überstunden.</p>
+<h3>Bekannte Beziehungen</h3>
+<p>Spaghetti gilt als außergewöhnlich charmant und besitzt eine bemerkenswerte Fähigkeit, sich gleichzeitig zu verlieben und alles zu verkomplizieren.</p>
+<p>Bekannte oder mutmaßliche Love Interests:</p>
+<p>Gina</p>
+<p>Chaya</p>
+<p><a class="wiki-link" data-wiki-target="sackhenker" href="#sackhenker">Sackhenker</a> (einseitiger Crush)</p>
+<p><a class="wiki-link" data-wiki-target="san-parmella" href="#san-parmella">San Parmella</a></p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 1</p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 2</p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 4</p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 7</p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 11</p>
+<p><a class="wiki-link" data-wiki-target="parmesanengel" href="#parmesanengel">Parmesanengel</a> Nr. 14</p>
+<p>Eine Raviolina</p>
+<p>Eine Tagliatella</p>
+<p>Zwei Tortellinis (gleichzeitig. Ging erwartbar schief.)</p>
+<p>Unreifer Parmesan (kurzzeitig. Danach lebenslanges Hausverbot.)</p>
+<p>Der sogenannte Parmesanvorfall gilt bis heute als einer der wenigen bekannten Fälle, in denen ein gesamter Tempel jemanden gleichzeitig exkommunizierte und vom Berg warf.</p>
+<h3>Bekannte Feinde</h3>
+<p><a class="wiki-link" data-wiki-target="schweizer-kaese" href="#schweizer-kaese">Schweizer Käse</a></p>
+<p><a class="wiki-link" data-wiki-target="compagnoni" href="#compagnoni">Compagnoni</a></p>
+<p>Überstunden</p>
+<p>Burnout</p>
+<h3>Bekannte Fähigkeiten</h3>
+<p>Außergewöhnlich schneller Kellner.</p>
+<p>Kann gleichzeitig sieben Teller und eine Lebenskrise balancieren.</p>
+<p>Besitzt ungewöhnlich lange Spaghettiarme.</p>
+<p>Charmant.</p>
+<p>Chronisch überarbeitet.</p>
+<h3>Bekannte Zitate</h3>
+<blockquote>„I mach's schnell.“</blockquote>
+<blockquote>„I han's gleich.“</blockquote>
+<blockquote>„Nur no des.“</blockquote>
+<blockquote>„Des wird scho.“</blockquote>
+<p>Historiker vermuten, dass sämtliche vier Aussagen gelogen waren.</p>
+<p class="wiki-edit-line">Bearbeitet von: Spaghetti</p>
+<blockquote>„Des mit em Parmesan isch komplett aus em Zusammenhang grissa.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung rückgängig gemacht von: <a class="wiki-link" data-wiki-target="san-parmella" href="#san-parmella">San Parmella</a></p>
+<blockquote>„Der Zusammenhang war exakt das Problem.“</blockquote>
+<p class="wiki-edit-line">Bearbeitung erneut rückgängig gemacht von: <a class="wiki-link" data-wiki-target="don-cannelloni" href="#don-cannelloni">Don Cannelloni</a></p>
+<blockquote>„Er hot nix gmacht. I au net.“</blockquote>
+<p class="wiki-meta-line">Sackipedia-Notiz: Mehrere Psychologen vermuten, dass Spaghetti seinen Burnout deutlich früher bemerkt hätte, wenn er sich nicht ständig vorgenommen hätte, „nur noch schnell“ irgendetwas zu erledigen. Bisher ist ihm dafür allerdings noch keine Zeit geblieben.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="steven spielsack" id="steven-spielsack">
+<header class="wiki-article-header">
+<h2>Steven Spielsack</h2>
+<aside class="wiki-infobox">
+<strong>Steven Spielsack</strong>
+<span>Kategorie: Film</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Steven Spielsack erkennt großes Kino, selbst wenn es niemand bestellt hat.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="straßburger" id="strassburger">
+<header class="wiki-article-header">
+<h2>Straßburger</h2>
+<aside class="wiki-infobox">
+<strong>Straßburger</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Straßburger trägt Heimat, Grenze und Vorurteil in einer Figur.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="stuhlingen" id="stuhlingen">
+<header class="wiki-article-header">
+<h2>Stuhlingen</h2>
+<aside class="wiki-infobox">
+<strong>Stuhlingen</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Stuhlingen ist ein Ort, an dem Sitzmöbel mehr Bedeutung haben, als Außenstehende verstehen.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="stuhlinger zoo" id="stuhlinger-zoo">
+<header class="wiki-article-header">
+<h2>Stuhlinger Zoo</h2>
+<aside class="wiki-infobox">
+<strong>Stuhlinger Zoo</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Der Stuhlinger Zoo sammelt Wesen, die vermutlich auch außerhalb von Käfigen erklärungsbedürftig wären.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="säckin" id="saeckin">
+<header class="wiki-article-header">
+<h2>Säckin</h2>
+<aside class="wiki-infobox">
+<strong>Säckin</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Säckin steht für die weibliche Sacklinie in <a class="wiki-link" data-wiki-target="sackingen" href="#sackingen">Sackingen</a> . <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> s Mutter gehört dazu.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="the good, the bad and the junkie sack" id="the-good-the-bad-and-the-junkie-sack">
+<header class="wiki-article-header">
+<h2>The Good, The Bad and The Junkie Sack</h2>
+<aside class="wiki-infobox">
+<strong>The Good, The Bad and The Junkie Sack</strong>
+<span>Kategorie: Werk</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Werk</p>
+<p>Ein Werk Labersacks und Ursprung mehrerer Splitter des Sackuniversums.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="tonningen" id="tonningen">
+<header class="wiki-article-header">
+<h2>Tonningen</h2>
+<aside class="wiki-infobox">
+<strong>Tonningen</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Tonningen ist die Stadt der Tonnen. Was andere wegwerfen, ist hier Heimat. <a class="wiki-link" data-wiki-target="drecksack" href="#drecksack">Drecksack</a> s Vater stammt von dort.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="vadersack" id="vadersack">
+<header class="wiki-article-header">
+<h2>Vadersack</h2>
+<aside class="wiki-infobox">
+<strong>Vadersack</strong>
+<span>Kategorie: Weltraum</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Vadersack betrachtet Familienthemen mit maximal dramatischer Helmhaltung.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="veggie saggy" id="veggie-saggy">
+<header class="wiki-article-header">
+<h2>Veggie Saggy</h2>
+<aside class="wiki-infobox">
+<strong>Veggie Saggy</strong>
+<span>Kategorie: Ort</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Veggie Saggy ist das Gemüse-Gegenstück zu <a class="wiki-link" data-wiki-target="macsack" href="#macsack">MacSack</a> . Gesünder. Angeblich.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="von säcken und säcken, die kaputtgehen" id="von-saecken-und-saecken-die-kaputtgehen">
+<header class="wiki-article-header">
+<h2>Von Säcken und Säcken, die kaputtgehen</h2>
+<aside class="wiki-infobox">
+<strong>Von Säcken und Säcken, die kaputtgehen</strong>
+<span>Kategorie: Werk</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Werk</p>
+<p>Ein Werk Labersacks über Dinge, die nicht stabil bleiben.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="waldi watsch" id="waldi-watsch">
+<header class="wiki-article-header">
+<h2>Waldi Watsch</h2>
+<aside class="wiki-infobox">
+<strong>Waldi Watsch</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Waldi Watsch ist eine Figur mit hohem Geräuschpotenzial.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="weiße sackwanderer" id="weisse-sackwanderer">
+<header class="wiki-article-header">
+<h2>Weiße Sackwanderer</h2>
+<aside class="wiki-infobox">
+<strong>Weiße Sackwanderer</strong>
+<span>Kategorie: Fantasy</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Die Weißen Sackwanderer kommen, wenn der Winter nicht reicht und noch Symbolik gebraucht wird.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="white knight" id="white-knight">
+<header class="wiki-article-header">
+<h2>White Knight</h2>
+<aside class="wiki-infobox">
+<strong>White Knight</strong>
+<span>Kategorie: Ritter</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>White Knight ist Ritterfigur und moralische Projektionsfläche.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="winneschuh" id="winneschuh">
+<header class="wiki-article-header">
+<h2>Winneschuh</h2>
+<aside class="wiki-infobox">
+<strong>Winneschuh</strong>
+<span>Kategorie: Western</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p>Winneschuh ist Westernmythos mit Fußproblem.</p>
+</div>
+</article>
+<article class="wiki-article" data-title="wladi watsch" id="wladi-watsch">
+<header class="wiki-article-header">
+<h2>WLADI WATSCH</h2>
+<aside class="wiki-infobox">
+<strong>WLADI WATSCH</strong>
+<span>Kategorie: Figur</span>
+<span>Status: dokumentiert</span>
+</aside>
+</header>
+<div class="wiki-article-body">
+<p class="wiki-meta-line">Kategorie: Figur</p>
+<p>WLADI WATSCH ist Inkasso-Besuch in personifizierter Form.</p>
+</div>
+</article></section>
+</div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
