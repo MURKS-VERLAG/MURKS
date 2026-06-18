@@ -1,18 +1,19 @@
-# Sackipedia präziser Mini-Patch
+# Sackipedia Reparatur aus aktueller Live-Datei
 
-Enthält nur sackipedia.html.
+Basis: direkt hochgeladene aktuelle sackipedia.html.
 
-Änderungen:
-- Infokasten-Position geändert: links unter/bei Titel, direkt neben dem Artikelfluss statt ganz rechts.
-- Doppelten großgeschriebenen EL CRIPPOLO ohne Eintrag entfernt.
-- WLADI WATSCH großgeschrieben entfernt.
-- Wladi Watsch normal bleibt drin.
-- Wladi Wodka Artikel wieder eingefügt/ersetzt.
+Nur sackipedia.html.
+
+Repariert:
+- Pseudo-Artikel aus Bearbeitungszeilen/Sätzen entfernt.
+- Entsprechende kaputte linke Reiter entfernt.
+- Metadatenblöcke wie Kategorie/Status/Wesen/Beruf/Wohnort aus Fließtext in Infokästen verschoben.
+- Grüner Heckensackritter wieder in linke Reiterliste eingefügt.
+- Grüner Heckensackritter Infokasten befüllt.
 
 Nicht geändert:
-- andere Artikel
-- alte Einträge
-- Navigation außer den genannten doppelten falschen Reitern
-- CSS-Dateien
-- JS
-- andere Seiten
+- keine CSS-Datei
+- keine JS-Datei
+- keine Assets
+- keine anderen Seiten
+- bestehende Artikeltexte bleiben erhalten, abgesehen von entfernten Metadatenzeilen
