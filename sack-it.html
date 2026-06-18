@@ -28,7 +28,7 @@
   <main class="sackit-page">
     <section class="sackit-hero">
       <img src="assets/sack-it-logo.png" alt="SACK IT! Sack Media" class="sackit-page-logo" />
-      <p class="sackit-kicker">Die offizielle Plattform für alle Säcke, die ihren Sack dazugeben wollen.</p>
+      <p class="sackit-kicker">Die offizielle Plattform für alle Säcke, die ihren Sack ausschütten, ablegen oder dazugeben wollen.</p>
       <p>Bald können Leser hier posten, liken und mit Sackingen interagieren.</p>
       <p>Keine neuen Sacks erstellen. Aber Beiträge schreiben, Dinge liken und Teil der Diskussion werden.</p>
     </section>
@@ -47,46 +47,77 @@
       </aside>
 
       <section class="sackit-feed">
+
         <article class="sackit-post">
           <div class="sackit-votes">
-            <button title="Sack geben">🟧</button>
+            <button title="Sack"><img src="assets/sackit-icon-like.png" alt="Sack" /></button>
             <strong>421</strong>
-            <button title="Kackhaufen geben">💩</button>
+            <button title="Kackhaufen"><img src="assets/sackit-icon-dislike.png" alt="Kackhaufen" /></button>
           </div>
           <div class="sackit-post-content">
             <div class="sackit-post-meta">
               <span class="sackit-sack">s/Sackingen</span>
-              <span>gepostet von <strong>Labersack</strong> <span class="verified-sack">🟦</span></span>
+              <span>gepostet von <strong>Labersack</strong> <img class="sackit-verified-icon" src="assets/sackit-icon-verified.png" alt="verifizierter Sack" /></span>
             </div>
             <h2>Willkommen auf SACK IT!</h2>
             <p>Hier kommentiert Sackingen zurück. Manchmal hilfreich. Meistens nicht.</p>
             <div class="sackit-actions">
               <span>💬 42 Sackantworten</span>
-              <span>🟧 Orangene Säcke = Zustimmung</span>
-              <span>💩 Downvote</span>
+              <span><img src="assets/sackit-icon-like.png" alt="" /> Sack</span>
+              <span><img src="assets/sackit-icon-archive.png" alt="" /> Archivieren</span>
+              <span><img src="assets/sackit-icon-dislike.png" alt="" /> Kackhaufen</span>
             </div>
           </div>
         </article>
 
-        <article class="sackit-post">
+        <article class="sackit-post sackit-image-post" id="anbausaecke">
           <div class="sackit-votes">
-            <button title="Sack geben">🟧</button>
-            <strong>87</strong>
-            <button title="Kackhaufen geben">💩</button>
+            <button title="Sack"><img src="assets/sackit-icon-like.png" alt="Sack" /></button>
+            <strong>8.742</strong>
+            <button title="Kackhaufen"><img src="assets/sackit-icon-dislike.png" alt="Kackhaufen" /></button>
           </div>
           <div class="sackit-post-content">
             <div class="sackit-post-meta">
-              <span class="sackit-sack">s/SackTV</span>
-              <span>gepostet von <strong>Sackgesicht</strong> <span class="verified-sack">🟦</span></span>
+              <span class="sackit-sack">s/Anbausäcke</span>
+              <span>gepostet von <strong>BIOSACK</strong> <img class="sackit-verified-icon" src="assets/sackit-icon-verified.png" alt="verifizierter Sack" /></span>
             </div>
-            <h2>Ich bewerbe mich hiermit als Moderator aller Sacks.</h2>
-            <p>Aus Gründen der objektiven Ordnung. Weitere Nachfragen werden entfernt.</p>
+            <h2>Stinkstängel #7 läuft brutal. 🌿</h2>
+            <p>Endlich mal wieder stabile Genetik. Viel Liebe und noch mehr Sonne.</p>
+            <img class="sackit-post-image" src="assets/sackit-biosack-post.png" alt="BIOSACK präsentiert sein Ott bei s/Anbausäcke" />
             <div class="sackit-actions">
-              <span>💬 317 Sackantworten</span>
-              <span>🛡️ Moderatorstatus: umstritten</span>
+              <span>💬 420 Sackantworten</span>
+              <span><img src="assets/sackit-icon-like.png" alt="" /> 8.742 Säcke</span>
+              <span><img src="assets/sackit-icon-archive.png" alt="" /> Archivieren</span>
+              <span><img src="assets/sackit-icon-dislike.png" alt="" /> 12 Kackhaufen</span>
             </div>
           </div>
         </article>
+
+        <article class="sackit-post sackit-image-post sackit-controversial" id="blecksackaliens">
+          <div class="sackit-votes">
+            <button title="Sack"><img src="assets/sackit-icon-like.png" alt="Sack" /></button>
+            <strong>6.991</strong>
+            <button title="Kackhaufen"><img src="assets/sackit-icon-dislike.png" alt="Kackhaufen" /></button>
+          </div>
+          <div class="sackit-post-content">
+            <div class="sackit-post-meta">
+              <span class="sackit-sack">s/Blecksackaliens</span>
+              <span>gepostet von <strong>LACKSACK</strong></span>
+              <span class="sackit-hot">umstritten</span>
+            </div>
+            <h2>Ich hab's euch gesagt!!</h2>
+            <p>03:41 Uhr. Gruselsackwald. Filterbach. Wer jetzt noch lacht, ist Teil des Problems.</p>
+            <img class="sackit-post-image sackit-ufo-image" src="assets/sackit-lacksack-ufo-post.png" alt="Unscharfes UFO über dem Gruselsackwald" />
+            <div class="sackit-actions">
+              <span>💬 1.337 Sackantworten</span>
+              <span><img src="assets/sackit-icon-like.png" alt="" /> 6.991 Säcke</span>
+              <span><img src="assets/sackit-icon-archive.png" alt="" /> Archivieren</span>
+              <span><img src="assets/sackit-icon-dislike.png" alt="" /> 6.420 Kackhaufen</span>
+            </div>
+          </div>
+        </article>
+
+      
       </section>
 
       <aside class="sackit-rightbar">
