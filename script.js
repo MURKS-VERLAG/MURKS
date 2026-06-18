@@ -54,5 +54,42 @@ if (wikiSearch) {
   }
 })();
 
-// SACKIPEDIA SINGLE ARTICLE DISPLAY
-(function(){const buttons=document.querySelectorAll(".wiki-entry-link"),articles=document.querySelectorAll(".wiki-article"),search=document.querySelector("#wikiSearch");if(!buttons.length||!articles.length)return;function showArticle(id){articles.forEach(a=>a.classList.toggle("active",a.id===id));buttons.forEach(b=>b.classList.toggle("active",b.dataset.target===id));if(history.replaceState)history.replaceState(null,"","#"+id)}buttons.forEach(btn=>btn.addEventListener("click",()=>showArticle(btn.dataset.target)));document.querySelectorAll(".wiki-link[data-wiki-target]").forEach(link=>link.addEventListener("click",e=>{e.preventDefault();showArticle(link.dataset.wikiTarget);window.scrollTo({top:0,behavior:"smooth"})}));if(location.hash&&document.querySelector(location.hash+".wiki-article"))showArticle(location.hash.slice(1));else if(buttons[0])showArticle(buttons[0].dataset.target);if(search)search.addEventListener("input",()=>{const q=search.value.toLowerCase().trim();buttons.forEach(btn=>{btn.style.display=btn.textContent.toLowerCase().includes(q)?"":"none"})})})();
+
+// SACKIPEDIA SINGLE ARTICLE DISPLAY FINAL
+(function(){
+  const buttons = document.querySelectorAll(".wiki-entry-link");
+  const articles = document.querySelectorAll(".wiki-article");
+  const search = document.querySelector("#wikiSearch");
+  if (!buttons.length || !articles.length) return;
+
+  function showArticle(id) {
+    articles.forEach(a => a.classList.toggle("active", a.id === id));
+    buttons.forEach(b => b.classList.toggle("active", b.dataset.target === id));
+    if (history.replaceState) history.replaceState(null, "", "#" + id);
+  }
+
+  buttons.forEach(btn => btn.addEventListener("click", () => showArticle(btn.dataset.target)));
+
+  document.querySelectorAll(".wiki-link[data-wiki-target]").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      showArticle(link.dataset.wikiTarget);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  if (location.hash && document.querySelector(location.hash + ".wiki-article")) {
+    showArticle(location.hash.slice(1));
+  } else if (buttons[0]) {
+    showArticle(buttons[0].dataset.target);
+  }
+
+  if (search) {
+    search.addEventListener("input", () => {
+      const q = search.value.toLowerCase().trim();
+      buttons.forEach(btn => {
+        btn.style.display = btn.textContent.toLowerCase().includes(q) ? "" : "none";
+      });
+    });
+  }
+})();
