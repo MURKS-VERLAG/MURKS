@@ -1,21 +1,22 @@
-# SACK IT Mobile-Only Patch
+# SACK IT Content-only Patch
+
+Basis: aktuelle vom Nutzer gelieferte sack-it.html.
 
 Enthält nur:
 - sack-it.html
 
-Umgesetzt:
-- Mobile-Ansicht für SACK IT verbessert.
-- Desktop bleibt unverändert, weil alle sichtbaren Layout-Regeln nur in @media (max-width: 768px) liegen.
-- Link "ANMELDUNG" unten im mobilen SACKS-Menü ergänzt.
-- Klick darauf springt zum Anmeldebereich unten.
-- Anmeldebereich steht mobil unter dem Feed.
+Nur eingefügt:
+- 4 neue Posts direkt nach post-scfreisack-drecksack:
+  1. Bibbeleskäs Klassiker
+  2. Bibbeleskäs Gewürz
+  3. White Knight Gewürzanschlag in s/Sackrecht
+  4. White Knight Dank für Ehrenabzeichen in s/Rittersäcke
 
-Nicht enthalten:
+Nicht geändert:
 - keine style.css
 - keine Assets
+- keine Sidebars
+- keine Mobile-Regeln
+- keine bestehenden Posts
+- keine Icons
 - keine anderen Seiten
-- keine Posts/Textänderungen
-- keine Icons geändert
-
-Rollback:
-- sack-it.html durch vorherige Version ersetzen.
