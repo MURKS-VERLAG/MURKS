@@ -194,6 +194,142 @@ body.sackit-page-body .sackit-post:first-of-type .sackit-locked-note {
   color: #bcbcbc !important;
   font-size: .85rem !important;
 }
+</style><style>
+/* SACK IT MOBILE ONLY PATCH - DESKTOP UNTOUCHED */
+body.sackit-page-body .sackit-mobile-anmeldung {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body.sackit-page-body {
+    overflow-x: hidden !important;
+  }
+
+  body.sackit-page-body .sackit-shell {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 18px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-sidebar {
+    order: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    position: static !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  body.sackit-page-body .sackit-sidebar h2 {
+    white-space: normal !important;
+  }
+
+  body.sackit-page-body .sackit-sidebar a {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-mobile-anmeldung {
+    display: block !important;
+    margin-top: 16px !important;
+    padding-top: 12px !important;
+    border-top: 1px solid rgba(255,255,255,.14) !important;
+    color: #ff7a00 !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    letter-spacing: .04em !important;
+  }
+
+  body.sackit-page-body .sackit-feed {
+    order: 1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-post {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  body.sackit-page-body .sackit-post-content {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-post h2 {
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  body.sackit-page-body .sackit-post p {
+    overflow-wrap: anywhere !important;
+  }
+
+  body.sackit-page-body .sackit-post-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px 12px !important;
+    line-height: 1 !important;
+  }
+
+  body.sackit-page-body .sackit-actions span {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+  }
+
+  body.sackit-page-body .sackit-actions img {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain !important;
+    display: inline-block !important;
+  }
+
+  body.sackit-page-body .sackit-rightbar {
+    order: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    position: static !important;
+    margin-top: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  body.sackit-page-body .sackit-rightbar .sackit-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
 </style></head>
 <body class="sackit-page-body">
 <header class="page-header">
@@ -237,13 +373,11 @@ body.sackit-page-body .sackit-post:first-of-type .sackit-locked-note {
 <a href="#fresssaecke">s/Fresssäcke</a>
 <a href="#waldsaecke">s/Waldsäcke</a>
 <a href="#sacklegenden">s/Sacklegenden</a>
-</aside>
+<a class="sackit-mobile-anmeldung" href="#sackit-anmeldung">ANMELDUNG</a></aside>
 <section class="sackit-feed">
 <article class="sackit-post sackit-post-locked"><div class="sackit-votes sackit-votes-locked"><span class="sackit-lock-icon">🔒</span></div>
 <div class="sackit-post-content">
-
 <div class="sackit-post-meta"><span class="sackit-sack">s/Sackingen</span><span>gepostet von <strong>Labersack</strong><img alt="verifiziert" class="sackit-verified-inline" src="assets/sackit-icon-verified.png"/></span><span class="sackit-modsack-badge">MODSACK</span></div><h2>Willkommen auf SACK IT!</h2><p>Hier kommentiert Sackingen zurück. Manchmal hilfreich. Meistens nicht.</p>
-
 <div class="sackit-locked-note">🔒 Gesperrter Post</div></div>
 </article>
 <article class="sackit-post sackit-modsack-post">
@@ -574,7 +708,7 @@ body.sackit-page-body .sackit-post:first-of-type .sackit-locked-note {
 </div>
 </article>
 </section>
-<aside class="sackit-rightbar">
+<aside class="sackit-rightbar" id="sackit-anmeldung">
 <div class="sackit-card">
 <h2>Anmeldung</h2>
 <p>Aktivierungscode:</p>

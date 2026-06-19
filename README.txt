@@ -1,18 +1,21 @@
-# SACK IT Labersack erster Post Format-Fix
+# SACK IT Mobile-Only Patch
 
 Enthält nur:
 - sack-it.html
 
-Nur geändert:
-- erster Labersack-Post oben wieder normal formatiert.
-- Meta-Zeile in eine Zeile.
-- Blauer Verifizierungssack direkt neben Labersack.
-- Gesperrter Post bleibt ohne Likes/Dislikes/Kommentare/Actions.
-- Inhalte bleiben erhalten.
+Umgesetzt:
+- Mobile-Ansicht für SACK IT verbessert.
+- Desktop bleibt unverändert, weil alle sichtbaren Layout-Regeln nur in @media (max-width: 768px) liegen.
+- Link "ANMELDUNG" unten im mobilen SACKS-Menü ergänzt.
+- Klick darauf springt zum Anmeldebereich unten.
+- Anmeldebereich steht mobil unter dem Feed.
 
-Nicht geändert:
+Nicht enthalten:
 - keine style.css
 - keine Assets
-- keine Sidebars
-- keine anderen Posts
-- Shadowmaid-Zeile bleibt wie zuvor
+- keine anderen Seiten
+- keine Posts/Textänderungen
+- keine Icons geändert
+
+Rollback:
+- sack-it.html durch vorherige Version ersetzen.
