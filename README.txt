@@ -1,18 +1,20 @@
-# SACK IT Mini-Patch exakt
+# SACK IT: 4 neue Posts nach Drecksack-Tonnenpost
 
 Enthält nur:
 - sack-it.html
-- assets/sackit-drecksack-sticker.png
+- assets/sackit-sackhenker-whiteknight.png
+- assets/sackit-scfreisack-kicksack.png
 
 Umgesetzt:
-- Drecksack-Post nutzt das neue Tonne-mit-Aufkleber-Bild.
-- Blauer Verifizierungssack steht direkt rechts neben dem Usernamen.
-- Erster Labersack-Post bleibt oben, ist gesperrt, ohne Likes/Dislikes/Kommentare/Actions.
-- Labersack bekommt dort MODSACK.
+- 4 neue Posts direkt nach dem Drecksack-Tonnenpost.
+- Schwobeseggel in s/WallstreeetSäcke.
+- Sackhenker-Warnpost mit Bild in s/ToxischeSäckeSpottet.
+- White-Knight-Dementi in s/Rittersäcke.
+- Drecksack-Fußballpost mit Kick-Sack-Bild in s/SCFreiSack.
 
 Nicht geändert:
 - keine style.css
-- keine anderen Seiten
-- keine weiteren Posts
+- keine Sidebars
+- keine bestehenden Posts
 - keine Icons
-- keine linke/rechte Sidebar-Inhalte
+- keine anderen Seiten
