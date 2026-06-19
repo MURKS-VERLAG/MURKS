@@ -129,6 +129,71 @@ body.sackit-page-body .sackit-locked-note {
   color: #bcbcbc !important;
   font-size: .85rem !important;
 }
+</style><style>
+/* SACK IT LABERSACK FIRST POST FORMAT FIX ONLY */
+body.sackit-page-body .sackit-post:first-of-type .sackit-votes-locked {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  min-width: 44px !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-lock-icon {
+  font-size: 18px !important;
+  line-height: 1 !important;
+  margin-top: 4px !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-post-content {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-post-meta {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-post-meta span {
+  display: inline-flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-verified-inline {
+  width: 12px !important;
+  height: 12px !important;
+  max-width: 12px !important;
+  max-height: 12px !important;
+  display: inline-block !important;
+  object-fit: contain !important;
+  vertical-align: middle !important;
+  margin-left: 4px !important;
+  position: static !important;
+  transform: none !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type h2 {
+  white-space: normal !important;
+  max-width: none !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type p {
+  max-width: none !important;
+}
+
+body.sackit-page-body .sackit-post:first-of-type .sackit-locked-note {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-top: 10px !important;
+  color: #bcbcbc !important;
+  font-size: .85rem !important;
+}
 </style></head>
 <body class="sackit-page-body">
 <header class="page-header">
@@ -174,14 +239,11 @@ body.sackit-page-body .sackit-locked-note {
 <a href="#sacklegenden">s/Sacklegenden</a>
 </aside>
 <section class="sackit-feed">
-<article class="sackit-post sackit-post-locked">
+<article class="sackit-post sackit-post-locked"><div class="sackit-votes sackit-votes-locked"><span class="sackit-lock-icon">🔒</span></div>
 <div class="sackit-post-content">
-<div class="sackit-post-meta">
-<span class="sackit-sack">s/Sackingen</span>
-<span>gepostet von <strong>Labersack</strong><img alt="verifizierter Sack" class="sackit-verified-icon sackit-verified-inline" src="assets/sackit-icon-verified.png"/> </span>
-<span class="sackit-modsack-badge">MODSACK</span></div>
-<h2>Willkommen auf SACK IT!</h2>
-<p>Hier kommentiert Sackingen zurück. Manchmal hilfreich. Meistens nicht.</p>
+
+<div class="sackit-post-meta"><span class="sackit-sack">s/Sackingen</span><span>gepostet von <strong>Labersack</strong><img alt="verifiziert" class="sackit-verified-inline" src="assets/sackit-icon-verified.png"/></span><span class="sackit-modsack-badge">MODSACK</span></div><h2>Willkommen auf SACK IT!</h2><p>Hier kommentiert Sackingen zurück. Manchmal hilfreich. Meistens nicht.</p>
+
 <div class="sackit-locked-note">🔒 Gesperrter Post</div></div>
 </article>
 <article class="sackit-post sackit-modsack-post">
@@ -511,7 +573,6 @@ body.sackit-page-body .sackit-locked-note {
 </div>
 </div>
 </article>
-
 </section>
 <aside class="sackit-rightbar">
 <div class="sackit-card">
