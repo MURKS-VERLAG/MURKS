@@ -1,0 +1,10 @@
+@media (max-width:768px){
+.sackit-shell{display:flex!important;flex-direction:column!important;}
+.sackit-feed{order:1;width:100%!important;}
+.sackit-sidebar{order:0;width:100%!important;position:static!important;}
+.sackit-rightbar{order:2;width:100%!important;position:static!important;margin-top:28px;}
+.sackit-post-image{width:100%!important;height:auto!important;}
+.sackit-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.sackit-mobile-anmeldung{display:block;margin-top:18px;font-weight:700;cursor:pointer;}
+html{scroll-behavior:smooth;}
+}
