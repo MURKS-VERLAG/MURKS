@@ -1,17 +1,15 @@
-# Sackipedia Final Microfix
+# SACK IT Finaler Mini-Patch
 
-Enthält nur sackipedia.html.
+Enthält nur:
+- sack-it.html
+- assets/sackit-drecksack-sticker.png
 
-Nur diese Änderungen:
-- Waldi Watsch / Wladi Watsch / WLADI WATSCH aus linker Liste entfernt.
-- Falls passende Waldi/Wladi-Watsch-Artikel existierten, wurden sie entfernt.
-- Wladi Wodka bleibt erhalten.
-- Infokasten steht unter dem Titel, Text beginnt erst darunter.
+Umgesetzt:
+1. Drecksack-Sticker-Bild in den Drecksack-Post eingefügt.
+2. Linke SACKS-Leiste und rechter Anmeldebereich wieder kompakt gesetzt.
 
-Nicht geändert:
-- keine anderen Artikeltexte
-- keine andere Navigation
-- kein CSS außerhalb des internen Sackipedia-Infokasten-Fixes
-- keine JS-Dateien
-- keine Assets
-- keine anderen Seiten
+Wichtig:
+- Keine style.css enthalten.
+- Keine anderen Seiten enthalten.
+- Keine Sidebars inhaltlich verändert.
+- Keine Posts außer dem Bild im Drecksack-Post verändert.
