@@ -966,156 +966,39 @@
     padding-right: 0 !important;
   }
 }
-/* SACK IT SIDEBAR / RIGHTBAR MINI FIX */
-.sackit-shell{
-  grid-template-columns:260px minmax(0,1fr) 230px !important;
-}
-
-.sackit-sidebar{
-  padding:12px !important;
-  overflow:hidden !important;
-}
-
-.sackit-sidebar h2{
-  font-size:1.08rem !important;
-  line-height:1.05 !important;
-  white-space:nowrap !important;
-  overflow:hidden !important;
-  text-overflow:ellipsis !important;
-  margin-bottom:10px !important;
-}
-
-.sackit-sidebar a{
-  display:block !important;
-  font-size:.92rem !important;
-  line-height:1.15 !important;
-  padding:5px 0 !important;
-  overflow-wrap:anywhere !important;
-}
-
-.sackit-rightbar{
-  width:230px !important;
-  padding:10px !important;
-  gap:10px !important;
-}
-
-.sackit-card{
-  padding:10px !important;
-}
-
-.sackit-card h2{
-  font-size:.92rem !important;
-  margin:0 0 6px 0 !important;
-}
-
-.sackit-card p,
-.sackit-card a,
-.sackit-card li{
-  font-size:.80rem !important;
-  line-height:1.25 !important;
-  margin:4px 0 !important;
-}
 
 
-/* SACK IT SIDE BARS ONLY MINI FIX */
-body.sackit-page-body .sackit-shell {
-  grid-template-columns: 190px minmax(0, 1fr) 230px !important;
-  gap: 14px !important;
-}
-
-body.sackit-page-body .sackit-sidebar {
-  width: 190px !important;
-  min-width: 190px !important;
-  max-width: 190px !important;
-  padding: 10px 12px !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-}
-
-body.sackit-page-body .sackit-sidebar h2 {
-  font-size: 2rem !important;
+/* SACK IT POSTS APPEND + ACTION ROW FIX ONLY */
+body.sackit-page-body .sackit-actions {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px 14px !important;
   line-height: 1 !important;
-  letter-spacing: .02em !important;
-  margin: 0 0 14px 0 !important;
-  padding: 0 !important;
-  max-width: 100% !important;
+  margin-top: 10px !important;
+}
+
+body.sackit-page-body .sackit-actions span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  line-height: 1 !important;
   white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: clip !important;
-}
-
-body.sackit-page-body .sackit-sidebar a {
-  font-size: .88rem !important;
-  line-height: 1.12 !important;
-  padding: 6px 0 !important;
   margin: 0 !important;
-  overflow-wrap: anywhere !important;
-}
-
-body.sackit-page-body .sackit-rightbar {
-  width: 230px !important;
-  min-width: 230px !important;
-  max-width: 230px !important;
-  padding: 10px !important;
-  gap: 10px !important;
-  box-sizing: border-box !important;
-}
-
-body.sackit-page-body .sackit-rightbar .sackit-card {
-  padding: 10px 12px !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-}
-
-body.sackit-page-body .sackit-rightbar .sackit-card h2 {
-  font-size: 1.35rem !important;
-  line-height: 1 !important;
-  letter-spacing: .04em !important;
-  margin: 0 0 10px 0 !important;
   padding: 0 !important;
 }
 
-body.sackit-page-body .sackit-rightbar .sackit-card p,
-body.sackit-page-body .sackit-rightbar .sackit-card a,
-body.sackit-page-body .sackit-rightbar .sackit-card li {
-  font-size: .78rem !important;
-  line-height: 1.24 !important;
-  margin: 4px 0 !important;
-}
-
-body.sackit-page-body .sackit-rightbar .sackit-card ul {
-  margin: 6px 0 0 14px !important;
-  padding: 0 !important;
-}
-
-@media (max-width: 980px) {
-  body.sackit-page-body .sackit-shell {
-    grid-template-columns: 1fr !important;
-  }
-
-  body.sackit-page-body .sackit-sidebar,
-  body.sackit-page-body .sackit-rightbar {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-  }
-}
-
-
-/* EMERGENCY RESTORE + SACK IT VERIFIED BADGE INLINE FIX */
-body.sackit-page-body .sackit-verified-icon,
-body.sackit-page-body .verified-sack-img,
-body.sackit-page-body img.sackit-verified-icon,
-body.sackit-page-body img.verified-sack-img {
-  width: 12px !important;
-  height: 12px !important;
-  max-width: 12px !important;
-  max-height: 12px !important;
-  display: inline-block !important;
+body.sackit-page-body .sackit-actions img {
+  width: 18px !important;
+  height: 18px !important;
   object-fit: contain !important;
-  vertical-align: -1px !important;
-  margin-left: 4px !important;
-  margin-right: 0 !important;
-  position: static !important;
-  transform: none !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+}
+
+body.sackit-page-body .sackit-award {
+  color: #ffbf2f !important;
+  font-weight: 900 !important;
 }
