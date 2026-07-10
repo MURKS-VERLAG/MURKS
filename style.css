@@ -1002,3 +1002,14 @@ body.sackit-page-body .sackit-award {
   color: #ffbf2f !important;
   font-weight: 900 !important;
 }
+
+/* AUTHORS LIST — Noah bleibt links, Oliver rechts */
+.author-list{
+  display:flex;
+  align-items:flex-start;
+  gap:34px;
+  flex-wrap:wrap;
+}
+@media(max-width:560px){
+  .author-list{gap:24px}
+}
